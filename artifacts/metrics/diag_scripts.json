@@ -1,0 +1,962 @@
+{
+ "train_S2": {
+  "n": {
+   "India": 2017799,
+   "US": 3016817
+  },
+  "class": {
+   "India|name": {
+    "nonlatin": 455759,
+    "ascii": 1455362,
+    "latin_ext": 88092,
+    "mixed": 18586
+   },
+   "India|addr": {
+    "ascii": 1481557,
+    "mixed": 477521,
+    "empty": 57846,
+    "latin_ext": 875
+   },
+   "US|name": {
+    "ascii": 2814646,
+    "latin_ext": 202171
+   },
+   "US|addr": {
+    "ascii": 2905639,
+    "empty": 111121,
+    "latin_ext": 57
+   }
+  },
+  "scripts": {
+   "India|name": {
+    "DEVANAGARI": 269424,
+    "TELUGU": 39323,
+    "KANNADA": 37211,
+    "TAMIL": 33781,
+    "GUJARATI": 30929,
+    "BENGALI": 30723,
+    "MALAYALAM": 18773,
+    "ORIYA": 7493,
+    "GURMUKHI": 6688
+   },
+   "India|addr": {
+    "DEVANAGARI": 277523,
+    "KANNADA": 38560,
+    "TAMIL": 34777,
+    "TELUGU": 34382,
+    "BENGALI": 31770,
+    "GUJARATI": 31543,
+    "MALAYALAM": 15680,
+    "GURMUKHI": 7129,
+    "ORIYA": 6157
+   }
+  },
+  "erased_by_normalize": {
+   "India|name": 455759
+  },
+  "name_nonlatin_and_addr_nonlatin_or_empty": {},
+  "lost_letters_top30": {
+   "India": [
+    [
+     "र",
+     "DEVANAGARI LETTER RA",
+     411591
+    ],
+    [
+     "ट",
+     "DEVANAGARI LETTER TTA",
+     326548
+    ],
+    [
+     "म",
+     "DEVANAGARI LETTER MA",
+     309965
+    ],
+    [
+     "ल",
+     "DEVANAGARI LETTER LA",
+     305476
+    ],
+    [
+     "प",
+     "DEVANAGARI LETTER PA",
+     267959
+    ],
+    [
+     "ड",
+     "DEVANAGARI LETTER DDA",
+     214725
+    ],
+    [
+     "स",
+     "DEVANAGARI LETTER SA",
+     202673
+    ],
+    [
+     "इ",
+     "DEVANAGARI LETTER I",
+     193913
+    ],
+    [
+     "व",
+     "DEVANAGARI LETTER VA",
+     188362
+    ],
+    [
+     "ह",
+     "DEVANAGARI LETTER HA",
+     165780
+    ],
+    [
+     "न",
+     "DEVANAGARI LETTER NA",
+     138377
+    ],
+    [
+     "क",
+     "DEVANAGARI LETTER KA",
+     130987
+    ],
+    [
+     "द",
+     "DEVANAGARI LETTER DA",
+     128507
+    ],
+    [
+     "य",
+     "DEVANAGARI LETTER YA",
+     118295
+    ],
+    [
+     "ष",
+     "DEVANAGARI LETTER SSA",
+     115277
+    ],
+    [
+     "ज",
+     "DEVANAGARI LETTER JA",
+     110516
+    ],
+    [
+     "श",
+     "DEVANAGARI LETTER SHA",
+     101715
+    ],
+    [
+     "ಟ",
+     "KANNADA LETTER TTA",
+     65087
+    ],
+    [
+     "ರ",
+     "KANNADA LETTER RA",
+     64396
+    ],
+    [
+     "ग",
+     "DEVANAGARI LETTER GA",
+     61346
+    ],
+    [
+     "फ",
+     "DEVANAGARI LETTER PHA",
+     61283
+    ],
+    [
+     "त",
+     "DEVANAGARI LETTER TA",
+     61282
+    ],
+    [
+     "ட",
+     "TAMIL LETTER TTA",
+     59340
+    ],
+    [
+     "ब",
+     "DEVANAGARI LETTER BA",
+     58716
+    ],
+    [
+     "ம",
+     "TAMIL LETTER MA",
+     57377
+    ],
+    [
+     "ల",
+     "TELUGU LETTER LA",
+     56306
+    ],
+    [
+     "ನ",
+     "KANNADA LETTER NA",
+     54744
+    ],
+    [
+     "ए",
+     "DEVANAGARI LETTER E",
+     52990
+    ],
+    [
+     "ર",
+     "GUJARATI LETTER RA",
+     52941
+    ],
+    [
+     "ಕ",
+     "KANNADA LETTER KA",
+     52253
+    ]
+   ]
+  }
+ },
+ "train_S3": {
+  "n": {
+   "US": 3170056,
+   "India": 2115547
+  },
+  "class": {
+   "US|name": {
+    "ascii": 2954491,
+    "latin_ext": 215565
+   },
+   "US|addr": {
+    "ascii": 3059036,
+    "empty": 110968,
+    "latin_ext": 52
+   },
+   "India|name": {
+    "ascii": 1724375,
+    "mixed": 34894,
+    "nonlatin": 243630,
+    "latin_ext": 112648
+   },
+   "India|addr": {
+    "empty": 64948,
+    "mixed": 475691,
+    "ascii": 1574063,
+    "latin_ext": 758,
+    "nonlatin": 87
+   }
+  },
+  "scripts": {
+   "India|addr": {
+    "DEVANAGARI": 275861,
+    "KANNADA": 38974,
+    "TAMIL": 34978,
+    "TELUGU": 34324,
+    "GUJARATI": 31517,
+    "BENGALI": 31448,
+    "MALAYALAM": 15379,
+    "GURMUKHI": 7195,
+    "ORIYA": 6102
+   },
+   "India|name": {
+    "DEVANAGARI": 158003,
+    "TELUGU": 23033,
+    "KANNADA": 21995,
+    "TAMIL": 19790,
+    "BENGALI": 18144,
+    "GUJARATI": 18020,
+    "MALAYALAM": 11116,
+    "ORIYA": 4317,
+    "GURMUKHI": 4106
+   }
+  },
+  "erased_by_normalize": {
+   "India|name": 243630
+  },
+  "name_nonlatin_and_addr_nonlatin_or_empty": {
+   "India": 1
+  },
+  "lost_letters_top30": {
+   "India": [
+    [
+     "र",
+     "DEVANAGARI LETTER RA",
+     324277
+    ],
+    [
+     "ट",
+     "DEVANAGARI LETTER TTA",
+     231413
+    ],
+    [
+     "म",
+     "DEVANAGARI LETTER MA",
+     225910
+    ],
+    [
+     "ल",
+     "DEVANAGARI LETTER LA",
+     202593
+    ],
+    [
+     "प",
+     "DEVANAGARI LETTER PA",
+     174249
+    ],
+    [
+     "ह",
+     "DEVANAGARI LETTER HA",
+     152882
+    ],
+    [
+     "द",
+     "DEVANAGARI LETTER DA",
+     124744
+    ],
+    [
+     "स",
+     "DEVANAGARI LETTER SA",
+     122469
+    ],
+    [
+     "ड",
+     "DEVANAGARI LETTER DDA",
+     121458
+    ],
+    [
+     "ष",
+     "DEVANAGARI LETTER SSA",
+     110502
+    ],
+    [
+     "इ",
+     "DEVANAGARI LETTER I",
+     109722
+    ],
+    [
+     "व",
+     "DEVANAGARI LETTER VA",
+     106476
+    ],
+    [
+     "न",
+     "DEVANAGARI LETTER NA",
+     85576
+    ],
+    [
+     "य",
+     "DEVANAGARI LETTER YA",
+     80299
+    ],
+    [
+     "श",
+     "DEVANAGARI LETTER SHA",
+     79807
+    ],
+    [
+     "क",
+     "DEVANAGARI LETTER KA",
+     74012
+    ],
+    [
+     "ज",
+     "DEVANAGARI LETTER JA",
+     69743
+    ],
+    [
+     "ಟ",
+     "KANNADA LETTER TTA",
+     54192
+    ],
+    [
+     "ರ",
+     "KANNADA LETTER RA",
+     53833
+    ],
+    [
+     "त",
+     "DEVANAGARI LETTER TA",
+     52238
+    ],
+    [
+     "ட",
+     "TAMIL LETTER TTA",
+     49096
+    ],
+    [
+     "ನ",
+     "KANNADA LETTER NA",
+     48099
+    ],
+    [
+     "ம",
+     "TAMIL LETTER MA",
+     47764
+    ],
+    [
+     "ಕ",
+     "KANNADA LETTER KA",
+     46775
+    ],
+    [
+     "उ",
+     "DEVANAGARI LETTER U",
+     45344
+    ],
+    [
+     "ર",
+     "GUJARATI LETTER RA",
+     43643
+    ],
+    [
+     "ম",
+     "BENGALI LETTER MA",
+     43069
+    ],
+    [
+     "ల",
+     "TELUGU LETTER LA",
+     42750
+    ],
+    [
+     "প",
+     "BENGALI LETTER PA",
+     42408
+    ],
+    [
+     "ब",
+     "DEVANAGARI LETTER BA",
+     38144
+    ]
+   ]
+  }
+ },
+ "test_S1": {
+  "n": {
+   "US": 663106,
+   "France": 259452,
+   "India": 809986
+  },
+  "class": {
+   "US|name": {
+    "ascii": 663106
+   },
+   "US|addr": {
+    "ascii": 663106
+   },
+   "France|name": {
+    "ascii": 218663,
+    "latin_ext": 40789
+   },
+   "France|addr": {
+    "latin_ext": 73335,
+    "ascii": 186117
+   },
+   "India|name": {
+    "ascii": 809986
+   },
+   "India|addr": {
+    "ascii": 809521,
+    "latin_ext": 465
+   }
+  },
+  "scripts": {},
+  "erased_by_normalize": {},
+  "name_nonlatin_and_addr_nonlatin_or_empty": {},
+  "lost_letters_top30": {
+   "France": [
+    [
+     "Œ",
+     "LATIN CAPITAL LIGATURE OE",
+     30
+    ]
+   ]
+  }
+ },
+ "test_S2": {
+  "n": {
+   "India": 2312565,
+   "France": 703378,
+   "US": 1871330
+  },
+  "class": {
+   "India|name": {
+    "ascii": 1673951,
+    "nonlatin": 526050,
+    "mixed": 20556,
+    "latin_ext": 92008
+   },
+   "India|addr": {
+    "ascii": 1708340,
+    "mixed": 550573,
+    "empty": 52764,
+    "latin_ext": 888
+   },
+   "France|name": {
+    "ascii": 530761,
+    "latin_ext": 172617
+   },
+   "France|addr": {
+    "ascii": 512678,
+    "latin_ext": 157282,
+    "empty": 21537,
+    "mixed": 11881
+   },
+   "US|name": {
+    "ascii": 1754403,
+    "latin_ext": 116927
+   },
+   "US|addr": {
+    "ascii": 1816182,
+    "empty": 55107,
+    "latin_ext": 41
+   }
+  },
+  "scripts": {
+   "India|addr": {
+    "DEVANAGARI": 318369,
+    "KANNADA": 45006,
+    "TAMIL": 40621,
+    "TELUGU": 39624,
+    "BENGALI": 36832,
+    "GUJARATI": 36709,
+    "MALAYALAM": 18129,
+    "GURMUKHI": 8195,
+    "ORIYA": 7088
+   },
+   "India|name": {
+    "DEVANAGARI": 309103,
+    "TELUGU": 45171,
+    "KANNADA": 43906,
+    "TAMIL": 38953,
+    "BENGALI": 35546,
+    "GUJARATI": 35321,
+    "MALAYALAM": 22033,
+    "ORIYA": 8670,
+    "GURMUKHI": 7903
+   },
+   "France|addr": {
+    "MASCULINE": 11881
+   }
+  },
+  "erased_by_normalize": {
+   "India|name": 526050
+  },
+  "name_nonlatin_and_addr_nonlatin_or_empty": {},
+  "lost_letters_top30": {
+   "India": [
+    [
+     "र",
+     "DEVANAGARI LETTER RA",
+     472838
+    ],
+    [
+     "ट",
+     "DEVANAGARI LETTER TTA",
+     376118
+    ],
+    [
+     "म",
+     "DEVANAGARI LETTER MA",
+     355937
+    ],
+    [
+     "ल",
+     "DEVANAGARI LETTER LA",
+     351353
+    ],
+    [
+     "प",
+     "DEVANAGARI LETTER PA",
+     307390
+    ],
+    [
+     "ड",
+     "DEVANAGARI LETTER DDA",
+     247027
+    ],
+    [
+     "स",
+     "DEVANAGARI LETTER SA",
+     237393
+    ],
+    [
+     "इ",
+     "DEVANAGARI LETTER I",
+     222417
+    ],
+    [
+     "व",
+     "DEVANAGARI LETTER VA",
+     215712
+    ],
+    [
+     "ह",
+     "DEVANAGARI LETTER HA",
+     191417
+    ],
+    [
+     "न",
+     "DEVANAGARI LETTER NA",
+     161981
+    ],
+    [
+     "क",
+     "DEVANAGARI LETTER KA",
+     153359
+    ],
+    [
+     "द",
+     "DEVANAGARI LETTER DA",
+     147769
+    ],
+    [
+     "य",
+     "DEVANAGARI LETTER YA",
+     137917
+    ],
+    [
+     "ज",
+     "DEVANAGARI LETTER JA",
+     132764
+    ],
+    [
+     "ष",
+     "DEVANAGARI LETTER SSA",
+     131201
+    ],
+    [
+     "श",
+     "DEVANAGARI LETTER SHA",
+     118127
+    ],
+    [
+     "ಟ",
+     "KANNADA LETTER TTA",
+     76230
+    ],
+    [
+     "ರ",
+     "KANNADA LETTER RA",
+     75455
+    ],
+    [
+     "ग",
+     "DEVANAGARI LETTER GA",
+     72642
+    ],
+    [
+     "फ",
+     "DEVANAGARI LETTER PHA",
+     72264
+    ],
+    [
+     "त",
+     "DEVANAGARI LETTER TA",
+     69662
+    ],
+    [
+     "ட",
+     "TAMIL LETTER TTA",
+     68847
+    ],
+    [
+     "ब",
+     "DEVANAGARI LETTER BA",
+     68729
+    ],
+    [
+     "ம",
+     "TAMIL LETTER MA",
+     66393
+    ],
+    [
+     "ల",
+     "TELUGU LETTER LA",
+     64892
+    ],
+    [
+     "ए",
+     "DEVANAGARI LETTER E",
+     64601
+    ],
+    [
+     "ನ",
+     "KANNADA LETTER NA",
+     64140
+    ],
+    [
+     "ಕ",
+     "KANNADA LETTER KA",
+     61290
+    ],
+    [
+     "ર",
+     "GUJARATI LETTER RA",
+     61114
+    ]
+   ],
+   "France": [
+    [
+     "Œ",
+     "LATIN CAPITAL LIGATURE OE",
+     64
+    ]
+   ]
+  }
+ },
+ "test_S3": {
+  "n": {
+   "India": 2405000,
+   "France": 731615,
+   "US": 1945701
+  },
+  "class": {
+   "India|name": {
+    "nonlatin": 280779,
+    "ascii": 1967097,
+    "mixed": 39860,
+    "latin_ext": 117264
+   },
+   "India|addr": {
+    "ascii": 1794486,
+    "mixed": 550384,
+    "empty": 59240,
+    "latin_ext": 791,
+    "nonlatin": 99
+   },
+   "France|name": {
+    "ascii": 556430,
+    "latin_ext": 175185
+   },
+   "France|addr": {
+    "ascii": 532160,
+    "latin_ext": 166105,
+    "empty": 21541,
+    "mixed": 11809
+   },
+   "US|name": {
+    "ascii": 1821274,
+    "latin_ext": 124427
+   },
+   "US|addr": {
+    "ascii": 1890350,
+    "empty": 55317,
+    "latin_ext": 34
+   }
+  },
+  "scripts": {
+   "India|name": {
+    "DEVANAGARI": 181068,
+    "TELUGU": 26698,
+    "KANNADA": 25832,
+    "TAMIL": 22808,
+    "BENGALI": 20872,
+    "GUJARATI": 20570,
+    "MALAYALAM": 13095,
+    "ORIYA": 5062,
+    "GURMUKHI": 4634
+   },
+   "India|addr": {
+    "DEVANAGARI": 319073,
+    "KANNADA": 45164,
+    "TAMIL": 40544,
+    "TELUGU": 39430,
+    "GUJARATI": 36732,
+    "BENGALI": 36427,
+    "MALAYALAM": 17933,
+    "GURMUKHI": 7992,
+    "ORIYA": 7188
+   },
+   "France|addr": {
+    "MASCULINE": 11809
+   }
+  },
+  "erased_by_normalize": {
+   "India|name": 280779,
+   "India|addr": 1
+  },
+  "name_nonlatin_and_addr_nonlatin_or_empty": {
+   "India": 1
+  },
+  "lost_letters_top30": {
+   "India": [
+    [
+     "र",
+     "DEVANAGARI LETTER RA",
+     374326
+    ],
+    [
+     "ट",
+     "DEVANAGARI LETTER TTA",
+     267040
+    ],
+    [
+     "म",
+     "DEVANAGARI LETTER MA",
+     260562
+    ],
+    [
+     "ल",
+     "DEVANAGARI LETTER LA",
+     233213
+    ],
+    [
+     "प",
+     "DEVANAGARI LETTER PA",
+     200327
+    ],
+    [
+     "ह",
+     "DEVANAGARI LETTER HA",
+     177931
+    ],
+    [
+     "द",
+     "DEVANAGARI LETTER DA",
+     143623
+    ],
+    [
+     "स",
+     "DEVANAGARI LETTER SA",
+     143098
+    ],
+    [
+     "ड",
+     "DEVANAGARI LETTER DDA",
+     139797
+    ],
+    [
+     "ष",
+     "DEVANAGARI LETTER SSA",
+     127443
+    ],
+    [
+     "इ",
+     "DEVANAGARI LETTER I",
+     125739
+    ],
+    [
+     "व",
+     "DEVANAGARI LETTER VA",
+     122030
+    ],
+    [
+     "न",
+     "DEVANAGARI LETTER NA",
+     99620
+    ],
+    [
+     "य",
+     "DEVANAGARI LETTER YA",
+     93728
+    ],
+    [
+     "श",
+     "DEVANAGARI LETTER SHA",
+     93275
+    ],
+    [
+     "क",
+     "DEVANAGARI LETTER KA",
+     86506
+    ],
+    [
+     "ज",
+     "DEVANAGARI LETTER JA",
+     83205
+    ],
+    [
+     "ಟ",
+     "KANNADA LETTER TTA",
+     63118
+    ],
+    [
+     "ರ",
+     "KANNADA LETTER RA",
+     62609
+    ],
+    [
+     "त",
+     "DEVANAGARI LETTER TA",
+     59913
+    ],
+    [
+     "ட",
+     "TAMIL LETTER TTA",
+     56842
+    ],
+    [
+     "ನ",
+     "KANNADA LETTER NA",
+     56005
+    ],
+    [
+     "ம",
+     "TAMIL LETTER MA",
+     55220
+    ],
+    [
+     "ಕ",
+     "KANNADA LETTER KA",
+     54399
+    ],
+    [
+     "उ",
+     "DEVANAGARI LETTER U",
+     52091
+    ],
+    [
+     "ર",
+     "GUJARATI LETTER RA",
+     50654
+    ],
+    [
+     "ম",
+     "BENGALI LETTER MA",
+     49739
+    ],
+    [
+     "ల",
+     "TELUGU LETTER LA",
+     49298
+    ],
+    [
+     "প",
+     "BENGALI LETTER PA",
+     48830
+    ],
+    [
+     "ब",
+     "DEVANAGARI LETTER BA",
+     45214
+    ]
+   ],
+   "France": [
+    [
+     "Œ",
+     "LATIN CAPITAL LIGATURE OE",
+     75
+    ]
+   ]
+  }
+ },
+ "train_S1": {
+  "n": {
+   "US": 1323633,
+   "India": 883188
+  },
+  "class": {
+   "US|name": {
+    "ascii": 1323633
+   },
+   "US|addr": {
+    "ascii": 1323633
+   },
+   "India|name": {
+    "ascii": 883188
+   },
+   "India|addr": {
+    "ascii": 882634,
+    "latin_ext": 554
+   }
+  },
+  "scripts": {},
+  "erased_by_normalize": {},
+  "name_nonlatin_and_addr_nonlatin_or_empty": {},
+  "lost_letters_top30": {}
+ }
+}

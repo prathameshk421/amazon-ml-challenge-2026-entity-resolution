@@ -1,0 +1,116 @@
+{
+ "K": {
+  "50": {
+   "pair_recall": 0.8811915383508419,
+   "entity_recall": 0.9728698601102161,
+   "avg_cands": 50,
+   "reduction": 0.9999951551415721
+  },
+  "100": {
+   "pair_recall": 0.9099150956972226,
+   "entity_recall": 0.9841034336583298,
+   "avg_cands": 100,
+   "reduction": 0.9999903102831442
+  },
+  "150": {
+   "pair_recall": 0.92177291696647,
+   "entity_recall": 0.9872827469266638,
+   "avg_cands": 150,
+   "reduction": 0.9999854654247162
+  },
+  "250": {
+   "pair_recall": 0.9351273564541661,
+   "entity_recall": 0.9912038999576092,
+   "avg_cands": 250,
+   "reduction": 0.9999757757078604
+  },
+  "500": {
+   "pair_recall": 0.9471290833213412,
+   "entity_recall": 0.9936413734633319,
+   "avg_cands": 500,
+   "reduction": 0.9999515514157209
+  }
+ },
+ "ms_per_query": 1.687048077583313,
+ "source_attribution_top500": {
+  "EX": 0.29822535553664764,
+  "NT": 0.758265467363559,
+  "TR": 0.44250638142700865,
+  "AD": 0.9497386653701227,
+  "PH": 0.6815060167740367
+ },
+ "n_pos_pairs": 34745,
+ "missed_count": 1837,
+ "missed_examples": [
+  {
+   "s1": "S1-107837988",
+   "s1_name": "Best Tech Limited",
+   "s1_addr": "2-91/12/4/Nr, Plot No 4, Doc Bhavan, 4Th And 5Th Floor, Kondapur, Shaikpet, Hyderabad, Telangana",
+   "missed": "S3-841692994",
+   "missed_name": "(Ltd) Best Tech"
+  },
+  {
+   "s1": "S1-170349586",
+   "s1_name": "Green Ram Marketing Pvt Ltd",
+   "s1_addr": "Shop No. 21, Ozone City, Asadpur Kayampur Bypass Road, Aligarh, Uttar Pradesh",
+   "missed": "S2-169506391",
+   "missed_name": "\u0917\u094d\u0930\u0940\u0928 \u0930\u093e\u092e \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092a\u094d\u0930\u093e. \u0932\u093f."
+  },
+  {
+   "s1": "S1-170349586",
+   "s1_name": "Green Ram Marketing Pvt Ltd",
+   "s1_addr": "Shop No. 21, Ozone City, Asadpur Kayampur Bypass Road, Aligarh, Uttar Pradesh",
+   "missed": "S2-997575564",
+   "missed_name": "\u0917\u094d\u0930\u0940\u0928 \u0930\u093e\u092e \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092a\u094d\u0930\u093e. \u0932\u093f."
+  },
+  {
+   "s1": "S1-250207157",
+   "s1_name": "Al Properties Pvt Ltd",
+   "s1_addr": "57, New Cloth Market, O/S. Raipur Gate, Raipur, Ahmedabad, Gujarat",
+   "missed": "S2-245978951",
+   "missed_name": "\u0a85\u0ab2 \u0aaa\u0acd\u0ab0\u0acb\u0aaa\u0ab0\u0acd\u0a9f\u0ac0\u0a9d \u0aaa\u0acd\u0ab0\u0abe. \u0ab2\u0abf."
+  },
+  {
+   "s1": "S1-597517977",
+   "s1_name": "Indo Exports Limited",
+   "s1_addr": "1185, West End Colony, Anna Nagar West Extn., Chennai, Tamil Nadu",
+   "missed": "S2-125649491",
+   "missed_name": "\u0b87\u0ba3\u0bcd\u0b9f\u0bcb \u0b8e\u0b95\u0bcd\u0bb8\u0bcd\u0baa\u0bcb\u0bb0\u0bcd\u0b9f\u0bcd\u0bb8\u0bcd \u0bb2\u0bbf\u0bae\u0bbf\u0b9f\u0bc6\u0b9f\u0bcd"
+  },
+  {
+   "s1": "S1-597517977",
+   "s1_name": "Indo Exports Limited",
+   "s1_addr": "1185, West End Colony, Anna Nagar West Extn., Chennai, Tamil Nadu",
+   "missed": "S3-767547033",
+   "missed_name": "\u0b87\u0ba3\u0bcd\u0b9f\u0bcb \u0b8e\u0b95\u0bcd\u0bb8\u0bcd\u0baa\u0bcb\u0bb0\u0bcd\u0b9f\u0bcd\u0bb8\u0bcd \u0bb2\u0bbf\u0bae\u0bbf\u0b9f\u0bc6\u0b9f\u0bcd"
+  },
+  {
+   "s1": "S1-347877380",
+   "s1_name": "Jain Marketing Private Limited",
+   "s1_addr": "New Delhi, Flat No E-375, Delhi, Gali No. 11, Mittal Colony, Pul Prahlad Pur, New Delhi",
+   "missed": "S3-445691031",
+   "missed_name": "\u091c\u0948\u0928 \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921"
+  },
+  {
+   "s1": "S1-347877380",
+   "s1_name": "Jain Marketing Private Limited",
+   "s1_addr": "New Delhi, Flat No E-375, Delhi, Gali No. 11, Mittal Colony, Pul Prahlad Pur, New Delhi",
+   "missed": "S3-929091312",
+   "missed_name": "\u091c\u0948\u0928 \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921"
+  },
+  {
+   "s1": "S1-33493969",
+   "s1_name": "Richmond City Literacy Highland League Center",
+   "s1_addr": "318 Cary Street, Richmond City, VA",
+   "missed": "S2-897983292",
+   "missed_name": "cityrichm0ndliteracy.com"
+  },
+  {
+   "s1": "S1-179782148",
+   "s1_name": "Hari Builders Pvt Ltd",
+   "s1_addr": "Raigarh(Mh), Hno382, 420, 758, 763, Ganesh, Panvel, Raigarh, Panvel, Flatc308, Maharashtra",
+   "missed": "S2-968808316",
+   "missed_name": "\u0939\u0930\u093f \u092c\u093f\u0932\u094d\u0921\u0930\u094d\u0938 \u092a\u094d\u0930\u093e. \u0932\u093f."
+  }
+ ]
+}

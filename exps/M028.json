@@ -1,0 +1,1 @@
+{"id": "M028", "parent": "M027", "hypothesis": "two cross-encoder scores (ce_rec, trained on DEV_REST_180K; ce_rec_c0 = ce_rec + 1 epoch on DEV_REST_REST fold 0) as separate columns: where they disagree the pair is uncertain; both out-of-sample on MATCH_TRAIN; both already scored on TEST", "groups": ["ce:ce_rec", "cex_p:ce_rec_c0"], "weights": null}

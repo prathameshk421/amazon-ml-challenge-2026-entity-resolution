@@ -1,0 +1,1 @@
+{"id": "M015", "parent": "x1_strsim", "hypothesis": "Item 12: Fellegi-Sunter m/u log-likelihood ratio of the (name tset x address tset x address-number Jaccard) agreement pattern, fitted per fold on fit rows; tests whether an explicit pattern-level likelihood adds anything to trees over the same columns", "groups": [], "weights": null, "mu": true}

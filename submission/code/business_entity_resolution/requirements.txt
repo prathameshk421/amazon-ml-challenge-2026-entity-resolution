@@ -1,0 +1,24 @@
+# Python 3.12+ (built and run with CPython 3.14.5). Versions are the ones the submission was built with.
+# CPU steps (ingest, normalization, blocking, LightGBM stages)
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+rapidfuzz==3.14.6
+jellyfish==1.2.1
+scikit-learn==1.9.1
+scipy==1.18.1
+lightgbm==4.7.0
+faiss-cpu==1.15.1  # ANN variant only; not on the submission path
+# xgboost is not pinned: src/ber/exp.py imports it (line ~943) only inside the "xgb_blend" branch, which runs
+# only when a run's matcher.json sets "xgb_blend" (neither shipped matcher does); not reached by reproduce.py.
+# GPU steps (cross-encoder, e5 retrieval, e5 distillation). On Linux/Windows install the CUDA build of torch,
+# see README section 2. The HF scoring/retrieval jobs ran image pytorch/pytorch:2.6.0-cuda12.4-cudnn9-runtime
+# (torch 2.6.0; the job command only pip-installs transformers/peft/pyarrow/huggingface_hub/sentencepiece, so the
+# image's torch stands). The Kaggle ce_train run's torch version was not recorded. The pins below are the local env's.
+torch==2.14.0
+transformers==5.17.0
+tokenizers==0.23.2
+safetensors==0.8.0
+peft==0.21.0
+accelerate==1.15.0
+huggingface_hub==1.33.0

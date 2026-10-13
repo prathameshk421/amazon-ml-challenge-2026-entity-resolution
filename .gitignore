@@ -1,0 +1,67 @@
+# --- environments / tooling ---
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+.DS_Store
+**/.DS_Store
+
+# --- contest data (never committed; see AGENTS.md) ---
+student_resource/
+student_resource
+*.tsv
+*.z01
+*.zip
+# data/: keep only the split script, split write-up and split manifest
+data/*
+!data/write_s1_split.py
+!data/student_resource/
+data/student_resource/*
+!data/student_resource/dataset/
+data/student_resource/dataset/*
+!data/student_resource/dataset/split.md
+!data/student_resource/dataset/train/
+data/student_resource/dataset/train/*
+!data/student_resource/dataset/train/s1_split_manifest.json
+
+# --- submission deliverables (Git LFS, see .gitattributes) ---
+!submission/output/*.tsv
+
+# --- local scratch / shares ---
+/teammate_share/
+/files/
+/logs/
+/output/
+
+# --- pipeline intermediates (work/ is ~13 GB); keep only trained models ---
+work/*
+!work/stage1/
+!work/rerank/
+work/rerank/*
+!work/rerank/model_v1.txt
+!work/rerank/model_v1_meta.json
+!work/rerank/cut_v1.json
+!work/match/
+work/match/*
+!work/match/models/
+!work/match_k5_submission1/
+work/match_k5_submission1/*
+!work/match_k5_submission1/models/
+
+# --- legacy phase-0..3 artifacts ---
+artifacts/models/
+artifacts/candidates/
+artifacts/index/
+artifacts/tmp/
+artifacts/tok_idf.json
+artifacts/split.json
+artifacts/val_list.json
+*.parquet
+*.pkl
+*.npy
+*.bin
+
+# local GPU/cloud credentials and settings; never commit
+cloud/gpu.env

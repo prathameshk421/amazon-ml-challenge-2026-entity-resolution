@@ -1,0 +1,729 @@
+{
+ "n_pool": 10320219,
+ "G_size": 268,
+ "G": [
+  "academy",
+  "adity",
+  "al",
+  "alliance",
+  "alpha",
+  "anand",
+  "apartments",
+  "arban",
+  "arihant",
+  "arts",
+  "assets",
+  "associates",
+  "association",
+  "automotive",
+  "baba",
+  "back",
+  "balaji",
+  "bangalore",
+  "barbershop",
+  "behavioral",
+  "big",
+  "bistro",
+  "blu",
+  "board",
+  "body",
+  "bombe",
+  "brait",
+  "brands",
+  "bureau",
+  "c",
+  "cafe",
+  "cancer",
+  "cardiology",
+  "center",
+  "central",
+  "charities",
+  "chennai",
+  "childrens",
+  "chiropractic",
+  "church",
+  "clinic",
+  "coalition",
+  "coffee",
+  "collective",
+  "college",
+  "com",
+  "commission",
+  "committee",
+  "company",
+  "concepts",
+  "corner",
+  "corporation",
+  "council",
+  "cozy",
+  "cream",
+  "credit",
+  "cultural",
+  "dayanamik",
+  "deli",
+  "department",
+  "dermatology",
+  "diagnostics",
+  "dijital",
+  "diner",
+  "division",
+  "downtown",
+  "dr",
+  "drim",
+  "dynamics",
+  "ear",
+  "east",
+  "eastern",
+  "eastgate",
+  "elaelapi",
+  "electric",
+  "elelpi",
+  "endocrinology",
+  "epeks",
+  "es",
+  "esaes",
+  "eye",
+  "federation",
+  "fellowship",
+  "fitness",
+  "foot",
+  "glass",
+  "goldan",
+  "greater",
+  "gret",
+  "grill",
+  "grin",
+  "group",
+  "gud",
+  "guild",
+  "gujarat",
+  "guru",
+  "hai",
+  "haitek",
+  "happy",
+  "hari",
+  "heart",
+  "historical",
+  "holdings",
+  "hunger",
+  "hyderabad",
+  "hypnosis",
+  "id",
+  "ii",
+  "iii",
+  "incorporated",
+  "indiyan",
+  "indo",
+  "initiative",
+  "inovetiv",
+  "interests",
+  "interfaith",
+  "internal",
+  "ist",
+  "istarn",
+  "iv",
+  "jain",
+  "jaipur",
+  "jay",
+  "klasik",
+  "kolkata",
+  "krietiv",
+  "l",
+  "laboratories",
+  "laiph",
+  "lakeside",
+  "lakshmi",
+  "league",
+  "li",
+  "limatid",
+  "limitad",
+  "limited",
+  "limitet",
+  "literacy",
+  "little",
+  "llc",
+  "llp",
+  "lnc",
+  "lotas",
+  "lower",
+  "lp",
+  "lucky",
+  "maid",
+  "man",
+  "massage",
+  "may",
+  "meridian",
+  "midtown",
+  "ministries",
+  "modarn",
+  "mr",
+  "mumbai",
+  "nails",
+  "networks",
+  "new",
+  "north",
+  "northern",
+  "northside",
+  "nyu",
+  "office",
+  "ol",
+  "oncology",
+  "orthopedic",
+  "paraphekt",
+  "partners",
+  "payoniyar",
+  "pc",
+  "pediatric",
+  "pediatrics",
+  "pharst",
+  "phorchyun",
+  "physical",
+  "phyuchar",
+  "pilates",
+  "piraivet",
+  "pizza",
+  "pllc",
+  "pra",
+  "practice",
+  "praibhet",
+  "praim",
+  "praivat",
+  "praivet",
+  "primary",
+  "primiyar",
+  "private",
+  "program",
+  "project",
+  "pub",
+  "public",
+  "pune",
+  "raj",
+  "red",
+  "rev",
+  "riverside",
+  "riyal",
+  "sadarn",
+  "saint",
+  "samiti",
+  "san",
+  "sanaraij",
+  "sangh",
+  "sauth",
+  "scholarship",
+  "seafood",
+  "service",
+  "services",
+  "sevan",
+  "shakti",
+  "shiv",
+  "shiva",
+  "shop",
+  "shyam",
+  "silvar",
+  "siti",
+  "skai",
+  "smt",
+  "society",
+  "south",
+  "southern",
+  "southside",
+  "spa",
+  "sri",
+  "store",
+  "straight",
+  "studio",
+  "studios",
+  "summit",
+  "supar",
+  "suprim",
+  "surgical",
+  "sury",
+  "svastik",
+  "sweet",
+  "tattoo",
+  "tavern",
+  "the",
+  "tirupati",
+  "transport",
+  "trinity",
+  "trust",
+  "twisted",
+  "upper",
+  "uptown",
+  "urban",
+  "urgent",
+  "urology",
+  "van",
+  "vhait",
+  "vi",
+  "vijan",
+  "vijay",
+  "vision",
+  "west",
+  "western",
+  "westgate",
+  "wildlife",
+  "womens",
+  "works",
+  "worldwide",
+  "yoga",
+  "yunaited",
+  "yunik",
+  "yunivarsal"
+ ],
+ "examples": {
+  "Phaedra Zeng Pegasus Corp": {
+   "norm": "phaedra zeng pegasus corporation",
+   "query": {
+    "EN": [
+     "phaedra zeng pegasus corporation"
+    ],
+    "NT": [
+     "phaedra",
+     "zeng",
+     "pegasus",
+     "corporation"
+    ],
+    "NG": [
+     " ph",
+     "pha",
+     "hae",
+     "aed",
+     "edr",
+     "dra",
+     "ra ",
+     "a z",
+     " ze",
+     "zen",
+     "eng",
+     "ng ",
+     "g p",
+     " pe",
+     "peg",
+     "ega",
+     "gas",
+     "asu",
+     "sus",
+     "us ",
+     "s c",
+     " co",
+     "cor",
+     "orp",
+     "rpo",
+     "por",
+     "ora",
+     "rat",
+     "ati",
+     "tio",
+     "ion",
+     "on "
+    ],
+    "NP": [
+     "phaedra|zeng",
+     "pegasus|phaedra",
+     "corporation|phaedra",
+     "pegasus|zeng",
+     "corporation|zeng",
+     "corporation|pegasus"
+    ],
+    "PH": [
+     "FTR",
+     "SNK",
+     "PKSS",
+     "KRPRXN"
+    ],
+    "SK": [
+     "PTR",
+     "SNK",
+     "PKS",
+     "KRPRTN"
+    ],
+    "SP": [
+     "PTR|SNK",
+     "PKS|PTR",
+     "KRPRTN|PTR",
+     "PKS|SNK",
+     "KRPRTN|SNK",
+     "KRPRTN|PKS"
+    ],
+    "NC": [
+     "phaedrazengpegasuscorporation",
+     "phaedrazengpegasus"
+    ]
+   },
+   "pool_NC": [
+    "phaedrazengpegasuscorporation",
+    "phaedrazengpegasus",
+    "corporation"
+   ]
+  },
+  "phaedrazengpegasus.com": {
+   "norm": "phaedrazengpegasus com",
+   "query": {
+    "EN": [
+     "phaedrazengpegasus com"
+    ],
+    "NT": [
+     "phaedrazengpegasus",
+     "com"
+    ],
+    "NG": [
+     " ph",
+     "pha",
+     "hae",
+     "aed",
+     "edr",
+     "dra",
+     "raz",
+     "aze",
+     "zen",
+     "eng",
+     "ngp",
+     "gpe",
+     "peg",
+     "ega",
+     "gas",
+     "asu",
+     "sus",
+     "us ",
+     "s c",
+     " co",
+     "com",
+     "om "
+    ],
+    "NP": [
+     "com|phaedrazengpegasus"
+    ],
+    "PH": [
+     "FTRSNKPKSS",
+     "KM"
+    ],
+    "SK": [
+     "PTRSNKPKS",
+     "KM"
+    ],
+    "SP": [
+     "KM|PTRSNKPKS"
+    ],
+    "NC": [
+     "phaedrazengpegasuscom",
+     "phaedrazengpegasus"
+    ]
+   },
+   "pool_NC": [
+    "phaedrazengpegasuscom",
+    "phaedrazengpegasus"
+   ]
+  },
+  "HU Desert Alto LLC": {
+   "norm": "hu desert alto llc",
+   "query": {
+    "EN": [
+     "hu desert alto llc"
+    ],
+    "NT": [
+     "hu",
+     "desert",
+     "alto",
+     "llc"
+    ],
+    "NG": [
+     " hu",
+     "hu ",
+     "u d",
+     " de",
+     "des",
+     "ese",
+     "ser",
+     "ert",
+     "rt ",
+     "t a",
+     " al",
+     "alt",
+     "lto",
+     "to ",
+     "o l",
+     " ll",
+     "llc",
+     "lc "
+    ],
+    "NP": [
+     "desert|hu",
+     "alto|hu",
+     "hu|llc",
+     "alto|desert",
+     "desert|llc",
+     "alto|llc"
+    ],
+    "PH": [
+     "TSRT",
+     "ALT",
+     "LK"
+    ],
+    "SK": [
+     "TSRT",
+     "LT",
+     "LK"
+    ],
+    "SP": [
+     "LT|TSRT",
+     "LK|TSRT",
+     "LK|LT"
+    ],
+    "NC": [
+     "hudesertaltollc",
+     "hudesertalto"
+    ]
+   },
+   "pool_NC": [
+    "hudesertaltollc",
+    "hudesertalto"
+   ]
+  },
+  "HU DESERT ALTO": {
+   "norm": "hu desert alto",
+   "query": {
+    "EN": [
+     "hu desert alto"
+    ],
+    "NT": [
+     "hu",
+     "desert",
+     "alto"
+    ],
+    "NG": [
+     " hu",
+     "hu ",
+     "u d",
+     " de",
+     "des",
+     "ese",
+     "ser",
+     "ert",
+     "rt ",
+     "t a",
+     " al",
+     "alt",
+     "lto",
+     "to "
+    ],
+    "NP": [
+     "desert|hu",
+     "alto|hu",
+     "alto|desert"
+    ],
+    "PH": [
+     "TSRT",
+     "ALT"
+    ],
+    "SK": [
+     "TSRT",
+     "LT"
+    ],
+    "SP": [
+     "LT|TSRT"
+    ],
+    "NC": [
+     "hudesertalto"
+    ]
+   },
+   "pool_NC": [
+    "hudesertalto"
+   ]
+  },
+  "Happy Nails LLC": {
+   "norm": "happy nails llc",
+   "query": {
+    "EN": [
+     "happy nails llc"
+    ],
+    "NT": [
+     "happy",
+     "nails",
+     "llc"
+    ],
+    "NG": [
+     " ha",
+     "hap",
+     "app",
+     "ppy",
+     "py ",
+     "y n",
+     " na",
+     "nai",
+     "ail",
+     "ils",
+     "ls ",
+     "s l",
+     " ll",
+     "llc",
+     "lc "
+    ],
+    "NP": [
+     "happy|nails",
+     "happy|llc",
+     "llc|nails"
+    ],
+    "PH": [
+     "HP",
+     "NLS",
+     "LK"
+    ],
+    "SK": [
+     "NLS",
+     "LK"
+    ],
+    "SP": [
+     "LK|NLS"
+    ],
+    "NC": [
+     "happynailsllc",
+     "happynails",
+     "nailsllc"
+    ]
+   },
+   "pool_NC": [
+    "happynailsllc",
+    "happynails",
+    "nailsllc"
+   ]
+  },
+  "happynails.com": {
+   "norm": "happynails com",
+   "query": {
+    "EN": [
+     "happynails com"
+    ],
+    "NT": [
+     "happynails",
+     "com"
+    ],
+    "NG": [
+     " ha",
+     "hap",
+     "app",
+     "ppy",
+     "pyn",
+     "yna",
+     "nai",
+     "ail",
+     "ils",
+     "ls ",
+     "s c",
+     " co",
+     "com",
+     "om "
+    ],
+    "NP": [
+     "com|happynails"
+    ],
+    "PH": [
+     "HPNLS",
+     "KM"
+    ],
+    "SK": [
+     "PNLS",
+     "KM"
+    ],
+    "SP": [
+     "KM|PNLS"
+    ],
+    "NC": [
+     "happynailscom",
+     "happynails"
+    ]
+   },
+   "pool_NC": [
+    "happynailscom",
+    "happynails"
+   ]
+  },
+  "राम मार्केटिंग प्राइवेट लिमिटेड": {
+   "norm": "ram marketing praivet limited",
+   "query": {
+    "EN": [
+     "ram marketing praivet limited"
+    ],
+    "NT": [
+     "ram",
+     "marketing",
+     "praivet",
+     "limited"
+    ],
+    "NG": [
+     " ra",
+     "ram",
+     "am ",
+     "m m",
+     " ma",
+     "mar",
+     "ark",
+     "rke",
+     "ket",
+     "eti",
+     "tin",
+     "ing",
+     "ng ",
+     "g p",
+     " pr",
+     "pra",
+     "rai",
+     "aiv",
+     "ive",
+     "vet",
+     "et ",
+     "t l",
+     " li",
+     "lim",
+     "imi",
+     "mit",
+     "ite",
+     "ted",
+     "ed "
+    ],
+    "NP": [
+     "marketing|ram",
+     "praivet|ram",
+     "limited|ram",
+     "marketing|praivet",
+     "limited|marketing",
+     "limited|praivet"
+    ],
+    "PH": [
+     "RM",
+     "MRKTNK",
+     "PRFT",
+     "LMTT"
+    ],
+    "SK": [
+     "RM",
+     "MRKTNK",
+     "PRPT",
+     "LMT"
+    ],
+    "SP": [
+     "MRKTNK|RM",
+     "PRPT|RM",
+     "LMT|RM",
+     "MRKTNK|PRPT",
+     "LMT|MRKTNK",
+     "LMT|PRPT"
+    ],
+    "NC": [
+     "rammarketingpraivetlimited",
+     "rammarketingpraivet",
+     "rammarketing"
+    ]
+   },
+   "pool_NC": [
+    "rammarketingpraivetlimited",
+    "rammarketingpraivet",
+    "rammarketing",
+    "marketing"
+   ]
+  }
+ },
+ "key64_golden": {
+  "EN|ram marketing private limited": 13839960140003792679
+ }
+}

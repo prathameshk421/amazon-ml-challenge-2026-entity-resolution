@@ -1,0 +1,1 @@
+{"id": "M019", "parent": "M018", "hypothesis": "ce_headroom: 75% of FN_in_list have an empty pool address; among empty-address same-name rows the positive rate is 67% when the name is on exactly 1 S1 vs 8% when on 4+ S1, and 50% vs 7% by pool-name count; whole-name frequency columns should let LightGBM separate them", "groups": ["ce:ce_rec", "nfreq"], "weights": null}

@@ -1,0 +1,438 @@
+{
+ "n_queries": 180000,
+ "n_true_pairs": 621534,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.001,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 150,
+   "NAME": 0,
+   "ADDR": 50,
+   "PAIR": 100,
+   "XK": 50,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": false,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 5,
+    "K_max": 60,
+    "p_min": 0.05
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   },
+   "families": {
+    "experiment": "E2",
+    "metrics": "artifacts/metrics/s1_E2.json",
+    "value": [
+     "EN",
+     "NT",
+     "NG",
+     "NP",
+     "SP",
+     "NC",
+     "AT",
+     "AB",
+     "XK"
+    ]
+   },
+   "cap_frac.NT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.001
+   },
+   "cap_frac.NG": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.0008
+   },
+   "cap_frac.AT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.NP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.SP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.AB": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.XK": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "channels.LEARN": {
+    "experiment": "E3b",
+    "metrics": "artifacts/metrics/s1_E3b.json",
+    "value": "stage1_model"
+   },
+   "quota": {
+    "experiment": "E4",
+    "metrics": "artifacts/metrics/s1_E4.json",
+    "value": {
+     "LEARN": 150,
+     "NAME": 0,
+     "ADDR": 50,
+     "PAIR": 100,
+     "XK": 50,
+     "CAT": 20
+    }
+   },
+   "chain_rule.enabled": {
+    "experiment": "E5",
+    "metrics": "artifacts/metrics/s1_E5.json",
+    "value": false
+   },
+   "rerank.cut.K_min": {
+    "experiment": "revert: teammate's ADDRESS_EXPERIMENTS.md S4 already measured K_min widening (ceiling +0.002 past K=5, not worth it); K_min stays 5, keep the matcher feature gain instead (k5_feat vs k5_base OOF +0.00211 CI[0.00190,0.00235])",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 5
+   },
+   "rerank.cut.K_max": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 60
+   },
+   "rerank.cut.p_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 0.05
+   }
+  }
+ },
+ "config_hash": "94241292b8cdffae19b4574cddafde111bd9aceb",
+ "norm_version": "2.1",
+ "git_commit": "708172ce13bce3e64ddcbf5ae1090afb351584e1",
+ "created_at": "2026-09-27T21:01:42+05:30",
+ "sweep": [
+  {
+   "T": 0.9,
+   "f05": 0.9883081199904259,
+   "added": 6136,
+   "added_true": 5803,
+   "empty_added": 8,
+   "empty_true": 2,
+   "vs_0995": {
+    "delta": -0.00015409530957213063,
+    "ci95": [
+     -0.00021182683176122457,
+     -8.45989136031723e-05
+    ],
+    "n_changed": 485,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.95,
+   "f05": 0.9883998308156203,
+   "added": 5999,
+   "added_true": 5750,
+   "empty_added": 7,
+   "empty_true": 2,
+   "vs_0995": {
+    "delta": -6.238448437775156e-05,
+    "ci95": [
+     -0.00011605971295880516,
+     -1.0111177497922563e-05
+    ],
+    "n_changed": 355,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.97,
+   "f05": 0.9884589703024328,
+   "added": 5912,
+   "added_true": 5710,
+   "empty_added": 6,
+   "empty_true": 2,
+   "vs_0995": {
+    "delta": -3.244997565252213e-06,
+    "ci95": [
+     -4.432039946409311e-05,
+     3.837995918044479e-05
+    ],
+    "n_changed": 274,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.98,
+   "f05": 0.9884720041759406,
+   "added": 5850,
+   "added_true": 5677,
+   "empty_added": 6,
+   "empty_true": 2,
+   "vs_0995": {
+    "delta": 9.788875942483298e-06,
+    "ci95": [
+     -2.5458423718916354e-05,
+     5.05944401062599e-05
+    ],
+    "n_changed": 219,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.99,
+   "f05": 0.9884827246088623,
+   "added": 5743,
+   "added_true": 5610,
+   "empty_added": 4,
+   "empty_true": 2,
+   "vs_0995": {
+    "delta": 2.0509308864301288e-05,
+    "ci95": [
+     -9.333333990645658e-06,
+     5.342477471852713e-05
+    ],
+    "n_changed": 118,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.993,
+   "f05": 0.9884723644283508,
+   "added": 5678,
+   "added_true": 5560,
+   "empty_added": 3,
+   "empty_true": 1,
+   "vs_0995": {
+    "delta": 1.0149128352777209e-05,
+    "ci95": [
+     -9.916947646040365e-06,
+     3.259281213328284e-05
+    ],
+    "n_changed": 54,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.995,
+   "f05": 0.9884622152999981,
+   "added": 5621,
+   "added_true": 5518,
+   "empty_added": 1,
+   "empty_true": 1,
+   "vs_0995": {
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n_changed": 0,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.997,
+   "f05": 0.9884540270590579,
+   "added": 5505,
+   "added_true": 5424,
+   "empty_added": 1,
+   "empty_true": 1,
+   "vs_0995": {
+    "delta": -8.188240940218926e-06,
+    "ci95": [
+     -4.020307234191251e-05,
+     2.853644995469841e-05
+    ],
+    "n_changed": 112,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.998,
+   "f05": 0.9884318398472999,
+   "added": 5392,
+   "added_true": 5330,
+   "empty_added": 1,
+   "empty_true": 1,
+   "vs_0995": {
+    "delta": -3.0375452698227374e-05,
+    "ci95": [
+     -6.653185789140247e-05,
+     1.0045142937409375e-05
+    ],
+    "n_changed": 221,
+    "n": 180000
+   }
+  },
+  {
+   "T": 0.999,
+   "f05": 0.9883441387904022,
+   "added": 5168,
+   "added_true": 5126,
+   "empty_added": 1,
+   "empty_true": 1,
+   "vs_0995": {
+    "delta": -0.00011807650959577332,
+    "ci95": [
+     -0.00016920049755386827,
+     -6.090252283839319e-05
+    ],
+    "n_changed": 435,
+    "n": 180000
+   }
+  }
+ ],
+ "cand_true_below": {},
+ "crossfit_vs_0995": -1.0142665850221218e-05,
+ "missed_by_T": {
+  "count": 8755.0,
+  "mean": 4.6820102798400915,
+  "std": 1.582717252736711,
+  "min": 1.0,
+  "25%": 4.0,
+  "50%": 5.0,
+  "75%": 6.0,
+  "max": 10.0
+ },
+ "missed_T_gt5_share": 0.2964020559680183
+}

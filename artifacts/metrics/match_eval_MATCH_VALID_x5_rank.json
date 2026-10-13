@@ -1,0 +1,449 @@
+{
+ "n_queries": 20000,
+ "n_true_pairs": 69139,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.001,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 150,
+   "NAME": 0,
+   "ADDR": 50,
+   "PAIR": 100,
+   "XK": 50,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": false,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 5,
+    "K_max": 60,
+    "p_min": 0.05
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   },
+   "families": {
+    "experiment": "E2",
+    "metrics": "artifacts/metrics/s1_E2.json",
+    "value": [
+     "EN",
+     "NT",
+     "NG",
+     "NP",
+     "SP",
+     "NC",
+     "AT",
+     "AB",
+     "XK"
+    ]
+   },
+   "cap_frac.NT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.001
+   },
+   "cap_frac.NG": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.0008
+   },
+   "cap_frac.AT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.NP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.SP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.AB": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.XK": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "channels.LEARN": {
+    "experiment": "E3b",
+    "metrics": "artifacts/metrics/s1_E3b.json",
+    "value": "stage1_model"
+   },
+   "quota": {
+    "experiment": "E4",
+    "metrics": "artifacts/metrics/s1_E4.json",
+    "value": {
+     "LEARN": 150,
+     "NAME": 0,
+     "ADDR": 50,
+     "PAIR": 100,
+     "XK": 50,
+     "CAT": 20
+    }
+   },
+   "chain_rule.enabled": {
+    "experiment": "E5",
+    "metrics": "artifacts/metrics/s1_E5.json",
+    "value": false
+   },
+   "rerank.cut.K_min": {
+    "experiment": "revert: teammate's ADDRESS_EXPERIMENTS.md S4 already measured K_min widening (ceiling +0.002 past K=5, not worth it); K_min stays 5, keep the matcher feature gain instead (k5_feat vs k5_base OOF +0.00211 CI[0.00190,0.00235])",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 5
+   },
+   "rerank.cut.K_max": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 60
+   },
+   "rerank.cut.p_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 0.05
+   }
+  }
+ },
+ "config_hash": "94241292b8cdffae19b4574cddafde111bd9aceb",
+ "norm_version": "2.1",
+ "git_commit": "fd77ee792acf56b54a5694dd9e0e3950a2c9b115",
+ "created_at": "2026-09-26T04:41:22+05:30",
+ "set": "MATCH_VALID",
+ "limited": false,
+ "decision": {
+  "rule": "threshold",
+  "threshold": 0.88,
+  "one_owner": true
+ },
+ "eval": {
+  "f05": 0.9595639268723706,
+  "ceiling": 0.9927591078417874,
+  "n_queries": 20000,
+  "n_singletons": 1152,
+  "singleton_accuracy": 0.84375,
+  "candidate_recall_retained": 0.9146357743595829,
+  "pairwise": {
+   "precision": 0.9945965127344871,
+   "recall_in_candidates": 0.9146357743595829,
+   "recall_all_true": 0.8918555373956811,
+   "n_predicted": 61997,
+   "roc_auc": 0.9944222585637099,
+   "pr_auc": 0.9966659486964925,
+   "logloss": 0.0915827825665474
+  },
+  "pred_size": {
+   "mean": 3.09985,
+   "share_empty": 0.0523
+  },
+  "loss_total": 0.040436073127629604,
+  "loss_breakdown": {
+   "singleton_with_fp": {
+    "n_entities": 180,
+    "loss": 0.009
+   },
+   "matched_fp_only": {
+    "n_entities": 99,
+    "loss": 0.001580384074628682
+   },
+   "matched_missed_only": {
+    "n_entities": 4700,
+    "loss": 0.02335091809497712
+   },
+   "matched_fp_and_missed": {
+    "n_entities": 38,
+    "loss": 0.0007638707126207127
+   },
+   "blocking_miss_only": {
+    "n_entities": 1088,
+    "loss": 0.005740900245403089
+   }
+  }
+ },
+ "floor": {
+  "threshold": 0.69,
+  "f05": 0.9459921549804389,
+  "note": "threshold chosen on MATCH_TRAIN, not on this set"
+ },
+ "gain_vs_floor": 0.013571771891931705,
+ "oof_f05": 0.9582432229841907,
+ "drop_vs_oof": -0.0013207038881798416,
+ "oof_gain_vs_floor": 0.011691490855136988,
+ "calibration_reliability": [
+  {
+   "bin": [
+    0.0,
+    0.1
+   ],
+   "n": 34756,
+   "mean_p": 0.01453081052750349,
+   "pos_rate": 0.013522844976406951
+  },
+  {
+   "bin": [
+    0.1,
+    0.2
+   ],
+   "n": 2458,
+   "mean_p": 0.1495521515607834,
+   "pos_rate": 0.1529698942229455
+  },
+  {
+   "bin": [
+    0.2,
+    0.30000000000000004
+   ],
+   "n": 1967,
+   "mean_p": 0.252398282289505,
+   "pos_rate": 0.24046771733604475
+  },
+  {
+   "bin": [
+    0.30000000000000004,
+    0.4
+   ],
+   "n": 1145,
+   "mean_p": 0.3442901074886322,
+   "pos_rate": 0.33624454148471616
+  },
+  {
+   "bin": [
+    0.4,
+    0.5
+   ],
+   "n": 1207,
+   "mean_p": 0.4348950684070587,
+   "pos_rate": 0.4167357083678542
+  },
+  {
+   "bin": [
+    0.5,
+    0.6000000000000001
+   ],
+   "n": 947,
+   "mean_p": 0.5426754355430603,
+   "pos_rate": 0.5512143611404435
+  },
+  {
+   "bin": [
+    0.6000000000000001,
+    0.7000000000000001
+   ],
+   "n": 850,
+   "mean_p": 0.6464490294456482,
+   "pos_rate": 0.6388235294117647
+  },
+  {
+   "bin": [
+    0.7000000000000001,
+    0.8
+   ],
+   "n": 1690,
+   "mean_p": 0.7539092898368835,
+   "pos_rate": 0.7325443786982249
+  },
+  {
+   "bin": [
+    0.8,
+    0.9
+   ],
+   "n": 1748,
+   "mean_p": 0.8542115688323975,
+   "pos_rate": 0.8466819221967964
+  },
+  {
+   "bin": [
+    0.9,
+    1.0
+   ],
+   "n": 61725,
+   "mean_p": 0.9952266216278076,
+   "pos_rate": 0.9951721344673957
+  }
+ ],
+ "segments": {
+  "chain_1": {
+   "n_queries": 12071,
+   "f05": 0.964976316586315
+  },
+  "chain_2_9": {
+   "n_queries": 4338,
+   "f05": 0.954289618913371
+  },
+  "chain_ge10": {
+   "n_queries": 3591,
+   "f05": 0.9477418694201601
+  },
+  "country_India": {
+   "n_queries": 8024,
+   "f05": 0.9551896925674368
+  },
+  "country_US": {
+   "n_queries": 11976,
+   "f05": 0.9624946930766779
+  },
+  "name_unseen": {
+   "n_queries": 12522,
+   "f05": 0.9648049397125845
+  },
+  "match_1": {
+   "n_queries": 1145,
+   "f05": 0.9466278505579814
+  },
+  "match_2_3": {
+   "n_queries": 8055,
+   "f05": 0.9711351783321237
+  },
+  "match_4_5": {
+   "n_queries": 7349,
+   "f05": 0.9662536177367576
+  },
+  "match_6p": {
+   "n_queries": 2299,
+   "f05": 0.9621130710508179
+  }
+ },
+ "wall_s": 5.5,
+ "run": "x5_rank"
+}

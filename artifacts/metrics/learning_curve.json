@@ -1,0 +1,440 @@
+{
+ "n_queries": 0,
+ "n_true_pairs": 0,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.001,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 150,
+   "NAME": 0,
+   "ADDR": 50,
+   "PAIR": 100,
+   "XK": 50,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": false,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 5,
+    "K_max": 60,
+    "p_min": 0.05
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   },
+   "families": {
+    "experiment": "E2",
+    "metrics": "artifacts/metrics/s1_E2.json",
+    "value": [
+     "EN",
+     "NT",
+     "NG",
+     "NP",
+     "SP",
+     "NC",
+     "AT",
+     "AB",
+     "XK"
+    ]
+   },
+   "cap_frac.NT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.001
+   },
+   "cap_frac.NG": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.0008
+   },
+   "cap_frac.AT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.NP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.SP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.AB": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.XK": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "channels.LEARN": {
+    "experiment": "E3b",
+    "metrics": "artifacts/metrics/s1_E3b.json",
+    "value": "stage1_model"
+   },
+   "quota": {
+    "experiment": "E4",
+    "metrics": "artifacts/metrics/s1_E4.json",
+    "value": {
+     "LEARN": 150,
+     "NAME": 0,
+     "ADDR": 50,
+     "PAIR": 100,
+     "XK": 50,
+     "CAT": 20
+    }
+   },
+   "chain_rule.enabled": {
+    "experiment": "E5",
+    "metrics": "artifacts/metrics/s1_E5.json",
+    "value": false
+   },
+   "rerank.cut.K_min": {
+    "experiment": "revert: teammate's ADDRESS_EXPERIMENTS.md S4 already measured K_min widening (ceiling +0.002 past K=5, not worth it); K_min stays 5, keep the matcher feature gain instead (k5_feat vs k5_base OOF +0.00211 CI[0.00190,0.00235])",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 5
+   },
+   "rerank.cut.K_max": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 60
+   },
+   "rerank.cut.p_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 0.05
+   }
+  }
+ },
+ "config_hash": "94241292b8cdffae19b4574cddafde111bd9aceb",
+ "norm_version": "2.1",
+ "git_commit": "c18d6065d545937ebe233dac93f2f04f9a0f3730",
+ "created_at": "2026-09-26T15:39:50+05:30",
+ "points": [
+  {
+   "n_queries": 45000,
+   "n_rows": 243842,
+   "oof_f05": 0.9746281673798539,
+   "threshold": 0.65,
+   "one_owner": true,
+   "folds": [
+    {
+     "fold": 0,
+     "best_iteration": 876,
+     "n_fit_rows": 175638
+    },
+    {
+     "fold": 1,
+     "best_iteration": 785,
+     "n_fit_rows": 175573
+    },
+    {
+     "fold": 2,
+     "best_iteration": 641,
+     "n_fit_rows": 175478
+    },
+    {
+     "fold": 3,
+     "best_iteration": 781,
+     "n_fit_rows": 175488
+    },
+    {
+     "fold": 4,
+     "best_iteration": 682,
+     "n_fit_rows": 175463
+    }
+   ],
+   "wall_s": 51.3
+  },
+  {
+   "n_queries": 90000,
+   "n_rows": 487994,
+   "oof_f05": 0.9767106398959108,
+   "threshold": 0.67,
+   "one_owner": true,
+   "folds": [
+    {
+     "fold": 0,
+     "best_iteration": 1382,
+     "n_fit_rows": 351237
+    },
+    {
+     "fold": 1,
+     "best_iteration": 1196,
+     "n_fit_rows": 351406
+    },
+    {
+     "fold": 2,
+     "best_iteration": 1136,
+     "n_fit_rows": 351327
+    },
+    {
+     "fold": 3,
+     "best_iteration": 1306,
+     "n_fit_rows": 351290
+    },
+    {
+     "fold": 4,
+     "best_iteration": 1260,
+     "n_fit_rows": 351267
+    }
+   ],
+   "wall_s": 120.3
+  },
+  {
+   "n_queries": 180000,
+   "n_rows": 975699,
+   "oof_f05": 0.9780694205072543,
+   "threshold": 0.67,
+   "one_owner": true,
+   "wall_s": 294.0,
+   "source": "match_train_x1_strsim.json (not rerun)"
+  },
+  {
+   "n_queries": 360000,
+   "n_rows": 1952601,
+   "oof_f05": 0.9794771546637513,
+   "threshold": 0.67,
+   "one_owner": true,
+   "folds": [
+    {
+     "fold": 0,
+     "best_iteration": 2997,
+     "n_fit_rows": 1405942
+    },
+    {
+     "fold": 1,
+     "best_iteration": 2424,
+     "n_fit_rows": 1406193
+    },
+    {
+     "fold": 2,
+     "best_iteration": 2566,
+     "n_fit_rows": 1405570
+    },
+    {
+     "fold": 3,
+     "best_iteration": 2727,
+     "n_fit_rows": 1405646
+    },
+    {
+     "fold": 4,
+     "best_iteration": 3000,
+     "n_fit_rows": 1405671
+    }
+   ],
+   "wall_s": 1225.6,
+   "source": "dev_rest_180k.py: MATCH_TRAIN + 180k new DEV_REST S1"
+  },
+  {
+   "n_queries": 1655458,
+   "n_rows": 8979983,
+   "oof_f05": 0.9822139032574392,
+   "threshold": 0.62,
+   "one_owner": true,
+   "folds": [
+    {
+     "fold": 0,
+     "best_iteration": 4000,
+     "n_fit_rows": 6465966,
+     "hit_cap": true
+    },
+    {
+     "fold": 1,
+     "best_iteration": 3998,
+     "n_fit_rows": 6464544,
+     "hit_cap": false
+    },
+    {
+     "fold": 2,
+     "best_iteration": 3988,
+     "n_fit_rows": 6465762,
+     "hit_cap": false
+    },
+    {
+     "fold": 3,
+     "best_iteration": 3996,
+     "n_fit_rows": 6465482,
+     "hit_cap": false
+    },
+    {
+     "fold": 4,
+     "best_iteration": 4000,
+     "n_fit_rows": 6466362,
+     "hit_cap": true
+    }
+   ],
+   "num_boost_round_override": 4000,
+   "any_fold_hit_cap": true,
+   "loss_breakdown": {
+    "singleton_with_fp": {
+     "n_entities": 1101,
+     "loss": 0.0006650727472397367
+    },
+    "matched_fp_only": {
+     "n_entities": 18411,
+     "loss": 0.002570438643870483
+    },
+    "matched_missed_only": {
+     "n_entities": 102942,
+     "loss": 0.007617266642218513
+    },
+    "matched_fp_and_missed": {
+     "n_entities": 1646,
+     "loss": 0.00031998056476375804
+    },
+    "blocking_miss_only": {
+     "n_entities": 111230,
+     "loss": 0.006613338144468365
+    }
+   },
+   "segments_report": {
+    "singleton_accuracy": 0.9881019278983315,
+    "candidate_recall_retained": 0.9799484408924437
+   },
+   "wall_s": 6423.6,
+   "source": "dev_rest_full.py: full MATCH_ALL (MATCH_TRAIN+MATCH_VALID+DEV_REST)"
+  }
+ ],
+ "note": "45k/90k random subsets of MATCH_TRAIN S1 (seed 42, unstratified); 180k point is x1_strsim itself, not rerun. Same 5-fold GroupKFold/LightGBM params/isotonic calibration/threshold+one_owner search as match-train. No feature rebuild, no state written to work/match/models/ or configs/match.json."
+}

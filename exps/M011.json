@@ -1,0 +1,1 @@
+{"id": "M011", "parent": "x1_strsim", "hypothesis": "Items 9+11: specialist LightGBMs on name-only, address-only and context-only columns (same folds, OOF) stacked into the main model with the name-minus-address disagreement; the main model can learn when name and address evidence conflict", "groups": [], "weights": null, "specialists": ["name", "addr", "ctx"]}

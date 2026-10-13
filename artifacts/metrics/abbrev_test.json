@@ -1,0 +1,1009 @@
+{
+ "n_queries": 0,
+ "n_true_pairs": 0,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.001,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 150,
+   "NAME": 0,
+   "ADDR": 50,
+   "PAIR": 100,
+   "XK": 50,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": false,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 5,
+    "K_max": 60,
+    "p_min": 0.05
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   },
+   "families": {
+    "experiment": "E2",
+    "metrics": "artifacts/metrics/s1_E2.json",
+    "value": [
+     "EN",
+     "NT",
+     "NG",
+     "NP",
+     "SP",
+     "NC",
+     "AT",
+     "AB",
+     "XK"
+    ]
+   },
+   "cap_frac.NT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.001
+   },
+   "cap_frac.NG": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.0008
+   },
+   "cap_frac.AT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.NP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.SP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.AB": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.XK": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "channels.LEARN": {
+    "experiment": "E3b",
+    "metrics": "artifacts/metrics/s1_E3b.json",
+    "value": "stage1_model"
+   },
+   "quota": {
+    "experiment": "E4",
+    "metrics": "artifacts/metrics/s1_E4.json",
+    "value": {
+     "LEARN": 150,
+     "NAME": 0,
+     "ADDR": 50,
+     "PAIR": 100,
+     "XK": 50,
+     "CAT": 20
+    }
+   },
+   "chain_rule.enabled": {
+    "experiment": "E5",
+    "metrics": "artifacts/metrics/s1_E5.json",
+    "value": false
+   },
+   "rerank.cut.K_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 5
+   },
+   "rerank.cut.K_max": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 60
+   },
+   "rerank.cut.p_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 0.05
+   }
+  }
+ },
+ "config_hash": "fc7811e23cb9358ab31b04e2b784fe8516779e5d",
+ "norm_version": "2.1",
+ "git_commit": "79bad2eeb2d0415f19299bc5d6377e1c36d87a94",
+ "created_at": "2026-09-25T20:14:34+05:30",
+ "maps": {
+  "France": {
+   "all": "allee",
+   "appt": "appartement",
+   "av": "avenue",
+   "b": "bis",
+   "bat": "batiment",
+   "bd": "boulevard",
+   "ch": "chemin",
+   "crs": "cours",
+   "imp": "impasse",
+   "n": "no",
+   "pass": "passage",
+   "pl": "place",
+   "psg": "passage",
+   "q": "quai",
+   "r": "rue",
+   "res": "residence",
+   "rte": "route",
+   "t": "ter"
+  },
+  "India": {
+   "ap": "andhrapradesh",
+   "apts": "apartments",
+   "br": "bihar",
+   "budh": "buddha",
+   "dl": "dilli",
+   "dor": "door",
+   "flt": "flat",
+   "ft": "feet",
+   "gj": "gujarat",
+   "h": "house",
+   "hn": "hno",
+   "hr": "hariyana",
+   "ind": "industrial",
+   "indl": "industrial",
+   "ka": "karnatak",
+   "kh": "khata",
+   "kl": "keralam",
+   "mh": "maharashtr",
+   "nr": "near",
+   "od": "odisha",
+   "opp": "opposite",
+   "pb": "panjab",
+   "pgs": "parganas",
+   "ph": "phase",
+   "pkt": "pocket",
+   "plt": "plot",
+   "prop": "property",
+   "rj": "rajasthan",
+   "sas": "shastri",
+   "sec": "sector",
+   "sect": "sector",
+   "sn": "sno",
+   "sr": "survey",
+   "sree": "shree",
+   "sy": "survey",
+   "tg": "telangan",
+   "tn": "tamilnatu"
+  },
+  "US": {
+   "ak": "alaska",
+   "al": "alabama",
+   "ar": "arkansas",
+   "atl": "atlanta",
+   "az": "arizona",
+   "b": "blue",
+   "ca": "california",
+   "co": "colorado",
+   "de": "delaware",
+   "fl": "floor",
+   "ft": "fort",
+   "ga": "georgia",
+   "ia": "iowa",
+   "il": "illinois",
+   "in": "indiana",
+   "ky": "kentucky",
+   "ma": "massachusetts",
+   "md": "maryland",
+   "me": "maine",
+   "mn": "minnesota",
+   "mo": "missouri",
+   "mt": "montana",
+   "ne": "nebraska",
+   "oh": "ohio",
+   "ok": "oklahoma",
+   "or": "oregon",
+   "pa": "pennsylvania",
+   "pl": "place",
+   "tn": "tennessee",
+   "tx": "texas",
+   "ut": "utah",
+   "va": "virginia",
+   "vt": "vermont",
+   "wi": "wisconsin",
+   "wy": "wyoming"
+  }
+ },
+ "stats": {
+  "n_pool": 9969589,
+  "countries": {
+   "France": {
+    "n_pool_records": 1434993,
+    "n_sample": 1434993,
+    "n_mined": 18,
+    "pairs": {
+     "all": [
+      "allee",
+      0.998,
+      25821,
+      40195,
+      0.998
+     ],
+     "appt": [
+      "appartement",
+      0.999,
+      4182,
+      3153,
+      0.999
+     ],
+     "av": [
+      "avenue",
+      1.0,
+      55148,
+      117128,
+      1.0
+     ],
+     "b": [
+      "bis",
+      0.999,
+      19915,
+      46918,
+      0.149
+     ],
+     "bat": [
+      "batiment",
+      0.97,
+      1456,
+      1572,
+      0.873
+     ],
+     "bd": [
+      "boulevard",
+      0.998,
+      23301,
+      35011,
+      0.798
+     ],
+     "ch": [
+      "chemin",
+      0.995,
+      7065,
+      11589,
+      0.203
+     ],
+     "crs": [
+      "cours",
+      1.0,
+      4520,
+      6579,
+      0.88
+     ],
+     "imp": [
+      "impasse",
+      1.0,
+      12006,
+      15970,
+      1.0
+     ],
+     "n": [
+      "no",
+      1.0,
+      70406,
+      94415,
+      0.748
+     ],
+     "pass": [
+      "passage",
+      0.999,
+      748,
+      2380,
+      0.999
+     ],
+     "pl": [
+      "place",
+      0.999,
+      11896,
+      10089,
+      0.847
+     ],
+     "psg": [
+      "passage",
+      0.999,
+      834,
+      2380,
+      0.999
+     ],
+     "q": [
+      "quai",
+      0.997,
+      4310,
+      6102,
+      0.997
+     ],
+     "r": [
+      "rue",
+      1.0,
+      356767,
+      557607,
+      0.04
+     ],
+     "res": [
+      "residence",
+      0.988,
+      1360,
+      4873,
+      0.976
+     ],
+     "rte": [
+      "route",
+      1.0,
+      11593,
+      13504,
+      1.0
+     ],
+     "t": [
+      "ter",
+      0.999,
+      2437,
+      7186,
+      0.978
+     ]
+    }
+   },
+   "India": {
+    "n_pool_records": 4717565,
+    "n_sample": 1500000,
+    "n_mined": 37,
+    "pairs": {
+     "ap": [
+      "andhrapradesh",
+      0.995,
+      11203,
+      6899,
+      0.847
+     ],
+     "apts": [
+      "apartments",
+      0.956,
+      3186,
+      9441,
+      0.266
+     ],
+     "br": [
+      "bihar",
+      0.997,
+      14320,
+      25323,
+      0.834
+     ],
+     "budh": [
+      "buddha",
+      0.974,
+      1640,
+      14471,
+      0.958
+     ],
+     "dl": [
+      "dilli",
+      1.0,
+      73330,
+      48969,
+      0.42
+     ],
+     "dor": [
+      "door",
+      1.0,
+      945,
+      84778,
+      0.904
+     ],
+     "flt": [
+      "flat",
+      0.992,
+      1345,
+      62699,
+      0.897
+     ],
+     "ft": [
+      "feet",
+      0.984,
+      2680,
+      3026,
+      0.187
+     ],
+     "gj": [
+      "gujarat",
+      0.996,
+      35104,
+      60534,
+      0.894
+     ],
+     "h": [
+      "house",
+      0.981,
+      139000,
+      52199,
+      0.022
+     ],
+     "hn": [
+      "hno",
+      0.981,
+      24142,
+      2788,
+      0.65
+     ],
+     "hr": [
+      "hariyana",
+      0.998,
+      21936,
+      14528,
+      0.004
+     ],
+     "ind": [
+      "indl",
+      0.974,
+      4231,
+      1911,
+      0.036
+     ],
+     "indl": [
+      "industrial",
+      0.961,
+      1911,
+      26740,
+      0.961
+     ],
+     "ka": [
+      "karnatak",
+      0.996,
+      46558,
+      28662,
+      0.008
+     ],
+     "kh": [
+      "khata",
+      0.987,
+      12714,
+      1608,
+      0.011
+     ],
+     "kl": [
+      "keralam",
+      0.998,
+      17203,
+      11436,
+      0.0
+     ],
+     "mh": [
+      "maharashtr",
+      0.998,
+      117761,
+      78038,
+      0.004
+     ],
+     "nr": [
+      "near",
+      0.962,
+      25076,
+      71784,
+      0.173
+     ],
+     "od": [
+      "odisha",
+      0.971,
+      6879,
+      11538,
+      0.805
+     ],
+     "opp": [
+      "opposite",
+      0.952,
+      38298,
+      5873,
+      0.952
+     ],
+     "pb": [
+      "panjab",
+      0.999,
+      7956,
+      5136,
+      0.002
+     ],
+     "pgs": [
+      "parganas",
+      0.954,
+      761,
+      8854,
+      0.954
+     ],
+     "ph": [
+      "phase",
+      0.975,
+      4141,
+      26783,
+      0.766
+     ],
+     "pkt": [
+      "pocket",
+      0.955,
+      3156,
+      5104,
+      0.955
+     ],
+     "plt": [
+      "plot",
+      0.984,
+      1107,
+      123846,
+      0.339
+     ],
+     "prop": [
+      "property",
+      0.997,
+      850,
+      1594,
+      0.997
+     ],
+     "rj": [
+      "rajasthan",
+      0.999,
+      19402,
+      33757,
+      0.839
+     ],
+     "sas": [
+      "shastri",
+      0.98,
+      938,
+      2520,
+      0.164
+     ],
+     "sec": [
+      "sector",
+      0.999,
+      11246,
+      63323,
+      0.031
+     ],
+     "sect": [
+      "sector",
+      0.97,
+      1093,
+      63323,
+      0.97
+     ],
+     "sn": [
+      "sno",
+      0.999,
+      3121,
+      3491,
+      0.28
+     ],
+     "sr": [
+      "survey",
+      0.995,
+      8342,
+      6395,
+      0.134
+     ],
+     "sree": [
+      "shree",
+      0.981,
+      1024,
+      5023,
+      0.981
+     ],
+     "sy": [
+      "survey",
+      0.989,
+      7349,
+      6395,
+      0.609
+     ],
+     "tg": [
+      "telangan",
+      0.998,
+      27758,
+      18402,
+      0.004
+     ],
+     "tn": [
+      "tamilnatu",
+      0.999,
+      38585,
+      25570,
+      0.174
+     ]
+    }
+   },
+   "US": {
+    "n_pool_records": 3817031,
+    "n_sample": 1500000,
+    "n_mined": 35,
+    "pairs": {
+     "ak": [
+      "alaska",
+      0.997,
+      2160,
+      1986,
+      0.084
+     ],
+     "al": [
+      "alabama",
+      1.0,
+      18326,
+      18073,
+      0.086
+     ],
+     "ar": [
+      "arkansas",
+      1.0,
+      15571,
+      14887,
+      0.019
+     ],
+     "atl": [
+      "atlanta",
+      0.987,
+      913,
+      2363,
+      0.768
+     ],
+     "az": [
+      "arizona",
+      1.0,
+      32274,
+      31235,
+      1.0
+     ],
+     "b": [
+      "blue",
+      0.954,
+      22188,
+      2393,
+      0.027
+     ],
+     "ca": [
+      "california",
+      0.999,
+      21224,
+      21164,
+      0.038
+     ],
+     "co": [
+      "colorado",
+      0.959,
+      3658,
+      2854,
+      0.029
+     ],
+     "de": [
+      "delaware",
+      0.99,
+      6694,
+      5917,
+      0.28
+     ],
+     "fl": [
+      "floor",
+      0.992,
+      7851,
+      3081,
+      0.698
+     ],
+     "ft": [
+      "fort",
+      0.98,
+      2341,
+      9796,
+      0.551
+     ],
+     "ga": [
+      "georgia",
+      0.961,
+      1703,
+      2138,
+      0.799
+     ],
+     "ia": [
+      "iowa",
+      0.997,
+      12376,
+      12823,
+      0.014
+     ],
+     "il": [
+      "illinois",
+      1.0,
+      42422,
+      40971,
+      0.774
+     ],
+     "in": [
+      "indiana",
+      1.0,
+      28010,
+      27500,
+      0.016
+     ],
+     "ky": [
+      "kentucky",
+      0.999,
+      16882,
+      16039,
+      0.892
+     ],
+     "ma": [
+      "massachusetts",
+      0.999,
+      31753,
+      30741,
+      0.007
+     ],
+     "md": [
+      "maryland",
+      0.999,
+      22535,
+      22470,
+      0.807
+     ],
+     "me": [
+      "maine",
+      1.0,
+      6811,
+      6713,
+      0.007
+     ],
+     "mn": [
+      "minnesota",
+      1.0,
+      17649,
+      17027,
+      0.011
+     ],
+     "mo": [
+      "missouri",
+      0.997,
+      14502,
+      14872,
+      0.033
+     ],
+     "mt": [
+      "montana",
+      0.977,
+      8624,
+      5535,
+      0.015
+     ],
+     "ne": [
+      "nebraska",
+      0.996,
+      3681,
+      3307,
+      0.846
+     ],
+     "oh": [
+      "ohio",
+      1.0,
+      47194,
+      45901,
+      0.02
+     ],
+     "ok": [
+      "oklahoma",
+      1.0,
+      12859,
+      12334,
+      0.93
+     ],
+     "or": [
+      "oregon",
+      0.999,
+      17046,
+      16870,
+      0.874
+     ],
+     "pa": [
+      "pennsylvania",
+      0.991,
+      6740,
+      7196,
+      0.588
+     ],
+     "pl": [
+      "place",
+      0.969,
+      15749,
+      14032,
+      0.594
+     ],
+     "tn": [
+      "tennessee",
+      1.0,
+      33617,
+      32603,
+      0.627
+     ],
+     "tx": [
+      "texas",
+      1.0,
+      74714,
+      72455,
+      0.85
+     ],
+     "ut": [
+      "utah",
+      1.0,
+      12858,
+      12708,
+      0.93
+     ],
+     "va": [
+      "virginia",
+      0.965,
+      33426,
+      43600,
+      0.858
+     ],
+     "vt": [
+      "vermont",
+      0.991,
+      3092,
+      2993,
+      0.833
+     ],
+     "wi": [
+      "wisconsin",
+      0.999,
+      17690,
+      17486,
+      0.023
+     ],
+     "wy": [
+      "wyoming",
+      0.982,
+      1435,
+      1883,
+      0.27
+     ]
+    }
+   }
+  },
+  "skipped_countries": {},
+  "peak_rss_mb": 3640.2
+ }
+}

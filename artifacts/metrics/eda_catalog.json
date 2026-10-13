@@ -1,0 +1,282 @@
+{
+ "legal_suffix_gap": {
+  "n": 6881,
+  "frac_of_pos": 0.15629045812796694,
+  "examples": [
+   {
+    "s1": "S1-886788817",
+    "cand": "S2-696538156",
+    "s1_name": "HU Desert Alto LLC",
+    "c_name": "HU DESERT ALTO",
+    "s1_addr": "1943 214th Lane, Buckeye, AZ",
+    "c_addr": "1945 214TH LN, BUCKEYE, AZ",
+    "n_lev_norm": 0.875,
+    "n_jacc": 0.75,
+    "a_lev_norm": 0.962,
+    "a_jacc": 0.667
+   },
+   {
+    "s1": "S1-886788817",
+    "cand": "S2-584125010",
+    "s1_name": "HU Desert Alto LLC",
+    "c_name": "HU Desert Alto",
+    "s1_addr": "1943 214th Lane, Buckeye, AZ",
+    "c_addr": "214TH LN, BUCKEYE, AZ",
+    "n_lev_norm": 0.875,
+    "n_jacc": 0.75,
+    "a_lev_norm": 0.894,
+    "a_jacc": 0.8
+   }
+  ]
+ },
+ "ampersand_vs_and": {
+  "n": 583,
+  "examples": [
+   {
+    "s1": "S1-441113981",
+    "cand": "S3-110711067",
+    "s1_name": "Oconnor & Sharma Clinic",
+    "c_name": "Oconnor Sharma Clinic Partners",
+    "s1_addr": "20136 Raven Drive, Eagle River, AK",
+    "c_addr": "20136 Raven Drive, Eagle River, Alaska",
+    "n_lev_norm": 0.764,
+    "n_jacc": 0.6,
+    "a_lev_norm": 0.941,
+    "a_jacc": 0.714
+   },
+   {
+    "s1": "S1-541308971",
+    "cand": "S3-852454733",
+    "s1_name": "Vang & Satterwhite LLC",
+    "c_name": "Vang + Satterte LLC",
+    "s1_addr": "1328 16th Avenue, City Of Wausau, WI",
+    "c_addr": "1328 16rd Avenue, Wauau, Wisconsin",
+    "n_lev_norm": 0.829,
+    "n_jacc": 0.4,
+    "a_lev_norm": 0.697,
+    "a_jacc": 0.2
+   }
+  ]
+ },
+ "word_order_transposition": {
+  "n": 3002,
+  "examples": [
+   {
+    "s1": "S1-886788817",
+    "cand": "S2-394900779",
+    "s1_name": "HU Desert Alto LLC",
+    "c_name": "HU Desert Alto Alto Llc",
+    "s1_addr": "1943 214th Lane, Buckeye, AZ",
+    "c_addr": "1945 214TH LANE, BUCKEYE, AZ",
+    "n_lev_norm": 0.878,
+    "n_jacc": 1.0,
+    "a_lev_norm": 0.962,
+    "a_jacc": 0.667
+   },
+   {
+    "s1": "S1-837648000",
+    "cand": "S2-507092648",
+    "s1_name": "Graham, Mccollum and Sullivan PC",
+    "c_name": "Graham, Mccollum And Sullivan Sullivan Pc",
+    "s1_addr": "16836 Mateer, Lincoln, AR",
+    "c_addr": "16836 MATEER, LINCOLN CITY, AR",
+    "n_lev_norm": 0.873,
+    "n_jacc": 1.0,
+    "a_lev_norm": 0.902,
+    "a_jacc": 0.8
+   }
+  ]
+ },
+ "typo_level": {
+  "n": 14223,
+  "examples": [
+   {
+    "s1": "S1-886788817",
+    "cand": "S2-696538156",
+    "s1_name": "HU Desert Alto LLC",
+    "c_name": "HU DESERT ALTO",
+    "s1_addr": "1943 214th Lane, Buckeye, AZ",
+    "c_addr": "1945 214TH LN, BUCKEYE, AZ",
+    "n_lev_norm": 0.875,
+    "n_jacc": 0.75,
+    "a_lev_norm": 0.962,
+    "a_jacc": 0.667
+   },
+   {
+    "s1": "S1-886788817",
+    "cand": "S2-479537579",
+    "s1_name": "HU Desert Alto LLC",
+    "c_name": "HU DESERT ALT  LLC",
+    "s1_addr": "1943 214th Lane, Buckeye, AZ",
+    "c_addr": "AZ, BUCKEYE, 1945 214TH LANE",
+    "n_lev_norm": 0.971,
+    "n_jacc": 0.6,
+    "a_lev_norm": 0.538,
+    "a_jacc": 0.667
+   }
+  ]
+ },
+ "phonetic_like": {
+  "n": 1153,
+  "examples": [
+   {
+    "s1": "S1-123663694",
+    "cand": "S2-249825602",
+    "s1_name": "Quon Inc",
+    "c_name": "QUON",
+    "s1_addr": "271 Pleasant Street, Unit 1, New Bedford, MA",
+    "c_addr": "271C PLEASANT ST, NEW BEDFORD, MA",
+    "n_lev_norm": 0.381,
+    "n_jacc": 0.5,
+    "a_lev_norm": 0.895,
+    "a_jacc": 0.556
+   },
+   {
+    "s1": "S1-187166803",
+    "cand": "S2-585604973",
+    "s1_name": "RPM Coinshares LLC",
+    "c_name": "RPM LLC Center",
+    "s1_addr": "696 Westbrook Street, Unit APT 13E, South Portland, ME",
+    "c_addr": "SOUTH PORTLAND, ME, PO BOX 7147, 696  WESTBROOK ST",
+    "n_lev_norm": 0.438,
+    "n_jacc": 0.5,
+    "a_lev_norm": 0.374,
+    "a_jacc": 0.5
+   }
+  ]
+ },
+ "landmark_address": {
+  "n": 2552,
+  "examples": [
+   {
+    "s1": "S1-395967700",
+    "cand": "S2-603091544",
+    "s1_name": "Legacy Equity Company",
+    "c_name": "Legacy Company  Center",
+    "s1_addr": "1 Village Square Shopping Circle, Unit SUITE B, Hazelwood, MO",
+    "c_addr": "HAZELWOOD, #1 VILLAGE SQUARE SHOPPING CIRCLE, N/A, MO",
+    "n_lev_norm": 0.667,
+    "n_jacc": 0.5,
+    "a_lev_norm": 0.729,
+    "a_jacc": 0.583
+   },
+   {
+    "s1": "S1-395967700",
+    "cand": "S3-285393885",
+    "s1_name": "Legacy Equity Company",
+    "c_name": "Legacy Equity Cómpany",
+    "s1_addr": "1 Village Square Shopping Circle, Unit SUITE B, Hazelwood, MO",
+    "c_addr": "1 Village Square Shopping Cir, Unit Suite B, Hazelwood, Missouri",
+    "n_lev_norm": 1.0,
+    "n_jacc": 1.0,
+    "a_lev_norm": 0.924,
+    "a_jacc": 0.667
+   }
+  ]
+ },
+ "empty_pool_address": {
+  "n": 1839,
+  "examples": [
+   {
+    "s1": "S1-504017805",
+    "cand": "S3-988798918",
+    "s1_name": "Guillema Miller Advanced Exchange",
+    "c_name": "Guillema Miller Advanced Exchange Inc",
+    "s1_addr": "Unit Lot 63, Athens, 19260 Airfield Street, AL",
+    "c_addr": "",
+    "n_lev_norm": 0.835,
+    "n_jacc": 0.8,
+    "a_lev_norm": 0.0,
+    "a_jacc": 0.0
+   },
+   {
+    "s1": "S1-125548537",
+    "cand": "S3-69207644",
+    "s1_name": "Gusta Soto, L.C.S.W.",
+    "c_name": "Gusta Soto, L.C.S.W. LLC",
+    "s1_addr": "5629 Kristi Ln, Bettendorf, IA",
+    "c_addr": "",
+    "n_lev_norm": 0.9,
+    "n_jacc": 0.857,
+    "a_lev_norm": 0.0,
+    "a_jacc": 0.0
+   }
+  ]
+ },
+ "domain_names": {
+  "n": 1757,
+  "examples": [
+   {
+    "s1": "S1-991209462",
+    "cand": "S3-674044832",
+    "s1_name": "Phaedra Zeng Pegasus Corp",
+    "c_name": "phaedrazengpegasus.com",
+    "s1_addr": "IL, Macomb, 926 Jamie Lane",
+    "c_addr": "926 Jamie Lane, Macomb, Illinois",
+    "n_lev_norm": 0.778,
+    "n_jacc": 0.0,
+    "a_lev_norm": 0.519,
+    "a_jacc": 0.667
+   },
+   {
+    "s1": "S1-24938646",
+    "cand": "S2-131507647",
+    "s1_name": "Continental Foundation LLC",
+    "c_name": "foundationcontinental.com",
+    "s1_addr": "Warrenville, 30W 179 Attleboro Court, IL",
+    "c_addr": "30W 179 ATTLEBORO CT, WARRENVILLE, IL",
+    "n_lev_norm": 0.51,
+    "n_jacc": 0.0,
+    "a_lev_norm": 0.684,
+    "a_jacc": 1.0
+   }
+  ]
+ },
+ "country_disagree": {
+  "n": 0,
+  "examples": []
+ },
+ "same_name_hard_negative": {
+  "n": 3839,
+  "frac_of_hard": 0.022798942898714255,
+  "examples": [
+   {
+    "s1": "S1-8020960",
+    "cand": "S3-186575138",
+    "s1_name": "Happy Nails, LLC",
+    "c_name": "HAPPY NAILS LLC",
+    "s1_addr": "480 University Boulevard, Middletown, OH",
+    "c_addr": "1494 Oakridge Park Road, Santa Maria, California",
+    "n_lev_norm": 1.0,
+    "n_jacc": 1.0,
+    "a_lev_norm": 0.357,
+    "a_jacc": 0.0
+   },
+   {
+    "s1": "S1-8020960",
+    "cand": "S2-296011993",
+    "s1_name": "Happy Nails, LLC",
+    "c_name": "HAPPY NAILS LLC",
+    "s1_addr": "480 University Boulevard, Middletown, OH",
+    "c_addr": "3941 Woodlane Ave, HALTOM CITY, TX",
+    "n_lev_norm": 1.0,
+    "n_jacc": 1.0,
+    "a_lev_norm": 0.329,
+    "a_jacc": 0.0
+   },
+   {
+    "s1": "S1-885703149",
+    "cand": "S3-981011868",
+    "s1_name": "Urban Coffee",
+    "c_name": "Urban-Coffee",
+    "s1_addr": "3591 Woodhaven Drive, Unit Suite D, Ellicott, NY",
+    "c_addr": "3061 Dothan Ln, Texas, Dallas",
+    "n_lev_norm": 1.0,
+    "n_jacc": 1.0,
+    "a_lev_norm": 0.432,
+    "a_jacc": 0.0
+   }
+  ]
+ },
+ "acronym_like_hardneg_rate_sample20k": 0.05425
+}

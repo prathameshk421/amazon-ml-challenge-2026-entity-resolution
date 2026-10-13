@@ -1,0 +1,1 @@
+{"id": "M009", "parent": "x1_strsim", "hypothesis": "Items 5-6 (copy-cluster support, S2/S3 triangulation): true matches of one S1 are near-duplicates of each other (sb_n_dup 2.28 for y=1 vs 1.14 for y=0 on 3,000 S1); candidate-to-candidate text evidence, no stacked model score (X3's stacked p broke singletons)", "groups": ["sib"], "weights": null}

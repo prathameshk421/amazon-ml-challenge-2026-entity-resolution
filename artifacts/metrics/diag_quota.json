@@ -1,0 +1,124 @@
+{
+ "n_true_pairs": 34745,
+ "n_entities": 9436,
+ "configs": {
+  "BOTH150 (ref)": {
+   "quotas": {
+    "BOTH": 150
+   },
+   "pair_recall": 0.931,
+   "entity_recall": 0.9913,
+   "mean_size": 149.9,
+   "p99_size": 150.0
+  },
+  "BOTH500 (ref)": {
+   "quotas": {
+    "BOTH": 500
+   },
+   "pair_recall": 0.9469,
+   "entity_recall": 0.9936,
+   "mean_size": 498.7,
+   "p99_size": 500.0
+  },
+  "BOTH2000 (ref)": {
+   "quotas": {
+    "BOTH": 2000
+   },
+   "pair_recall": 0.9622,
+   "entity_recall": 0.9955,
+   "mean_size": 1979.6,
+   "p99_size": 2000.0
+  },
+  "q50x5": {
+   "quotas": {
+    "BOTH": 50,
+    "NAME": 50,
+    "ADDR": 50,
+    "PAIR": 50,
+    "ROM": 50
+   },
+   "pair_recall": 0.9466,
+   "entity_recall": 0.9924,
+   "mean_size": 191.8,
+   "p99_size": 242.0
+  },
+  "q100x5": {
+   "quotas": {
+    "BOTH": 100,
+    "NAME": 100,
+    "ADDR": 100,
+    "PAIR": 100,
+    "ROM": 100
+   },
+   "pair_recall": 0.9562,
+   "entity_recall": 0.9944,
+   "mean_size": 381.1,
+   "p99_size": 487.0
+  },
+  "q200x5": {
+   "quotas": {
+    "BOTH": 200,
+    "NAME": 200,
+    "ADDR": 200,
+    "PAIR": 200,
+    "ROM": 200
+   },
+   "pair_recall": 0.9645,
+   "entity_recall": 0.9951,
+   "mean_size": 743.7,
+   "p99_size": 971.0
+  },
+  "q300x5": {
+   "quotas": {
+    "BOTH": 300,
+    "NAME": 300,
+    "ADDR": 300,
+    "PAIR": 300,
+    "ROM": 300
+   },
+   "pair_recall": 0.9678,
+   "entity_recall": 0.9957,
+   "mean_size": 1093.2,
+   "p99_size": 1448.0100000000002
+  },
+  "q500x5": {
+   "quotas": {
+    "BOTH": 500,
+    "NAME": 500,
+    "ADDR": 500,
+    "PAIR": 500,
+    "ROM": 500
+   },
+   "pair_recall": 0.9717,
+   "entity_recall": 0.9964,
+   "mean_size": 1754.7,
+   "p99_size": 2382.0
+  },
+  "B300+N100+A100+P100+R50": {
+   "quotas": {
+    "BOTH": 300,
+    "NAME": 100,
+    "ADDR": 100,
+    "PAIR": 100,
+    "ROM": 50
+   },
+   "pair_recall": 0.9623,
+   "entity_recall": 0.995,
+   "mean_size": 496.9,
+   "p99_size": 630.0
+  },
+  "B500+N200+A200+P200+R100": {
+   "quotas": {
+    "BOTH": 500,
+    "NAME": 200,
+    "ADDR": 200,
+    "PAIR": 200,
+    "ROM": 100
+   },
+   "pair_recall": 0.9681,
+   "entity_recall": 0.9958,
+   "mean_size": 888.5,
+   "p99_size": 1155.0100000000002
+  }
+ }
+}

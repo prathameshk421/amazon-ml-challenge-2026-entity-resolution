@@ -1,0 +1,184 @@
+{
+  "script": "plan/checks/error_patterns.py",
+  "created_at": "2026-09-26T01:24:58+05:30",
+  "git_commit": "fd77ee792acf56b54a5694dd9e0e3950a2c9b115",
+  "source": "reports/match_errors/*.csv (MATCH_TRAIN OOF, threshold 0.70 + one-owner)",
+  "definitions": {
+    "pool_addr_empty": "pool address blank or only <NULL>",
+    "name_tset_ge95": "rapidfuzz token_set_ratio on lowercased raw names >= 95",
+    "alias": "name token_set_ratio < 50 and address token_set_ratio >= 80",
+    "house_id": "regex for compound ids like 8-1-293/B/4, 86/1, H2-87; compared after removing spaces and leading zeros"
+  },
+  "train_false_negatives": {
+    "n_rows": 19275,
+    "country_S1": {
+      "US": 11772,
+      "India": 7503
+    },
+    "pool_addr_empty": {
+      "n": 7851,
+      "share": 0.40731517509727627
+    },
+    "name_tset_ge95": {
+      "n": 8686,
+      "share": 0.4506355382619974
+    },
+    "name_tset_ge95_and_pool_addr_empty": {
+      "n": 5106,
+      "share": 0.2649027237354086
+    },
+    "alias_name_tset_lt50_addr_tset_ge80": {
+      "n": 2533,
+      "share": 0.13141374837872893
+    },
+    "domain_like_pool_name": {
+      "n": 736,
+      "share": 0.038184176394293126
+    },
+    "nonlatin_pool_name": {
+      "n": 689,
+      "share": 0.03574578469520104
+    },
+    "nonlatin_pool_addr": {
+      "n": 1064,
+      "share": 0.055201037613488976
+    },
+    "leading_zero_number_pool_addr": {
+      "n": 2089,
+      "share": 0.10837872892347601
+    },
+    "ordinal_word_pool_addr": {
+      "n": 292,
+      "share": 0.015149156939040207
+    },
+    "house_id_both_present": {
+      "conflict": 543,
+      "shared": 724,
+      "conflict_share_of_rows": 0.028171206225680933
+    },
+    "unit_both_present": {
+      "conflict": 51,
+      "shared": 714,
+      "conflict_share_of_rows": 0.0026459143968871595
+    },
+    "po_box_pool_only": {
+      "n": 296,
+      "share": 0.015356679636835279
+    }
+  },
+  "train_false_positives": {
+    "n_rows": 4946,
+    "country_S1": {
+      "US": 2839,
+      "India": 2107
+    },
+    "pool_addr_empty": {
+      "n": 959,
+      "share": 0.19389405580266883
+    },
+    "name_tset_ge95": {
+      "n": 1755,
+      "share": 0.35483218762636476
+    },
+    "name_tset_ge95_and_pool_addr_empty": {
+      "n": 594,
+      "share": 0.12009704811969268
+    },
+    "alias_name_tset_lt50_addr_tset_ge80": {
+      "n": 927,
+      "share": 0.1874241811564901
+    },
+    "domain_like_pool_name": {
+      "n": 144,
+      "share": 0.029114435907804288
+    },
+    "nonlatin_pool_name": {
+      "n": 206,
+      "share": 0.041649818034775576
+    },
+    "nonlatin_pool_addr": {
+      "n": 445,
+      "share": 0.08997169429842297
+    },
+    "leading_zero_number_pool_addr": {
+      "n": 249,
+      "share": 0.050343712090578245
+    },
+    "ordinal_word_pool_addr": {
+      "n": 64,
+      "share": 0.01293974929235746
+    },
+    "house_id_both_present": {
+      "conflict": 239,
+      "shared": 281,
+      "conflict_share_of_rows": 0.048321876263647395
+    },
+    "unit_both_present": {
+      "conflict": 33,
+      "shared": 337,
+      "conflict_share_of_rows": 0.006672058228871815
+    },
+    "po_box_pool_only": {
+      "n": 20,
+      "share": 0.0040436716538617065
+    }
+  },
+  "train_blocking_misses": {
+    "n_rows": 15117,
+    "country_S1": {
+      "India": 8987,
+      "US": 6130
+    },
+    "pool_addr_empty": {
+      "n": 5813,
+      "share": 0.38453396837996956
+    },
+    "name_tset_ge95": {
+      "n": 3867,
+      "share": 0.25580472315935704
+    },
+    "name_tset_ge95_and_pool_addr_empty": {
+      "n": 2332,
+      "share": 0.15426341205265595
+    },
+    "alias_name_tset_lt50_addr_tset_ge80": {
+      "n": 1923,
+      "share": 0.1272077793212939
+    },
+    "domain_like_pool_name": {
+      "n": 1398,
+      "share": 0.0924786664020639
+    },
+    "nonlatin_pool_name": {
+      "n": 1710,
+      "share": 0.11311768207977774
+    },
+    "nonlatin_pool_addr": {
+      "n": 1550,
+      "share": 0.10253357147582193
+    },
+    "leading_zero_number_pool_addr": {
+      "n": 985,
+      "share": 0.06515843090560296
+    },
+    "ordinal_word_pool_addr": {
+      "n": 211,
+      "share": 0.013957795858966726
+    },
+    "house_id_both_present": {
+      "conflict": 232,
+      "shared": 1036,
+      "conflict_share_of_rows": 0.015346960375735927
+    },
+    "unit_both_present": {
+      "conflict": 90,
+      "shared": 388,
+      "conflict_share_of_rows": 0.005953562214725144
+    },
+    "po_box_pool_only": {
+      "n": 71,
+      "share": 0.004696699080505391
+    }
+  },
+  "wall_s": 1.1
+}

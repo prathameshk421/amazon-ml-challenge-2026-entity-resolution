@@ -1,0 +1,1557 @@
+[setup] device=cuda threads=4
+[setup] idle temps cpu=47.75C gpu=40.0C
+[data] loading pairs ...
+[data] rows=976897 null_text_cells=0
+[data] train=971466 eval=5431 eval_s1_groups=1000
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:05, 73.02it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 2955.77it/s]
+trainable params: 3,409,921 || all params: 571,165,698 || trainable%: 0.5970
+[mem] 1.15GB allocated, 1.15GB reserved
+[ep0 step50] loss=0.3949 0.17s/step temps=(50.125, 69.0)
+[ep0 step100] loss=0.2806 0.16s/step temps=(52.875, 72.0)
+[ep0 step150] loss=0.2280 0.16s/step temps=(54.625, 71.0)
+[ep0 step200] loss=0.2308 0.16s/step temps=(56.125, 71.0)
+[ep0 step200] EVAL loss=0.2044 auc=0.9749
+[ep0 step250] loss=0.2121 0.23s/step temps=(56.75, 72.0)
+[ep0 step300] loss=0.2202 0.22s/step temps=(57.875, 73.0)
+[ep0 step350] loss=0.1911 0.21s/step temps=(58.375, 78.0)
+[ep0 step400] loss=0.1737 0.21s/step temps=(58.875, 78.0)
+[ep0 step400] EVAL loss=0.1619 auc=0.9830
+[ep0 step450] loss=0.1963 0.24s/step temps=(60.625, 79.0)
+[ep0 step500] loss=0.1661 0.23s/step temps=(60.125, 77.0)
+[ep0 step550] loss=0.1687 0.23s/step temps=(60.5, 77.0)
+[ep0 step600] loss=0.1638 0.22s/step temps=(59.75, 77.0)
+[ep0 step600] EVAL loss=0.1291 auc=0.9891
+[ep0 step650] loss=0.1644 0.24s/step temps=(58.875, 79.0)
+[ep0 step700] loss=0.1719 0.24s/step temps=(59.125, 80.0)
+[ep0 step750] loss=0.1553 0.23s/step temps=(59.25, 80.0)
+[ep0 step800] loss=0.1648 0.23s/step temps=(58.375, 80.0)
+[ep0 step800] EVAL loss=0.1528 auc=0.9887
+[ep0 step850] loss=0.1285 0.24s/step temps=(59.25, 81.0)
+[ep0 step900] loss=0.1522 0.24s/step temps=(59.25, 81.0)
+[ep0 step950] loss=0.1853 0.24s/step temps=(58.5, 76.0)
+[ep0 step1000] loss=0.1762 0.23s/step temps=(58.5, 81.0)
+[ep0 step1000] EVAL loss=0.1269 auc=0.9906
+[ep0 step1050] loss=0.1556 0.25s/step temps=(59.875, 81.0)
+[ep0 step1100] loss=0.1518 0.24s/step temps=(59.875, 81.0)
+[ep0 step1150] loss=0.1231 0.24s/step temps=(60.0, 81.0)
+[ep0 step1200] loss=0.1325 0.24s/step temps=(59.875, 82.0)
+[ep0 step1200] EVAL loss=0.1089 auc=0.9925
+[ep0 step1250] loss=0.1443 0.25s/step temps=(58.75, 81.0)
+[ep0 step1300] loss=0.1255 0.24s/step temps=(60.0, 81.0)
+[ep0 step1350] loss=0.1367 0.24s/step temps=(60.25, 80.0)
+[ep0 step1400] loss=0.1416 0.24s/step temps=(59.125, 81.0)
+[ep0 step1400] EVAL loss=0.1167 auc=0.9926
+[ep0 step1450] loss=0.1326 0.25s/step temps=(59.0, 81.0)
+[ep0 step1500] loss=0.1155 0.24s/step temps=(59.125, 80.0)
+[ep0 step1550] loss=0.1035 0.24s/step temps=(59.0, 81.0)
+[ep0 step1600] loss=0.1198 0.24s/step temps=(59.0, 75.0)
+[ep0 step1600] EVAL loss=0.0955 auc=0.9942
+[ep0 step1650] loss=0.1625 0.25s/step temps=(59.125, 82.0)
+[ep0 step1700] loss=0.1215 0.24s/step temps=(59.25, 82.0)
+[ep0 step1750] loss=0.0931 0.24s/step temps=(59.25, 79.0)
+[ep0 step1800] loss=0.1174 0.24s/step temps=(59.375, 82.0)
+[ep0 step1800] EVAL loss=0.0998 auc=0.9943
+[ep0 step1850] loss=0.1487 0.25s/step temps=(59.0, 79.0)
+[ep0 step1900] loss=0.1360 0.24s/step temps=(59.125, 76.0)
+[ep0 step1950] loss=0.1215 0.24s/step temps=(59.5, 81.0)
+[ep0 step2000] loss=0.1448 0.24s/step temps=(60.0, 82.0)
+[ep0 step2000] EVAL loss=0.1003 auc=0.9937
+[ep0 step2000] ckpt saved
+[ep0 step2050] loss=0.1180 0.25s/step temps=(59.375, 81.0)
+[ep0 step2100] loss=0.0972 0.25s/step temps=(59.25, 81.0)
+[ep0 step2150] loss=0.1480 0.24s/step temps=(59.125, 81.0)
+[ep0 step2200] loss=0.0880 0.24s/step temps=(59.5, 81.0)
+[ep0 step2200] EVAL loss=0.0872 auc=0.9951
+[ep0 step2250] loss=0.1075 0.25s/step temps=(59.375, 81.0)
+[ep0 step2300] loss=0.1269 0.25s/step temps=(59.375, 82.0)
+[ep0 step2350] loss=0.1098 0.24s/step temps=(59.25, 81.0)
+[ep0 step2400] loss=0.1441 0.24s/step temps=(59.625, 82.0)
+[ep0 step2400] EVAL loss=0.0886 auc=0.9953
+[ep0 step2450] loss=0.1031 0.25s/step temps=(59.5, 82.0)
+[ep0 step2500] loss=0.1107 0.25s/step temps=(59.25, 82.0)
+[ep0 step2550] loss=0.1117 0.24s/step temps=(59.375, 82.0)
+[ep0 step2600] loss=0.1050 0.24s/step temps=(59.5, 81.0)
+[ep0 step2600] EVAL loss=0.0986 auc=0.9951
+[ep0 step2650] loss=0.1076 0.25s/step temps=(59.25, 81.0)
+[ep0 step2700] loss=0.1337 0.25s/step temps=(59.375, 81.0)
+[ep0 step2750] loss=0.1132 0.24s/step temps=(59.5, 81.0)
+[ep0 step2800] loss=0.1009 0.24s/step temps=(59.5, 82.0)
+[ep0 step2800] EVAL loss=0.0817 auc=0.9957
+[ep0 step2850] loss=0.0944 0.25s/step temps=(59.375, 82.0)
+[ep0 step2900] loss=0.1104 0.25s/step temps=(59.375, 81.0)
+[ep0 step2950] loss=0.1105 0.24s/step temps=(59.625, 81.0)
+[ep0 step3000] loss=0.1159 0.24s/step temps=(59.375, 80.0)
+[ep0 step3000] EVAL loss=0.1008 auc=0.9947
+[ep0 step3050] loss=0.0876 0.25s/step temps=(59.375, 81.0)
+[ep0 step3100] loss=0.1262 0.25s/step temps=(59.5, 82.0)
+[ep0 step3150] loss=0.0956 0.24s/step temps=(59.5, 81.0)
+[ep0 step3200] loss=0.0778 0.24s/step temps=(59.375, 82.0)
+[ep0 step3200] EVAL loss=0.0820 auc=0.9959
+[ep0 step3250] loss=0.1005 0.25s/step temps=(59.25, 80.0)
+[ep0 step3300] loss=0.1098 0.25s/step temps=(59.375, 81.0)
+[ep0 step3350] loss=0.1036 0.24s/step temps=(59.625, 82.0)
+[ep0 step3400] loss=0.0927 0.24s/step temps=(59.25, 81.0)
+[ep0 step3400] EVAL loss=0.0810 auc=0.9959
+[ep0 step3450] loss=0.1195 0.25s/step temps=(59.875, 81.0)
+[ep0 step3500] loss=0.0686 0.25s/step temps=(59.5, 81.0)
+[ep0 step3550] loss=0.0988 0.25s/step temps=(59.5, 81.0)
+[ep0 step3600] loss=0.0976 0.24s/step temps=(59.375, 81.0)
+[ep0 step3600] EVAL loss=0.0757 auc=0.9963
+[ep0 step3650] loss=0.1005 0.25s/step temps=(59.375, 81.0)
+[ep0 step3700] loss=0.1035 0.25s/step temps=(59.5, 81.0)
+[ep0 step3750] loss=0.1301 0.25s/step temps=(59.75, 81.0)
+[ep0 step3800] loss=0.1086 0.24s/step temps=(59.5, 81.0)
+[ep0 step3800] EVAL loss=0.0756 auc=0.9964
+[ep0 step3850] loss=0.1065 0.25s/step temps=(59.375, 81.0)
+[ep0 step3900] loss=0.1200 0.25s/step temps=(59.25, 80.0)
+[ep0 step3950] loss=0.0887 0.25s/step temps=(59.375, 81.0)
+[ep0 step4000] loss=0.1145 0.24s/step temps=(59.5, 82.0)
+[ep0 step4000] EVAL loss=0.0759 auc=0.9963
+[ep0 step4000] ckpt saved
+[ep0 step4050] loss=0.0895 0.25s/step temps=(58.875, 81.0)
+[ep0 step4100] loss=0.1034 0.25s/step temps=(59.375, 76.0)
+[ep0 step4150] loss=0.0893 0.25s/step temps=(59.125, 81.0)
+[ep0 step4200] loss=0.0940 0.24s/step temps=(59.25, 81.0)
+[ep0 step4200] EVAL loss=0.0804 auc=0.9966
+[ep0 step4250] loss=0.0885 0.25s/step temps=(59.125, 80.0)
+[ep0 step4300] loss=0.1017 0.25s/step temps=(59.25, 81.0)
+[ep0 step4350] loss=0.0731 0.25s/step temps=(59.125, 81.0)
+[ep0 step4400] loss=0.0869 0.24s/step temps=(59.25, 81.0)
+[ep0 step4400] EVAL loss=0.0784 auc=0.9966
+[ep0 step4450] loss=0.0780 0.25s/step temps=(59.25, 80.0)
+[ep0 step4500] loss=0.0880 0.25s/step temps=(60.5, 81.0)
+[ep0 step4550] loss=0.1139 0.25s/step temps=(60.5, 81.0)
+[ep0 step4600] loss=0.0842 0.24s/step temps=(60.375, 81.0)
+[ep0 step4600] EVAL loss=0.0836 auc=0.9958
+[ep0 step4650] loss=0.0902 0.25s/step temps=(60.625, 81.0)
+[ep0 step4700] loss=0.0826 0.25s/step temps=(60.375, 81.0)
+[ep0 step4750] loss=0.0813 0.25s/step temps=(60.25, 76.0)
+[ep0 step4800] loss=0.0842 0.25s/step temps=(59.5, 76.0)
+[ep0 step4800] EVAL loss=0.0768 auc=0.9964
+[ep0 step4850] loss=0.0690 0.25s/step temps=(60.375, 82.0)
+[ep0 step4900] loss=0.1072 0.25s/step temps=(60.25, 81.0)
+[ep0 step4950] loss=0.1006 0.25s/step temps=(58.75, 80.0)
+[ep0 step5000] loss=0.0765 0.25s/step temps=(59.25, 81.0)
+[ep0 step5000] EVAL loss=0.0712 auc=0.9967
+[ep0 step5050] loss=0.0706 0.25s/step temps=(59.25, 77.0)
+[ep0 step5100] loss=0.0678 0.25s/step temps=(58.75, 80.0)
+[ep0 step5150] loss=0.0866 0.25s/step temps=(59.125, 81.0)
+[ep0 step5200] loss=0.0888 0.25s/step temps=(59.25, 77.0)
+[ep0 step5200] EVAL loss=0.0694 auc=0.9969
+[ep0 step5250] loss=0.0988 0.25s/step temps=(59.25, 81.0)
+[ep0 step5300] loss=0.1002 0.25s/step temps=(59.375, 80.0)
+[ep0 step5350] loss=0.1075 0.25s/step temps=(59.5, 82.0)
+[ep0 step5400] loss=0.1046 0.25s/step temps=(59.5, 76.0)
+[ep0 step5400] EVAL loss=0.0758 auc=0.9971
+[ep0 step5450] loss=0.0767 0.25s/step temps=(59.375, 81.0)
+[ep0 step5500] loss=0.0859 0.25s/step temps=(59.625, 81.0)
+[ep0 step5550] loss=0.1119 0.25s/step temps=(60.5, 80.0)
+[ep0 step5600] loss=0.1019 0.25s/step temps=(60.0, 81.0)
+[ep0 step5600] EVAL loss=0.0773 auc=0.9962
+[ep0 step5650] loss=0.0841 0.25s/step temps=(59.25, 80.0)
+[ep0 step5700] loss=0.1048 0.25s/step temps=(59.5, 81.0)
+[ep0 step5750] loss=0.0825 0.25s/step temps=(59.25, 81.0)
+[ep0 step5800] loss=0.0636 0.25s/step temps=(59.375, 82.0)
+[ep0 step5800] EVAL loss=0.0680 auc=0.9970
+[ep0 step5850] loss=0.1022 0.25s/step temps=(59.25, 81.0)
+[ep0 step5900] loss=0.0992 0.25s/step temps=(59.25, 82.0)
+[ep0 step5950] loss=0.0955 0.25s/step temps=(59.25, 81.0)
+[ep0 step6000] loss=0.1081 0.25s/step temps=(59.5, 82.0)
+[ep0 step6000] EVAL loss=0.0688 auc=0.9971
+[ep0 step6000] ckpt saved
+[ep0 step6050] loss=0.1041 0.25s/step temps=(59.125, 78.0)
+[ep0 step6100] loss=0.0612 0.25s/step temps=(59.25, 80.0)
+[ep0 step6150] loss=0.0860 0.25s/step temps=(59.25, 80.0)
+[ep0 step6200] loss=0.0788 0.25s/step temps=(59.25, 81.0)
+[ep0 step6200] EVAL loss=0.0659 auc=0.9971
+[ep0 step6250] loss=0.1068 0.25s/step temps=(60.375, 81.0)
+[ep0 step6300] loss=0.0887 0.25s/step temps=(60.375, 81.0)
+[ep0 step6350] loss=0.0528 0.25s/step temps=(60.375, 81.0)
+[ep0 step6400] loss=0.0663 0.25s/step temps=(60.125, 80.0)
+[ep0 step6400] EVAL loss=0.0756 auc=0.9970
+[ep0 step6450] loss=0.0988 0.25s/step temps=(59.125, 81.0)
+[ep0 step6500] loss=0.0967 0.25s/step temps=(58.875, 81.0)
+[ep0 step6550] loss=0.0873 0.25s/step temps=(58.875, 81.0)
+[ep0 step6600] loss=0.0905 0.25s/step temps=(59.125, 81.0)
+[ep0 step6600] EVAL loss=0.0804 auc=0.9965
+[ep0 step6650] loss=0.0795 0.25s/step temps=(58.875, 80.0)
+[ep0 step6700] loss=0.1017 0.25s/step temps=(59.0, 81.0)
+[ep0 step6750] loss=0.0995 0.25s/step temps=(59.125, 81.0)
+[ep0 step6800] loss=0.0822 0.25s/step temps=(59.25, 78.0)
+[ep0 step6800] EVAL loss=0.0692 auc=0.9970
+[ep0 step6850] loss=0.0914 0.25s/step temps=(59.25, 81.0)
+[ep0 step6900] loss=0.0829 0.25s/step temps=(59.25, 76.0)
+[ep0 step6950] loss=0.0791 0.25s/step temps=(59.5, 79.0)
+[ep0 step7000] loss=0.0679 0.25s/step temps=(59.375, 81.0)
+[ep0 step7000] EVAL loss=0.0669 auc=0.9972
+[ep0 step7050] loss=0.0867 0.25s/step temps=(58.75, 80.0)
+[ep0 step7100] loss=0.0871 0.25s/step temps=(59.125, 80.0)
+[ep0 step7150] loss=0.0714 0.25s/step temps=(59.125, 81.0)
+[ep0 step7200] loss=0.1080 0.25s/step temps=(60.25, 77.0)
+[ep0 step7200] EVAL loss=0.0680 auc=0.9971
+[ep0 step7250] loss=0.0789 0.25s/step temps=(59.5, 81.0)
+[ep0 step7300] loss=0.0832 0.25s/step temps=(59.25, 80.0)
+[ep0 step7350] loss=0.0792 0.25s/step temps=(60.0, 81.0)
+[ep0 step7400] loss=0.1063 0.25s/step temps=(59.25, 81.0)
+[ep0 step7400] EVAL loss=0.0644 auc=0.9973
+[ep0 step7450] loss=0.0878 0.25s/step temps=(59.625, 81.0)
+[ep0 step7500] loss=0.0594 0.25s/step temps=(60.375, 80.0)
+[ep0 step7550] loss=0.0702 0.25s/step temps=(61.75, 81.0)
+[ep0 step7600] loss=0.0905 0.25s/step temps=(63.0, 81.0)
+[ep0 step7600] EVAL loss=0.0695 auc=0.9971
+[ep0 step7650] loss=0.0866 0.25s/step temps=(60.125, 81.0)
+[ep0 step7700] loss=0.0865 0.25s/step temps=(60.625, 76.0)
+[ep0 step7750] loss=0.0686 0.25s/step temps=(60.5, 81.0)
+[ep0 step7800] loss=0.0948 0.25s/step temps=(59.125, 81.0)
+[ep0 step7800] EVAL loss=0.0763 auc=0.9970
+[ep0 step7850] loss=0.0869 0.25s/step temps=(59.125, 79.0)
+[ep0 step7900] loss=0.0858 0.25s/step temps=(59.125, 82.0)
+[ep0 step7950] loss=0.0708 0.25s/step temps=(59.75, 82.0)
+[ep0 step8000] loss=0.0900 0.25s/step temps=(59.25, 81.0)
+[ep0 step8000] EVAL loss=0.0644 auc=0.9973
+[ep0 step8000] ckpt saved
+[ep0 step8050] loss=0.0717 0.25s/step temps=(59.25, 81.0)
+[ep0 step8100] loss=0.0717 0.25s/step temps=(58.875, 80.0)
+[ep0 step8150] loss=0.0774 0.25s/step temps=(63.25, 81.0)
+[ep0 step8200] loss=0.0840 0.25s/step temps=(59.375, 81.0)
+[ep0 step8200] EVAL loss=0.0636 auc=0.9974
+[ep0 step8250] loss=0.0744 0.25s/step temps=(60.125, 82.0)
+[ep0 step8300] loss=0.0773 0.25s/step temps=(59.25, 81.0)
+[ep0 step8350] loss=0.0810 0.25s/step temps=(59.625, 80.0)
+[ep0 step8400] loss=0.0617 0.25s/step temps=(59.125, 80.0)
+[ep0 step8400] EVAL loss=0.0881 auc=0.9970
+[ep0 step8450] loss=0.1046 0.25s/step temps=(59.25, 81.0)
+[ep0 step8500] loss=0.0690 0.25s/step temps=(59.5, 81.0)
+[ep0 step8550] loss=0.0778 0.25s/step temps=(59.5, 81.0)
+[ep0 step8600] loss=0.0737 0.25s/step temps=(59.375, 81.0)
+[ep0 step8600] EVAL loss=0.0707 auc=0.9970
+[ep0 step8650] loss=0.0766 0.25s/step temps=(59.375, 81.0)
+[ep0 step8700] loss=0.0745 0.25s/step temps=(61.25, 78.0)
+[ep0 step8750] loss=0.0672 0.25s/step temps=(60.75, 81.0)
+[ep0 step8800] loss=0.0625 0.25s/step temps=(60.625, 81.0)
+[ep0 step8800] EVAL loss=0.0639 auc=0.9974
+[ep0 step8850] loss=0.0776 0.25s/step temps=(60.25, 81.0)
+[ep0 step8900] loss=0.0814 0.25s/step temps=(60.375, 81.0)
+[ep0 step8950] loss=0.0913 0.25s/step temps=(60.5, 81.0)
+[ep0 step9000] loss=0.0732 0.25s/step temps=(60.375, 79.0)
+[ep0 step9000] EVAL loss=0.0669 auc=0.9970
+[ep0 step9050] loss=0.0771 0.25s/step temps=(60.625, 81.0)
+[ep0 step9100] loss=0.0841 0.25s/step temps=(60.5, 80.0)
+[ep0 step9150] loss=0.0991 0.25s/step temps=(60.5, 81.0)
+[ep0 step9200] loss=0.0675 0.25s/step temps=(60.5, 81.0)
+[ep0 step9200] EVAL loss=0.0683 auc=0.9972
+[ep0 step9250] loss=0.0786 0.25s/step temps=(60.25, 81.0)
+[ep0 step9300] loss=0.0949 0.25s/step temps=(60.375, 80.0)
+[ep0 step9350] loss=0.0849 0.25s/step temps=(60.125, 80.0)
+[ep0 step9400] loss=0.0619 0.25s/step temps=(60.25, 81.0)
+[ep0 step9400] EVAL loss=0.0724 auc=0.9967
+[ep0 step9450] loss=0.0691 0.25s/step temps=(60.0, 80.0)
+[ep0 step9500] loss=0.0769 0.25s/step temps=(60.25, 80.0)
+[ep0 step9550] loss=0.0858 0.25s/step temps=(60.125, 80.0)
+[ep0 step9600] loss=0.0803 0.25s/step temps=(60.0, 80.0)
+[ep0 step9600] EVAL loss=0.0707 auc=0.9969
+[ep0 step9650] loss=0.0897 0.25s/step temps=(60.5, 81.0)
+[ep0 step9700] loss=0.0822 0.25s/step temps=(60.125, 76.0)
+[ep0 step9750] loss=0.0748 0.25s/step temps=(60.5, 81.0)
+[ep0 step9800] loss=0.0675 0.25s/step temps=(60.625, 81.0)
+[ep0 step9800] EVAL loss=0.0687 auc=0.9974
+[ep0 step9850] loss=0.0895 0.25s/step temps=(60.625, 81.0)
+[ep0 step9900] loss=0.0830 0.25s/step temps=(60.625, 81.0)
+[ep0 step9950] loss=0.0685 0.25s/step temps=(60.625, 81.0)
+[ep0 step10000] loss=0.0858 0.25s/step temps=(60.375, 81.0)
+[ep0 step10000] EVAL loss=0.0639 auc=0.9974
+[ep0 step10000] ckpt saved
+[ep0 step10050] loss=0.0825 0.25s/step temps=(60.5, 80.0)
+[ep0 step10100] loss=0.0667 0.25s/step temps=(59.875, 79.0)
+[ep0 step10150] loss=0.0778 0.25s/step temps=(59.0, 81.0)
+[ep0 step10200] loss=0.0654 0.25s/step temps=(59.125, 81.0)
+[ep0 step10200] EVAL loss=0.0649 auc=0.9974
+[ep0 step10250] loss=0.0687 0.25s/step temps=(59.0, 81.0)
+[ep0 step10300] loss=0.0781 0.25s/step temps=(59.125, 76.0)
+[ep0 step10350] loss=0.0959 0.25s/step temps=(59.375, 82.0)
+[ep0 step10400] loss=0.0715 0.25s/step temps=(59.375, 81.0)
+[ep0 step10400] EVAL loss=0.0624 auc=0.9975
+[ep0 step10450] loss=0.0565 0.25s/step temps=(59.125, 81.0)
+[ep0 step10500] loss=0.0322 0.25s/step temps=(59.375, 76.0)
+[ep0 step10550] loss=0.0983 0.25s/step temps=(59.625, 80.0)
+[ep0 step10600] loss=0.1011 0.25s/step temps=(59.375, 82.0)
+[ep0 step10600] EVAL loss=0.0639 auc=0.9974
+[ep0 step10650] loss=0.0905 0.25s/step temps=(60.625, 81.0)
+[ep0 step10700] loss=0.0722 0.25s/step temps=(60.625, 81.0)
+[ep0 step10750] loss=0.0742 0.25s/step temps=(59.875, 81.0)
+[ep0 step10800] loss=0.0635 0.25s/step temps=(59.75, 76.0)
+[ep0 step10800] EVAL loss=0.0649 auc=0.9974
+[ep0 step10850] loss=0.0563 0.25s/step temps=(60.625, 81.0)
+[ep0 step10900] loss=0.0993 0.25s/step temps=(60.75, 81.0)
+[ep0 step10950] loss=0.0878 0.25s/step temps=(59.5, 81.0)
+[ep0 step11000] loss=0.0621 0.25s/step temps=(59.375, 78.0)
+[ep0 step11000] EVAL loss=0.0616 auc=0.9975
+[ep0 step11050] loss=0.0645 0.25s/step temps=(60.375, 76.0)
+[ep0 step11100] loss=0.0698 0.25s/step temps=(60.875, 81.0)
+[ep0 step11150] loss=0.0982 0.25s/step temps=(60.625, 80.0)
+[ep0 step11200] loss=0.0656 0.25s/step temps=(59.375, 81.0)
+[ep0 step11200] EVAL loss=0.0626 auc=0.9975
+[ep0 step11250] loss=0.0729 0.25s/step temps=(59.75, 82.0)
+[ep0 step11300] loss=0.0503 0.25s/step temps=(61.25, 81.0)
+[ep0 step11350] loss=0.0755 0.25s/step temps=(59.75, 82.0)
+[ep0 step11400] loss=0.0775 0.25s/step temps=(59.875, 81.0)
+[ep0 step11400] EVAL loss=0.0626 auc=0.9975
+[ep0 step11450] loss=0.0834 0.25s/step temps=(61.375, 83.0)
+[ep0 step11500] loss=0.0519 0.25s/step temps=(60.25, 82.0)
+[ep0 step11550] loss=0.0641 0.25s/step temps=(60.25, 80.0)
+[ep0 step11600] loss=0.0599 0.25s/step temps=(60.125, 78.0)
+[ep0 step11600] EVAL loss=0.0646 auc=0.9976
+[ep0 step11650] loss=0.0898 0.25s/step temps=(61.625, 82.0)
+[ep0 step11700] loss=0.0683 0.25s/step temps=(60.25, 82.0)
+[ep0 step11750] loss=0.0650 0.25s/step temps=(60.0, 82.0)
+[ep0 step11800] loss=0.0971 0.25s/step temps=(60.0, 82.0)
+[ep0 step11800] EVAL loss=0.0623 auc=0.9975
+[ep0 step11850] loss=0.0854 0.25s/step temps=(60.625, 82.0)
+[ep0 step11900] loss=0.0618 0.25s/step temps=(60.375, 82.0)
+[ep0 step11950] loss=0.0738 0.25s/step temps=(60.0, 79.0)
+[ep0 step12000] loss=0.0911 0.25s/step temps=(60.375, 77.0)
+[ep0 step12000] EVAL loss=0.0650 auc=0.9975
+[ep0 step12000] ckpt saved
+[ep0 step12050] loss=0.0608 0.25s/step temps=(60.25, 82.0)
+[ep0 step12100] loss=0.0708 0.25s/step temps=(60.0, 81.0)
+[ep0 step12150] loss=0.0840 0.25s/step temps=(60.375, 81.0)
+[ep0 step12200] loss=0.0684 0.25s/step temps=(60.375, 81.0)
+[ep0 step12200] EVAL loss=0.0623 auc=0.9975
+[ep0 step12250] loss=0.0717 0.25s/step temps=(60.5, 82.0)
+[ep0 step12300] loss=0.0722 0.25s/step temps=(61.5, 82.0)
+[ep0 step12350] loss=0.0849 0.25s/step temps=(60.25, 82.0)
+[ep0 step12400] loss=0.0772 0.25s/step temps=(60.25, 77.0)
+[ep0 step12400] EVAL loss=0.0658 auc=0.9977
+[ep0 step12450] loss=0.0875 0.25s/step temps=(60.125, 82.0)
+[ep0 step12500] loss=0.0597 0.25s/step temps=(60.5, 79.0)
+[ep0 step12550] loss=0.0431 0.25s/step temps=(60.0, 78.0)
+[ep0 step12600] loss=0.0791 0.25s/step temps=(60.25, 82.0)
+[ep0 step12600] EVAL loss=0.0611 auc=0.9978
+[ep0 step12650] loss=0.0760 0.25s/step temps=(61.0, 82.0)
+[ep0 step12700] loss=0.0783 0.25s/step temps=(60.625, 83.0)
+[ep0 step12750] loss=0.0691 0.25s/step temps=(60.25, 83.0)
+[ep0 step12800] loss=0.0766 0.25s/step temps=(60.375, 82.0)
+[ep0 step12800] EVAL loss=0.0620 auc=0.9975
+[ep0 step12850] loss=0.0832 0.25s/step temps=(60.25, 82.0)
+[ep0 step12900] loss=0.0628 0.25s/step temps=(60.0, 81.0)
+[ep0 step12950] loss=0.0707 0.25s/step temps=(60.25, 82.0)
+[ep0 step13000] loss=0.0809 0.25s/step temps=(60.875, 81.0)
+[ep0 step13000] EVAL loss=0.0638 auc=0.9975
+[ep0 step13050] loss=0.0760 0.25s/step temps=(68.0, 77.0)
+[ep0 step13100] loss=0.0798 0.25s/step temps=(63.375, 82.0)
+[ep0 step13150] loss=0.0807 0.25s/step temps=(62.75, 81.0)
+[ep0 step13200] loss=0.0714 0.25s/step temps=(65.375, 83.0)
+[ep0 step13200] EVAL loss=0.0641 auc=0.9974
+[ep0 step13250] loss=0.0844 0.25s/step temps=(64.375, 82.0)
+[ep0 step13300] loss=0.0567 0.25s/step temps=(63.5, 80.0)
+[ep0 step13350] loss=0.0738 0.25s/step temps=(63.875, 83.0)
+[ep0 step13400] loss=0.0996 0.25s/step temps=(65.125, 84.0)
+[ep0 step13400] EVAL loss=0.0628 auc=0.9974
+[ep0 step13450] loss=0.0828 0.25s/step temps=(65.5, 83.0)
+[ep0 step13500] loss=0.0604 0.25s/step temps=(64.625, 78.0)
+[ep0 step13550] loss=0.0652 0.25s/step temps=(64.75, 84.0)
+[ep0 step13600] loss=0.0862 0.25s/step temps=(64.25, 83.0)
+[ep0 step13600] EVAL loss=0.0653 auc=0.9975
+[ep0 step13650] loss=0.0574 0.25s/step temps=(64.125, 83.0)
+[ep0 step13700] loss=0.0615 0.25s/step temps=(62.125, 83.0)
+[ep0 step13750] loss=0.1137 0.25s/step temps=(62.875, 83.0)
+[ep0 step13800] loss=0.0752 0.25s/step temps=(62.875, 83.0)
+[ep0 step13800] EVAL loss=0.0634 auc=0.9974
+[ep0 step13850] loss=0.0667 0.25s/step temps=(62.625, 83.0)
+[ep0 step13900] loss=0.0930 0.25s/step temps=(62.375, 83.0)
+[ep0 step13950] loss=0.0478 0.25s/step temps=(62.25, 82.0)
+[ep0 step14000] loss=0.0770 0.25s/step temps=(62.25, 81.0)
+[ep0 step14000] EVAL loss=0.0606 auc=0.9977
+[ep0 step14000] ckpt saved
+[ep0 step14050] loss=0.0770 0.25s/step temps=(62.375, 82.0)
+[ep0 step14100] loss=0.0624 0.25s/step temps=(61.875, 82.0)
+[ep0 step14150] loss=0.0561 0.25s/step temps=(62.0, 82.0)
+[ep0 step14200] loss=0.0752 0.25s/step temps=(62.0, 78.0)
+[ep0 step14200] EVAL loss=0.0573 auc=0.9977
+[ep0 step14250] loss=0.0709 0.25s/step temps=(62.125, 82.0)
+[ep0 step14300] loss=0.0671 0.25s/step temps=(61.875, 83.0)
+[ep0 step14350] loss=0.0888 0.25s/step temps=(62.125, 83.0)
+[ep0 step14400] loss=0.0738 0.25s/step temps=(61.0, 82.0)
+[ep0 step14400] EVAL loss=0.0619 auc=0.9977
+[ep0 step14450] loss=0.0712 0.25s/step temps=(61.0, 78.0)
+[ep0 step14500] loss=0.0702 0.25s/step temps=(61.0, 83.0)
+[ep0 step14550] loss=0.0896 0.25s/step temps=(61.0, 82.0)
+[ep0 step14600] loss=0.0838 0.25s/step temps=(61.125, 82.0)
+[ep0 step14600] EVAL loss=0.0577 auc=0.9977
+[ep0 step14650] loss=0.0604 0.25s/step temps=(62.0, 82.0)
+[ep0 step14700] loss=0.0575 0.25s/step temps=(61.875, 82.0)
+[ep0 step14750] loss=0.0518 0.25s/step temps=(62.0, 79.0)
+[ep0 step14800] loss=0.0720 0.25s/step temps=(62.0, 82.0)
+[ep0 step14800] EVAL loss=0.0653 auc=0.9973
+[ep0 step14850] loss=0.0674 0.25s/step temps=(60.75, 83.0)
+[ep0 step14900] loss=0.0655 0.25s/step temps=(60.5, 82.0)
+[ep0 step14950] loss=0.0761 0.25s/step temps=(60.75, 82.0)
+[ep0 step15000] loss=0.0603 0.25s/step temps=(61.875, 82.0)
+[ep0 step15000] EVAL loss=0.0587 auc=0.9978
+[ep0 step15050] loss=0.0707 0.25s/step temps=(61.625, 82.0)
+[ep0 step15100] loss=0.0724 0.25s/step temps=(61.75, 82.0)
+[ep0 step15150] loss=0.0541 0.25s/step temps=(61.75, 81.0)
+[ep0 step15200] loss=0.0978 0.25s/step temps=(60.625, 83.0)
+[ep0 step15200] EVAL loss=0.0615 auc=0.9975
+[ep0 step15250] loss=0.0574 0.25s/step temps=(60.5, 83.0)
+[ep0 step15300] loss=0.0808 0.25s/step temps=(60.625, 81.0)
+[ep0 step15350] loss=0.0781 0.25s/step temps=(60.625, 82.0)
+[ep0 step15400] loss=0.0691 0.25s/step temps=(60.625, 80.0)
+[ep0 step15400] EVAL loss=0.0599 auc=0.9976
+[ep0 step15450] loss=0.0627 0.25s/step temps=(60.625, 82.0)
+[ep0 step15500] loss=0.0526 0.25s/step temps=(60.625, 83.0)
+[ep0 step15550] loss=0.0527 0.25s/step temps=(60.75, 82.0)
+[ep0 step15600] loss=0.0950 0.25s/step temps=(60.5, 82.0)
+[ep0 step15600] EVAL loss=0.0593 auc=0.9977
+[ep0 step15650] loss=0.0779 0.25s/step temps=(60.5, 83.0)
+[ep0 step15700] loss=0.0837 0.25s/step temps=(60.625, 78.0)
+[ep0 step15750] loss=0.0868 0.25s/step temps=(61.125, 82.0)
+[ep0 step15800] loss=0.0657 0.25s/step temps=(60.625, 82.0)
+[ep0 step15800] EVAL loss=0.0596 auc=0.9977
+[ep0 step15850] loss=0.0817 0.25s/step temps=(60.625, 82.0)
+[ep0 step15900] loss=0.0733 0.25s/step temps=(60.75, 81.0)
+[ep0 step15950] loss=0.0973 0.25s/step temps=(60.375, 79.0)
+[ep0 step16000] loss=0.0863 0.25s/step temps=(60.375, 83.0)
+[ep0 step16000] EVAL loss=0.0584 auc=0.9977
+[ep0 step16000] ckpt saved
+[ep0 step16050] loss=0.0846 0.25s/step temps=(60.875, 82.0)
+[ep0 step16100] loss=0.0707 0.25s/step temps=(61.5, 81.0)
+[ep0 step16150] loss=0.0752 0.25s/step temps=(60.75, 83.0)
+[ep0 step16200] loss=0.0767 0.25s/step temps=(60.375, 82.0)
+[ep0 step16200] EVAL loss=0.0573 auc=0.9977
+[ep0 step16250] loss=0.0685 0.25s/step temps=(60.5, 82.0)
+[ep0 step16300] loss=0.0769 0.25s/step temps=(60.75, 82.0)
+[ep0 step16350] loss=0.0483 0.25s/step temps=(61.0, 82.0)
+[ep0 step16400] loss=0.0740 0.25s/step temps=(60.625, 82.0)
+[ep0 step16400] EVAL loss=0.0589 auc=0.9975
+[ep0 step16450] loss=0.0731 0.25s/step temps=(60.625, 82.0)
+[ep0 step16500] loss=0.0664 0.25s/step temps=(60.875, 82.0)
+[ep0 step16550] loss=0.0839 0.25s/step temps=(60.5, 80.0)
+[ep0 step16600] loss=0.0573 0.25s/step temps=(60.5, 83.0)
+[ep0 step16600] EVAL loss=0.0561 auc=0.9980
+[ep0 step16650] loss=0.0790 0.25s/step temps=(60.625, 82.0)
+[ep0 step16700] loss=0.0547 0.25s/step temps=(60.625, 82.0)
+[ep0 step16750] loss=0.0807 0.25s/step temps=(60.5, 82.0)
+[ep0 step16800] loss=0.0595 0.25s/step temps=(60.625, 82.0)
+[ep0 step16800] EVAL loss=0.0570 auc=0.9979
+[ep0 step16850] loss=0.0759 0.25s/step temps=(60.625, 82.0)
+[ep0 step16900] loss=0.0717 0.25s/step temps=(61.625, 81.0)
+[ep0 step16950] loss=0.0669 0.25s/step temps=(61.5, 82.0)
+[ep0 step17000] loss=0.0915 0.25s/step temps=(61.625, 77.0)
+[ep0 step17000] EVAL loss=0.0593 auc=0.9978
+[ep0 step17050] loss=0.0611 0.25s/step temps=(61.5, 82.0)
+[ep0 step17100] loss=0.0642 0.25s/step temps=(60.375, 82.0)
+[ep0 step17150] loss=0.0445 0.25s/step temps=(60.25, 81.0)
+[ep0 step17200] loss=0.0506 0.25s/step temps=(60.375, 81.0)
+[ep0 step17200] EVAL loss=0.0580 auc=0.9979
+[ep0 step17250] loss=0.0741 0.25s/step temps=(60.5, 82.0)
+[ep0 step17300] loss=0.0425 0.25s/step temps=(60.375, 82.0)
+[ep0 step17350] loss=0.0755 0.25s/step temps=(60.625, 78.0)
+[ep0 step17400] loss=0.0782 0.25s/step temps=(60.625, 82.0)
+[ep0 step17400] EVAL loss=0.0592 auc=0.9978
+[ep0 step17450] loss=0.0673 0.25s/step temps=(60.625, 82.0)
+[ep0 step17500] loss=0.0725 0.25s/step temps=(60.75, 82.0)
+[ep0 step17550] loss=0.0491 0.25s/step temps=(60.375, 82.0)
+[ep0 step17600] loss=0.0633 0.25s/step temps=(60.375, 82.0)
+[ep0 step17600] EVAL loss=0.0581 auc=0.9978
+[ep0 step17650] loss=0.0540 0.25s/step temps=(60.625, 79.0)
+[ep0 step17700] loss=0.0574 0.25s/step temps=(60.25, 81.0)
+[ep0 step17750] loss=0.0505 0.25s/step temps=(60.375, 82.0)
+[ep0 step17800] loss=0.0750 0.25s/step temps=(60.5, 77.0)
+[ep0 step17800] EVAL loss=0.0625 auc=0.9976
+[ep0 step17850] loss=0.0898 0.25s/step temps=(60.75, 81.0)
+[ep0 step17900] loss=0.0781 0.25s/step temps=(60.5, 82.0)
+[ep0 step17950] loss=0.0586 0.25s/step temps=(60.5, 82.0)
+[ep0 step18000] loss=0.0670 0.25s/step temps=(60.625, 82.0)
+[ep0 step18000] EVAL loss=0.0571 auc=0.9974
+[ep0 step18000] ckpt saved
+[ep0 step18050] loss=0.0543 0.25s/step temps=(60.625, 81.0)
+[ep0 step18100] loss=0.0505 0.25s/step temps=(60.375, 78.0)
+[ep0 step18150] loss=0.0846 0.25s/step temps=(60.25, 80.0)
+[ep0 step18200] loss=0.0617 0.25s/step temps=(60.375, 82.0)
+[ep0 step18200] EVAL loss=0.0586 auc=0.9977
+[ep0 step18250] loss=0.0738 0.25s/step temps=(61.75, 81.0)
+[ep0 step18300] loss=0.0552 0.25s/step temps=(61.5, 82.0)
+[ep0 step18350] loss=0.0769 0.25s/step temps=(60.375, 83.0)
+[ep0 step18400] loss=0.0696 0.25s/step temps=(60.875, 82.0)
+[ep0 step18400] EVAL loss=0.0590 auc=0.9976
+[ep0 step18450] loss=0.0605 0.25s/step temps=(60.375, 83.0)
+[ep0 step18500] loss=0.0672 0.25s/step temps=(60.375, 82.0)
+[ep0 step18550] loss=0.0974 0.25s/step temps=(60.375, 82.0)
+[ep0 step18600] loss=0.0678 0.25s/step temps=(60.625, 83.0)
+[ep0 step18600] EVAL loss=0.0551 auc=0.9981
+[ep0 step18650] loss=0.0717 0.25s/step temps=(61.875, 77.0)
+[ep0 step18700] loss=0.0582 0.25s/step temps=(61.625, 80.0)
+[ep0 step18750] loss=0.0413 0.25s/step temps=(61.625, 82.0)
+[ep0 step18800] loss=0.0594 0.25s/step temps=(60.25, 82.0)
+[ep0 step18800] EVAL loss=0.0574 auc=0.9975
+[ep0 step18850] loss=0.0747 0.25s/step temps=(60.875, 82.0)
+[ep0 step18900] loss=0.0738 0.25s/step temps=(60.125, 83.0)
+[ep0 step18950] loss=0.0625 0.25s/step temps=(61.625, 82.0)
+[ep0 step19000] loss=0.0715 0.25s/step temps=(61.625, 82.0)
+[ep0 step19000] EVAL loss=0.0560 auc=0.9976
+[ep0 step19050] loss=0.0499 0.25s/step temps=(61.625, 82.0)
+[ep0 step19100] loss=0.0500 0.25s/step temps=(61.75, 81.0)
+[ep0 step19150] loss=0.0682 0.25s/step temps=(61.375, 81.0)
+[ep0 step19200] loss=0.0630 0.25s/step temps=(60.25, 82.0)
+[ep0 step19200] EVAL loss=0.0636 auc=0.9978
+[ep0 step19250] loss=0.0731 0.25s/step temps=(61.5, 82.0)
+[ep0 step19300] loss=0.0791 0.25s/step temps=(62.0, 80.0)
+[ep0 step19350] loss=0.0655 0.25s/step temps=(62.125, 83.0)
+[ep0 step19400] loss=0.0628 0.25s/step temps=(62.0, 82.0)
+[ep0 step19400] EVAL loss=0.0571 auc=0.9978
+[ep0 step19450] loss=0.0680 0.25s/step temps=(61.75, 81.0)
+[ep0 step19500] loss=0.0600 0.25s/step temps=(62.0, 82.0)
+[ep0 step19550] loss=0.0863 0.25s/step temps=(62.125, 81.0)
+[ep0 step19600] loss=0.0554 0.25s/step temps=(61.75, 82.0)
+[ep0 step19600] EVAL loss=0.0556 auc=0.9981
+[ep0 step19650] loss=0.0816 0.25s/step temps=(61.875, 78.0)
+[ep0 step19700] loss=0.0649 0.25s/step temps=(61.875, 82.0)
+[ep0 step19750] loss=0.0813 0.25s/step temps=(62.125, 82.0)
+[ep0 step19800] loss=0.0739 0.25s/step temps=(62.0, 82.0)
+[ep0 step19800] EVAL loss=0.0557 auc=0.9980
+[ep0 step19850] loss=0.0698 0.25s/step temps=(62.25, 80.0)
+[ep0 step19900] loss=0.0704 0.25s/step temps=(62.25, 82.0)
+[ep0 step19950] loss=0.0643 0.25s/step temps=(62.375, 82.0)
+[ep0 step20000] loss=0.0596 0.25s/step temps=(62.0, 83.0)
+[ep0 step20000] EVAL loss=0.0546 auc=0.9981
+[ep0 step20000] ckpt saved
+[ep0 step20050] loss=0.0592 0.25s/step temps=(61.375, 79.0)
+[ep0 step20100] loss=0.0691 0.25s/step temps=(60.625, 82.0)
+[ep0 step20150] loss=0.0740 0.25s/step temps=(60.75, 82.0)
+[ep0 step20200] loss=0.0596 0.25s/step temps=(60.75, 78.0)
+[ep0 step20200] EVAL loss=0.0563 auc=0.9981
+[ep0 step20250] loss=0.0583 0.25s/step temps=(62.125, 82.0)
+[ep0 step20300] loss=0.0662 0.25s/step temps=(62.25, 82.0)
+[ep0 step20350] loss=0.0544 0.25s/step temps=(62.25, 82.0)
+[ep0 step20400] loss=0.0692 0.25s/step temps=(62.25, 82.0)
+[ep0 step20400] EVAL loss=0.0564 auc=0.9981
+[ep0 step20450] loss=0.0466 0.25s/step temps=(60.875, 82.0)
+[ep0 step20500] loss=0.0651 0.25s/step temps=(61.0, 82.0)
+[ep0 step20550] loss=0.0535 0.25s/step temps=(60.75, 82.0)
+[ep0 step20600] loss=0.0952 0.25s/step temps=(60.75, 81.0)
+[ep0 step20600] EVAL loss=0.0533 auc=0.9982
+[ep0 step20650] loss=0.0487 0.25s/step temps=(60.75, 83.0)
+[ep0 step20700] loss=0.0651 0.25s/step temps=(61.0, 82.0)
+[ep0 step20750] loss=0.0811 0.25s/step temps=(60.5, 83.0)
+[ep0 step20800] loss=0.0522 0.25s/step temps=(62.0, 82.0)
+[ep0 step20800] EVAL loss=0.0667 auc=0.9980
+[ep0 step20850] loss=0.0770 0.25s/step temps=(61.875, 83.0)
+[ep0 step20900] loss=0.0707 0.25s/step temps=(61.75, 82.0)
+[ep0 step20950] loss=0.0591 0.25s/step temps=(61.875, 82.0)
+[ep0 step21000] loss=0.0699 0.25s/step temps=(62.0, 82.0)
+[ep0 step21000] EVAL loss=0.0591 auc=0.9979
+[ep0 step21050] loss=0.0618 0.25s/step temps=(61.875, 82.0)
+[ep0 step21100] loss=0.0682 0.25s/step temps=(62.0, 82.0)
+[ep0 step21150] loss=0.0953 0.25s/step temps=(61.75, 82.0)
+[ep0 step21200] loss=0.0925 0.25s/step temps=(61.875, 82.0)
+[ep0 step21200] EVAL loss=0.0597 auc=0.9977
+[ep0 step21250] loss=0.0727 0.25s/step temps=(62.0, 82.0)
+[ep0 step21300] loss=0.0581 0.25s/step temps=(61.875, 82.0)
+[ep0 step21350] loss=0.0862 0.25s/step temps=(60.625, 79.0)
+[ep0 step21400] loss=0.0762 0.25s/step temps=(61.0, 82.0)
+[ep0 step21400] EVAL loss=0.0551 auc=0.9980
+[ep0 step21450] loss=0.0699 0.25s/step temps=(60.625, 82.0)
+[ep0 step21500] loss=0.0536 0.25s/step temps=(60.5, 82.0)
+[ep0 step21550] loss=0.0718 0.25s/step temps=(60.75, 82.0)
+[ep0 step21600] loss=0.0726 0.25s/step temps=(61.0, 81.0)
+[ep0 step21600] EVAL loss=0.0526 auc=0.9982
+[ep0 step21650] loss=0.0543 0.25s/step temps=(61.125, 82.0)
+[ep0 step21700] loss=0.0565 0.25s/step temps=(60.625, 82.0)
+[ep0 step21750] loss=0.0696 0.25s/step temps=(60.875, 82.0)
+[ep0 step21800] loss=0.0781 0.25s/step temps=(60.75, 82.0)
+[ep0 step21800] EVAL loss=0.0528 auc=0.9982
+[ep0 step21850] loss=0.0699 0.25s/step temps=(60.5, 82.0)
+[ep0 step21900] loss=0.0567 0.25s/step temps=(60.625, 81.0)
+[ep0 step21950] loss=0.0585 0.25s/step temps=(60.875, 80.0)
+[ep0 step22000] loss=0.0545 0.25s/step temps=(60.375, 82.0)
+[ep0 step22000] EVAL loss=0.0553 auc=0.9980
+[ep0 step22000] ckpt saved
+[ep0 step22050] loss=0.0746 0.25s/step temps=(61.0, 81.0)
+[ep0 step22100] loss=0.0734 0.25s/step temps=(60.25, 81.0)
+[ep0 step22150] loss=0.0545 0.25s/step temps=(60.5, 82.0)
+[ep0 step22200] loss=0.0673 0.25s/step temps=(61.375, 82.0)
+[ep0 step22200] EVAL loss=0.0568 auc=0.9978
+[ep0 step22250] loss=0.0728 0.25s/step temps=(61.875, 80.0)
+[ep0 step22300] loss=0.0784 0.25s/step temps=(60.75, 82.0)
+[ep0 step22350] loss=0.0639 0.25s/step temps=(60.625, 82.0)
+[ep0 step22400] loss=0.0810 0.25s/step temps=(60.625, 82.0)
+[ep0 step22400] EVAL loss=0.0537 auc=0.9979
+[ep0 step22450] loss=0.0534 0.25s/step temps=(62.0, 82.0)
+[ep0 step22500] loss=0.0904 0.25s/step temps=(61.875, 82.0)
+[ep0 step22550] loss=0.0564 0.25s/step temps=(62.125, 82.0)
+[ep0 step22600] loss=0.0648 0.25s/step temps=(60.5, 82.0)
+[ep0 step22600] EVAL loss=0.0528 auc=0.9982
+[ep0 step22650] loss=0.0490 0.25s/step temps=(61.0, 82.0)
+[ep0 step22700] loss=0.0430 0.25s/step temps=(60.75, 82.0)
+[ep0 step22750] loss=0.0719 0.25s/step temps=(60.875, 79.0)
+[ep0 step22800] loss=0.0526 0.25s/step temps=(60.75, 82.0)
+[ep0 step22800] EVAL loss=0.0561 auc=0.9978
+[ep0 step22850] loss=0.0655 0.25s/step temps=(60.75, 80.0)
+[ep0 step22900] loss=0.0861 0.25s/step temps=(60.75, 82.0)
+[ep0 step22950] loss=0.0640 0.25s/step temps=(61.0, 82.0)
+[ep0 step23000] loss=0.0716 0.25s/step temps=(60.75, 82.0)
+[ep0 step23000] EVAL loss=0.0533 auc=0.9981
+[ep0 step23050] loss=0.0687 0.25s/step temps=(61.0, 83.0)
+[ep0 step23100] loss=0.0466 0.25s/step temps=(61.125, 78.0)
+[ep0 step23150] loss=0.0623 0.25s/step temps=(60.625, 82.0)
+[ep0 step23200] loss=0.0660 0.25s/step temps=(60.75, 77.0)
+[ep0 step23200] EVAL loss=0.0558 auc=0.9981
+[ep0 step23250] loss=0.0434 0.25s/step temps=(60.875, 81.0)
+[ep0 step23300] loss=0.0571 0.25s/step temps=(60.875, 82.0)
+[ep0 step23350] loss=0.0674 0.25s/step temps=(60.75, 82.0)
+[ep0 step23400] loss=0.0470 0.25s/step temps=(60.75, 82.0)
+[ep0 step23400] EVAL loss=0.0563 auc=0.9979
+[ep0 step23450] loss=0.0781 0.25s/step temps=(60.875, 82.0)
+[ep0 step23500] loss=0.0579 0.25s/step temps=(60.875, 82.0)
+[ep0 step23550] loss=0.0513 0.25s/step temps=(60.75, 82.0)
+[ep0 step23600] loss=0.0559 0.25s/step temps=(60.875, 82.0)
+[ep0 step23600] EVAL loss=0.0572 auc=0.9980
+[ep0 step23650] loss=0.0660 0.25s/step temps=(60.875, 83.0)
+[ep0 step23700] loss=0.0724 0.25s/step temps=(61.0, 80.0)
+[ep0 step23750] loss=0.0578 0.25s/step temps=(60.75, 82.0)
+[ep0 step23800] loss=0.0669 0.25s/step temps=(60.75, 84.0)
+[ep0 step23800] EVAL loss=0.0590 auc=0.9980
+[ep0 step23850] loss=0.0810 0.25s/step temps=(61.0, 82.0)
+[ep0 step23900] loss=0.0691 0.25s/step temps=(60.625, 83.0)
+[ep0 step23950] loss=0.0825 0.25s/step temps=(61.875, 83.0)
+[ep0 step24000] loss=0.0605 0.25s/step temps=(60.875, 83.0)
+[ep0 step24000] EVAL loss=0.0565 auc=0.9980
+[ep0 step24000] ckpt saved
+[ep0 step24050] loss=0.0552 0.25s/step temps=(62.125, 82.0)
+[ep0 step24100] loss=0.0580 0.25s/step temps=(62.125, 83.0)
+[ep0 step24150] loss=0.0649 0.25s/step temps=(62.0, 82.0)
+[ep0 step24200] loss=0.0685 0.25s/step temps=(62.25, 82.0)
+[ep0 step24200] EVAL loss=0.0542 auc=0.9982
+[ep0 step24250] loss=0.0425 0.25s/step temps=(60.875, 83.0)
+[ep0 step24300] loss=0.0746 0.25s/step temps=(61.0, 83.0)
+[ep0 step24350] loss=0.0585 0.25s/step temps=(61.0, 83.0)
+[ep0 step24400] loss=0.0560 0.25s/step temps=(61.0, 83.0)
+[ep0 step24400] EVAL loss=0.0539 auc=0.9982
+[ep0 step24450] loss=0.0536 0.25s/step temps=(61.125, 82.0)
+[ep0 step24500] loss=0.0664 0.25s/step temps=(60.75, 83.0)
+[ep0 step24550] loss=0.0588 0.25s/step temps=(60.875, 82.0)
+[ep0 step24600] loss=0.0646 0.25s/step temps=(60.875, 82.0)
+[ep0 step24600] EVAL loss=0.0547 auc=0.9982
+[ep0 step24650] loss=0.0605 0.25s/step temps=(61.0, 82.0)
+[ep0 step24700] loss=0.0886 0.25s/step temps=(60.875, 82.0)
+[ep0 step24750] loss=0.0805 0.25s/step temps=(60.75, 82.0)
+[ep0 step24800] loss=0.0620 0.25s/step temps=(61.125, 78.0)
+[ep0 step24800] EVAL loss=0.0540 auc=0.9981
+[ep0 step24850] loss=0.0700 0.25s/step temps=(60.875, 78.0)
+[ep0 step24900] loss=0.0617 0.25s/step temps=(60.5, 83.0)
+[ep0 step24950] loss=0.0465 0.25s/step temps=(60.75, 83.0)
+[ep0 step25000] loss=0.0540 0.25s/step temps=(61.0, 82.0)
+[ep0 step25000] EVAL loss=0.0571 auc=0.9982
+[ep0 step25050] loss=0.0744 0.25s/step temps=(61.0, 82.0)
+[ep0 step25100] loss=0.0898 0.25s/step temps=(61.5, 82.0)
+[ep0 step25150] loss=0.0701 0.25s/step temps=(60.75, 80.0)
+[ep0 step25200] loss=0.0587 0.25s/step temps=(60.875, 82.0)
+[ep0 step25200] EVAL loss=0.0535 auc=0.9983
+[ep0 step25250] loss=0.0709 0.25s/step temps=(61.375, 82.0)
+[ep0 step25300] loss=0.0523 0.25s/step temps=(61.875, 78.0)
+[ep0 step25350] loss=0.0604 0.25s/step temps=(61.125, 82.0)
+[ep0 step25400] loss=0.0808 0.25s/step temps=(60.875, 83.0)
+[ep0 step25400] EVAL loss=0.0544 auc=0.9982
+[ep0 step25450] loss=0.0580 0.25s/step temps=(61.125, 83.0)
+[ep0 step25500] loss=0.0478 0.25s/step temps=(60.75, 82.0)
+[ep0 step25550] loss=0.0609 0.25s/step temps=(60.875, 82.0)
+[ep0 step25600] loss=0.0570 0.25s/step temps=(60.875, 82.0)
+[ep0 step25600] EVAL loss=0.0523 auc=0.9983
+[ep0 step25650] loss=0.0596 0.25s/step temps=(60.75, 82.0)
+[ep0 step25700] loss=0.0628 0.25s/step temps=(60.75, 82.0)
+[ep0 step25750] loss=0.0581 0.25s/step temps=(60.75, 81.0)
+[ep0 step25800] loss=0.0632 0.25s/step temps=(60.75, 82.0)
+[ep0 step25800] EVAL loss=0.0540 auc=0.9982
+[ep0 step25850] loss=0.0649 0.25s/step temps=(61.75, 82.0)
+[ep0 step25900] loss=0.0594 0.25s/step temps=(60.75, 82.0)
+[ep0 step25950] loss=0.0463 0.25s/step temps=(60.875, 82.0)
+[ep0 step26000] loss=0.0563 0.25s/step temps=(60.5, 82.0)
+[ep0 step26000] EVAL loss=0.0542 auc=0.9982
+[ep0 step26000] ckpt saved
+[ep0 step26050] loss=0.0562 0.25s/step temps=(60.625, 82.0)
+[ep0 step26100] loss=0.0578 0.25s/step temps=(61.125, 82.0)
+[ep0 step26150] loss=0.0666 0.25s/step temps=(62.0, 81.0)
+[ep0 step26200] loss=0.0676 0.25s/step temps=(62.125, 81.0)
+[ep0 step26200] EVAL loss=0.0566 auc=0.9980
+[ep0 step26250] loss=0.0631 0.25s/step temps=(61.25, 82.0)
+[ep0 step26300] loss=0.0533 0.25s/step temps=(62.0, 79.0)
+[ep0 step26350] loss=0.0756 0.25s/step temps=(62.125, 83.0)
+[ep0 step26400] loss=0.0486 0.25s/step temps=(61.875, 82.0)
+[ep0 step26400] EVAL loss=0.0532 auc=0.9982
+[ep0 step26450] loss=0.0700 0.25s/step temps=(61.0, 82.0)
+[ep0 step26500] loss=0.0539 0.25s/step temps=(60.625, 82.0)
+[ep0 step26550] loss=0.0708 0.25s/step temps=(60.875, 82.0)
+[ep0 step26600] loss=0.0538 0.25s/step temps=(60.625, 82.0)
+[ep0 step26600] EVAL loss=0.0565 auc=0.9982
+[ep0 step26650] loss=0.0619 0.25s/step temps=(60.625, 82.0)
+[ep0 step26700] loss=0.0580 0.25s/step temps=(60.625, 83.0)
+[ep0 step26750] loss=0.0669 0.25s/step temps=(60.625, 82.0)
+[ep0 step26800] loss=0.0704 0.25s/step temps=(60.75, 83.0)
+[ep0 step26800] EVAL loss=0.0576 auc=0.9981
+[ep0 step26850] loss=0.0942 0.25s/step temps=(61.0, 83.0)
+[ep0 step26900] loss=0.0662 0.25s/step temps=(61.5, 82.0)
+[ep0 step26950] loss=0.0798 0.25s/step temps=(62.0, 81.0)
+[ep0 step27000] loss=0.0511 0.25s/step temps=(61.0, 83.0)
+[ep0 step27000] EVAL loss=0.0538 auc=0.9982
+[ep0 step27050] loss=0.0506 0.25s/step temps=(60.875, 82.0)
+[ep0 step27100] loss=0.0843 0.25s/step temps=(60.875, 78.0)
+[ep0 step27150] loss=0.0682 0.25s/step temps=(60.5, 80.0)
+[ep0 step27200] loss=0.0705 0.25s/step temps=(60.75, 82.0)
+[ep0 step27200] EVAL loss=0.0575 auc=0.9982
+[ep0 step27250] loss=0.0609 0.25s/step temps=(62.375, 82.0)
+[ep0 step27300] loss=0.0607 0.25s/step temps=(61.0, 83.0)
+[ep0 step27350] loss=0.0468 0.25s/step temps=(60.75, 83.0)
+[ep0 step27400] loss=0.0705 0.25s/step temps=(60.75, 81.0)
+[ep0 step27400] EVAL loss=0.0550 auc=0.9981
+[ep0 step27450] loss=0.0609 0.25s/step temps=(62.0, 82.0)
+[ep0 step27500] loss=0.0540 0.25s/step temps=(61.875, 82.0)
+[ep0 step27550] loss=0.0572 0.25s/step temps=(60.75, 82.0)
+[ep0 step27600] loss=0.0803 0.25s/step temps=(61.875, 78.0)
+[ep0 step27600] EVAL loss=0.0557 auc=0.9980
+[ep0 step27650] loss=0.0709 0.25s/step temps=(61.0, 82.0)
+[ep0 step27700] loss=0.0778 0.25s/step temps=(61.0, 79.0)
+[ep0 step27750] loss=0.0578 0.25s/step temps=(61.0, 83.0)
+[ep0 step27800] loss=0.0655 0.25s/step temps=(61.25, 82.0)
+[ep0 step27800] EVAL loss=0.0552 auc=0.9982
+[ep0 step27850] loss=0.0500 0.25s/step temps=(61.0, 81.0)
+[ep0 step27900] loss=0.0775 0.25s/step temps=(60.875, 82.0)
+[ep0 step27950] loss=0.0583 0.25s/step temps=(60.75, 82.0)
+[ep0 step28000] loss=0.0690 0.25s/step temps=(60.875, 83.0)
+[ep0 step28000] EVAL loss=0.0579 auc=0.9979
+[ep0 step28000] ckpt saved
+[ep0 step28050] loss=0.0598 0.25s/step temps=(61.25, 82.0)
+[ep0 step28100] loss=0.0480 0.25s/step temps=(61.0, 81.0)
+[ep0 step28150] loss=0.0522 0.25s/step temps=(60.75, 82.0)
+[ep0 step28200] loss=0.0553 0.25s/step temps=(60.75, 81.0)
+[ep0 step28200] EVAL loss=0.0649 auc=0.9977
+[ep0 step28250] loss=0.0583 0.25s/step temps=(62.375, 82.0)
+[ep0 step28300] loss=0.0584 0.25s/step temps=(61.0, 82.0)
+[ep0 step28350] loss=0.0596 0.25s/step temps=(61.0, 83.0)
+[ep0 step28400] loss=0.0605 0.25s/step temps=(61.125, 83.0)
+[ep0 step28400] EVAL loss=0.0545 auc=0.9983
+[ep0 step28450] loss=0.0583 0.25s/step temps=(62.125, 79.0)
+[ep0 step28500] loss=0.0535 0.25s/step temps=(61.875, 74.0)
+[ep0 step28550] loss=0.0555 0.25s/step temps=(62.125, 82.0)
+[ep0 step28600] loss=0.0503 0.25s/step temps=(62.5, 79.0)
+[ep0 step28600] EVAL loss=0.0549 auc=0.9981
+[ep0 step28650] loss=0.0541 0.25s/step temps=(61.75, 82.0)
+[ep0 step28700] loss=0.0825 0.25s/step temps=(62.375, 82.0)
+[ep0 step28750] loss=0.0731 0.25s/step temps=(62.5, 82.0)
+[ep0 step28800] loss=0.0566 0.25s/step temps=(64.5, 83.0)
+[ep0 step28800] EVAL loss=0.0593 auc=0.9981
+[ep0 step28850] loss=0.0733 0.25s/step temps=(61.25, 80.0)
+[ep0 step28900] loss=0.0581 0.25s/step temps=(61.0, 82.0)
+[ep0 step28950] loss=0.0608 0.25s/step temps=(61.0, 78.0)
+[ep0 step29000] loss=0.0597 0.25s/step temps=(61.125, 82.0)
+[ep0 step29000] EVAL loss=0.0521 auc=0.9983
+[ep0 step29050] loss=0.0583 0.25s/step temps=(61.125, 79.0)
+[ep0 step29100] loss=0.0729 0.25s/step temps=(61.125, 82.0)
+[ep0 step29150] loss=0.0688 0.25s/step temps=(60.875, 82.0)
+[ep0 step29200] loss=0.0675 0.25s/step temps=(61.125, 83.0)
+[ep0 step29200] EVAL loss=0.0528 auc=0.9982
+[ep0 step29250] loss=0.0597 0.25s/step temps=(62.5, 84.0)
+[ep0 step29300] loss=0.0511 0.25s/step temps=(61.125, 83.0)
+[ep0 step29350] loss=0.0575 0.25s/step temps=(60.875, 82.0)
+[ep0 step29400] loss=0.0540 0.25s/step temps=(61.125, 83.0)
+[ep0 step29400] EVAL loss=0.0557 auc=0.9981
+[ep0 step29450] loss=0.0564 0.25s/step temps=(61.0, 78.0)
+[ep0 step29500] loss=0.0720 0.25s/step temps=(60.875, 83.0)
+[ep0 step29550] loss=0.0655 0.25s/step temps=(61.0, 82.0)
+[ep0 step29600] loss=0.0702 0.25s/step temps=(61.125, 82.0)
+[ep0 step29600] EVAL loss=0.0557 auc=0.9982
+[ep0 step29650] loss=0.0463 0.25s/step temps=(61.25, 82.0)
+[ep0 step29700] loss=0.0940 0.25s/step temps=(60.75, 77.0)
+[ep0 step29750] loss=0.0726 0.25s/step temps=(60.75, 82.0)
+[ep0 step29800] loss=0.0579 0.25s/step temps=(61.0, 78.0)
+[ep0 step29800] EVAL loss=0.0534 auc=0.9982
+[ep0 step29850] loss=0.0748 0.25s/step temps=(60.875, 82.0)
+[ep0 step29900] loss=0.0658 0.25s/step temps=(60.625, 82.0)
+[ep0 step29950] loss=0.0731 0.25s/step temps=(60.75, 82.0)
+[ep0 step30000] loss=0.0645 0.25s/step temps=(60.875, 78.0)
+[ep0 step30000] EVAL loss=0.0592 auc=0.9977
+[ep0 step30000] ckpt saved
+[ep0 step30050] loss=0.0846 0.25s/step temps=(60.75, 82.0)
+[ep0 step30100] loss=0.0640 0.25s/step temps=(60.125, 77.0)
+[ep0 step30150] loss=0.0691 0.25s/step temps=(60.25, 81.0)
+[ep0 step30200] loss=0.0500 0.25s/step temps=(60.25, 79.0)
+[ep0 step30200] EVAL loss=0.0537 auc=0.9983
+[ep0 step30250] loss=0.0513 0.25s/step temps=(60.625, 81.0)
+[ep0 step30300] loss=0.0545 0.25s/step temps=(60.25, 77.0)
+[ep0 step30350] loss=0.0731 0.25s/step temps=(60.375, 82.0)
+[ep0 step30400] loss=0.0674 0.25s/step temps=(61.25, 81.0)
+[ep0 step30400] EVAL loss=0.0512 auc=0.9984
+[ep0 step30450] loss=0.0529 0.25s/step temps=(61.25, 81.0)
+[ep0 step30500] loss=0.0396 0.25s/step temps=(59.625, 79.0)
+[ep0 step30550] loss=0.0426 0.25s/step temps=(60.0, 80.0)
+[ep0 step30600] loss=0.0673 0.25s/step temps=(59.625, 75.0)
+[ep0 step30600] EVAL loss=0.0516 auc=0.9984
+[ep0 step30650] loss=0.0841 0.25s/step temps=(61.5, 83.0)
+[ep0 step30700] loss=0.0479 0.25s/step temps=(61.375, 78.0)
+[ep0 step30750] loss=0.0628 0.25s/step temps=(60.75, 79.0)
+[ep0 step30800] loss=0.0583 0.25s/step temps=(59.875, 82.0)
+[ep0 step30800] EVAL loss=0.0515 auc=0.9983
+[ep0 step30850] loss=0.0495 0.25s/step temps=(60.0, 82.0)
+[ep0 step30900] loss=0.0818 0.25s/step temps=(59.875, 81.0)
+[ep0 step30950] loss=0.0794 0.25s/step temps=(60.125, 82.0)
+[ep0 step31000] loss=0.0817 0.25s/step temps=(60.0, 82.0)
+[ep0 step31000] EVAL loss=0.0533 auc=0.9982
+[ep0 step31050] loss=0.0504 0.25s/step temps=(60.125, 82.0)
+[ep0 step31100] loss=0.0766 0.25s/step temps=(60.125, 81.0)
+[ep0 step31150] loss=0.0470 0.25s/step temps=(60.125, 81.0)
+[ep0 step31200] loss=0.0716 0.25s/step temps=(60.0, 81.0)
+[ep0 step31200] EVAL loss=0.0526 auc=0.9982
+[ep0 step31250] loss=0.0497 0.25s/step temps=(59.75, 82.0)
+[ep0 step31300] loss=0.0647 0.25s/step temps=(60.0, 82.0)
+[ep0 step31350] loss=0.0503 0.25s/step temps=(60.375, 81.0)
+[ep0 step31400] loss=0.0752 0.25s/step temps=(60.0, 81.0)
+[ep0 step31400] EVAL loss=0.0502 auc=0.9984
+[ep0 step31450] loss=0.0650 0.25s/step temps=(59.75, 78.0)
+[ep0 step31500] loss=0.0591 0.25s/step temps=(59.75, 81.0)
+[ep0 step31550] loss=0.0533 0.25s/step temps=(60.0, 81.0)
+[ep0 step31600] loss=0.0538 0.25s/step temps=(59.75, 81.0)
+[ep0 step31600] EVAL loss=0.0496 auc=0.9984
+[ep0 step31650] loss=0.0802 0.25s/step temps=(61.0, 79.0)
+[ep0 step31700] loss=0.0466 0.25s/step temps=(59.75, 77.0)
+[ep0 step31750] loss=0.0893 0.25s/step temps=(59.5, 81.0)
+[ep0 step31800] loss=0.0793 0.25s/step temps=(59.75, 82.0)
+[ep0 step31800] EVAL loss=0.0516 auc=0.9983
+[ep0 step31850] loss=0.0702 0.25s/step temps=(61.0, 81.0)
+[ep0 step31900] loss=0.0604 0.25s/step temps=(61.125, 81.0)
+[ep0 step31950] loss=0.0630 0.25s/step temps=(59.5, 76.0)
+[ep0 step32000] loss=0.0777 0.25s/step temps=(59.625, 76.0)
+[ep0 step32000] EVAL loss=0.0491 auc=0.9984
+[ep0 step32000] ckpt saved
+[ep0 step32050] loss=0.0530 0.25s/step temps=(59.5, 80.0)
+[ep0 step32100] loss=0.0537 0.25s/step temps=(59.375, 80.0)
+[ep0 step32150] loss=0.0475 0.25s/step temps=(59.375, 76.0)
+[ep0 step32200] loss=0.0579 0.25s/step temps=(59.5, 80.0)
+[ep0 step32200] EVAL loss=0.0499 auc=0.9985
+[ep0 step32250] loss=0.0576 0.25s/step temps=(59.625, 77.0)
+[ep0 step32300] loss=0.0654 0.25s/step temps=(59.875, 82.0)
+[ep0 step32350] loss=0.0556 0.25s/step temps=(59.125, 75.0)
+[ep0 step32400] loss=0.0721 0.25s/step temps=(59.875, 81.0)
+[ep0 step32400] EVAL loss=0.0508 auc=0.9983
+[ep0 step32450] loss=0.0507 0.25s/step temps=(59.875, 81.0)
+[ep0 step32500] loss=0.0593 0.25s/step temps=(59.375, 80.0)
+[ep0 step32550] loss=0.0679 0.25s/step temps=(59.75, 81.0)
+[ep0 step32600] loss=0.0659 0.25s/step temps=(59.5, 76.0)
+[ep0 step32600] EVAL loss=0.0522 auc=0.9982
+[ep0 step32650] loss=0.0598 0.25s/step temps=(59.75, 81.0)
+[ep0 step32700] loss=0.0537 0.25s/step temps=(59.5, 81.0)
+[ep0 step32750] loss=0.0539 0.25s/step temps=(59.625, 82.0)
+[ep0 step32800] loss=0.0593 0.25s/step temps=(59.75, 81.0)
+[ep0 step32800] EVAL loss=0.0509 auc=0.9983
+[ep0 step32850] loss=0.0543 0.25s/step temps=(59.75, 82.0)
+[ep0 step32900] loss=0.0836 0.25s/step temps=(59.625, 81.0)
+[ep0 step32950] loss=0.0644 0.25s/step temps=(59.75, 81.0)
+[ep0 step33000] loss=0.0646 0.25s/step temps=(59.875, 82.0)
+[ep0 step33000] EVAL loss=0.0535 auc=0.9981
+[ep0 step33050] loss=0.0417 0.25s/step temps=(59.25, 77.0)
+[ep0 step33100] loss=0.0555 0.25s/step temps=(59.5, 76.0)
+[ep0 step33150] loss=0.0735 0.25s/step temps=(59.625, 78.0)
+[ep0 step33200] loss=0.0727 0.25s/step temps=(59.75, 82.0)
+[ep0 step33200] EVAL loss=0.0536 auc=0.9981
+[ep0 step33250] loss=0.0419 0.25s/step temps=(60.125, 81.0)
+[ep0 step33300] loss=0.0376 0.25s/step temps=(60.25, 82.0)
+[ep0 step33350] loss=0.0720 0.25s/step temps=(59.875, 82.0)
+[ep0 step33400] loss=0.0500 0.25s/step temps=(59.75, 82.0)
+[ep0 step33400] EVAL loss=0.0503 auc=0.9984
+[ep0 step33450] loss=0.0744 0.25s/step temps=(59.75, 82.0)
+[ep0 step33500] loss=0.0658 0.25s/step temps=(59.75, 82.0)
+[ep0 step33550] loss=0.0523 0.25s/step temps=(59.875, 81.0)
+[ep0 step33600] loss=0.0676 0.25s/step temps=(59.625, 81.0)
+[ep0 step33600] EVAL loss=0.0556 auc=0.9981
+[ep0 step33650] loss=0.0654 0.25s/step temps=(59.875, 82.0)
+[ep0 step33700] loss=0.0685 0.25s/step temps=(59.75, 81.0)
+[ep0 step33750] loss=0.0615 0.25s/step temps=(60.125, 81.0)
+[ep0 step33800] loss=0.0732 0.25s/step temps=(59.875, 82.0)
+[ep0 step33800] EVAL loss=0.0511 auc=0.9984
+[ep0 step33850] loss=0.0388 0.25s/step temps=(59.875, 82.0)
+[ep0 step33900] loss=0.0634 0.25s/step temps=(59.625, 81.0)
+[ep0 step33950] loss=0.0441 0.25s/step temps=(60.625, 79.0)
+[ep0 step34000] loss=0.0453 0.25s/step temps=(59.375, 81.0)
+[ep0 step34000] EVAL loss=0.0535 auc=0.9982
+[ep0 step34000] ckpt saved
+[ep0 step34050] loss=0.0906 0.25s/step temps=(59.875, 80.0)
+[ep0 step34100] loss=0.0614 0.25s/step temps=(59.625, 81.0)
+[ep0 step34150] loss=0.0888 0.25s/step temps=(59.75, 80.0)
+[ep0 step34200] loss=0.0614 0.25s/step temps=(59.625, 82.0)
+[ep0 step34200] EVAL loss=0.0511 auc=0.9983
+[ep0 step34250] loss=0.0507 0.25s/step temps=(59.625, 78.0)
+[ep0 step34300] loss=0.0549 0.25s/step temps=(59.75, 81.0)
+[ep0 step34350] loss=0.0703 0.25s/step temps=(60.0, 81.0)
+[ep0 step34400] loss=0.0520 0.25s/step temps=(59.75, 81.0)
+[ep0 step34400] EVAL loss=0.0522 auc=0.9983
+[ep0 step34450] loss=0.0559 0.25s/step temps=(59.875, 81.0)
+[ep0 step34500] loss=0.0798 0.25s/step temps=(59.875, 81.0)
+[ep0 step34550] loss=0.0452 0.25s/step temps=(62.5, 81.0)
+[ep0 step34600] loss=0.0593 0.25s/step temps=(61.25, 81.0)
+[ep0 step34600] EVAL loss=0.0544 auc=0.9981
+[ep0 step34650] loss=0.0754 0.25s/step temps=(59.875, 81.0)
+[ep0 step34700] loss=0.0675 0.25s/step temps=(59.5, 81.0)
+[ep0 step34750] loss=0.0592 0.25s/step temps=(59.75, 81.0)
+[ep0 step34800] loss=0.0744 0.25s/step temps=(59.875, 82.0)
+[ep0 step34800] EVAL loss=0.0521 auc=0.9983
+[ep0 step34850] loss=0.0413 0.25s/step temps=(59.75, 81.0)
+[ep0 step34900] loss=0.0515 0.25s/step temps=(59.875, 78.0)
+[ep0 step34950] loss=0.0538 0.25s/step temps=(59.875, 81.0)
+[ep0 step35000] loss=0.0484 0.25s/step temps=(59.875, 82.0)
+[ep0 step35000] EVAL loss=0.0607 auc=0.9979
+[ep0 step35050] loss=0.0560 0.25s/step temps=(59.625, 81.0)
+[ep0 step35100] loss=0.0560 0.25s/step temps=(59.875, 81.0)
+[ep0 step35150] loss=0.0825 0.25s/step temps=(59.625, 80.0)
+[ep0 step35200] loss=0.0852 0.25s/step temps=(59.75, 82.0)
+[ep0 step35200] EVAL loss=0.0530 auc=0.9982
+[ep0 step35250] loss=0.0575 0.25s/step temps=(59.875, 82.0)
+[ep0 step35300] loss=0.0819 0.25s/step temps=(60.0, 81.0)
+[ep0 step35350] loss=0.0539 0.25s/step temps=(59.875, 81.0)
+[ep0 step35400] loss=0.0662 0.25s/step temps=(59.875, 80.0)
+[ep0 step35400] EVAL loss=0.0531 auc=0.9981
+[ep0 step35450] loss=0.0562 0.25s/step temps=(59.625, 81.0)
+[ep0 step35500] loss=0.0660 0.25s/step temps=(59.5, 78.0)
+[ep0 step35550] loss=0.0484 0.25s/step temps=(59.875, 81.0)
+[ep0 step35600] loss=0.0762 0.25s/step temps=(59.5, 81.0)
+[ep0 step35600] EVAL loss=0.0514 auc=0.9982
+[ep0 step35650] loss=0.0579 0.25s/step temps=(59.375, 81.0)
+[ep0 step35700] loss=0.0789 0.25s/step temps=(59.375, 79.0)
+[ep0 step35750] loss=0.0514 0.25s/step temps=(60.875, 81.0)
+[ep0 step35800] loss=0.0687 0.25s/step temps=(59.5, 82.0)
+[ep0 step35800] EVAL loss=0.0524 auc=0.9982
+[ep0 step35850] loss=0.0803 0.25s/step temps=(59.5, 82.0)
+[ep0 step35900] loss=0.0655 0.25s/step temps=(59.625, 81.0)
+[ep0 step35950] loss=0.0670 0.25s/step temps=(60.0, 81.0)
+[ep0 step36000] loss=0.0467 0.25s/step temps=(59.75, 82.0)
+[ep0 step36000] EVAL loss=0.0510 auc=0.9984
+[ep0 step36000] ckpt saved
+[ep0 step36050] loss=0.0645 0.25s/step temps=(60.125, 81.0)
+[ep0 step36100] loss=0.0578 0.25s/step temps=(59.5, 80.0)
+[ep0 step36150] loss=0.0608 0.25s/step temps=(59.625, 81.0)
+[ep0 step36200] loss=0.0645 0.25s/step temps=(62.0, 81.0)
+[ep0 step36200] EVAL loss=0.0534 auc=0.9982
+[ep0 step36250] loss=0.0434 0.25s/step temps=(60.375, 81.0)
+[ep0 step36300] loss=0.0669 0.25s/step temps=(61.125, 76.0)
+[ep0 step36350] loss=0.0633 0.25s/step temps=(61.0, 81.0)
+[ep0 step36400] loss=0.0659 0.25s/step temps=(61.125, 80.0)
+[ep0 step36400] EVAL loss=0.0503 auc=0.9983
+[ep0 step36450] loss=0.0741 0.25s/step temps=(61.125, 82.0)
+[ep0 step36500] loss=0.0647 0.25s/step temps=(60.625, 77.0)
+[ep0 step36550] loss=0.0442 0.25s/step temps=(59.75, 81.0)
+[ep0 step36600] loss=0.0785 0.25s/step temps=(59.75, 81.0)
+[ep0 step36600] EVAL loss=0.0501 auc=0.9984
+[ep0 step36650] loss=0.0378 0.25s/step temps=(59.875, 81.0)
+[ep0 step36700] loss=0.0858 0.25s/step temps=(60.0, 82.0)
+[ep0 step36750] loss=0.0595 0.25s/step temps=(60.125, 81.0)
+[ep0 step36800] loss=0.0523 0.25s/step temps=(60.0, 80.0)
+[ep0 step36800] EVAL loss=0.0508 auc=0.9982
+[ep0 step36850] loss=0.0868 0.25s/step temps=(60.125, 81.0)
+[ep0 step36900] loss=0.0578 0.25s/step temps=(59.75, 79.0)
+[ep0 step36950] loss=0.0421 0.25s/step temps=(59.875, 81.0)
+[ep0 step37000] loss=0.0592 0.25s/step temps=(59.875, 81.0)
+[ep0 step37000] EVAL loss=0.0513 auc=0.9983
+[ep0 step37050] loss=0.0477 0.25s/step temps=(59.875, 81.0)
+[ep0 step37100] loss=0.0703 0.25s/step temps=(60.0, 80.0)
+[ep0 step37150] loss=0.0451 0.25s/step temps=(59.75, 81.0)
+[ep0 step37200] loss=0.0759 0.25s/step temps=(60.0, 82.0)
+[ep0 step37200] EVAL loss=0.0506 auc=0.9984
+[ep0 step37250] loss=0.0525 0.25s/step temps=(59.75, 82.0)
+[ep0 step37300] loss=0.0529 0.25s/step temps=(60.125, 81.0)
+[ep0 step37350] loss=0.0672 0.25s/step temps=(60.0, 81.0)
+[ep0 step37400] loss=0.0538 0.25s/step temps=(59.875, 82.0)
+[ep0 step37400] EVAL loss=0.0535 auc=0.9984
+[ep0 step37450] loss=0.0772 0.25s/step temps=(61.125, 81.0)
+[ep0 step37500] loss=0.0493 0.25s/step temps=(61.125, 81.0)
+[ep0 step37550] loss=0.0511 0.25s/step temps=(61.125, 81.0)
+[ep0 step37600] loss=0.0519 0.25s/step temps=(61.0, 82.0)
+[ep0 step37600] EVAL loss=0.0536 auc=0.9981
+[ep0 step37650] loss=0.0928 0.25s/step temps=(61.125, 82.0)
+[ep0 step37700] loss=0.0786 0.25s/step temps=(61.0, 82.0)
+[ep0 step37750] loss=0.0611 0.25s/step temps=(61.0, 77.0)
+[ep0 step37800] loss=0.0529 0.25s/step temps=(59.875, 81.0)
+[ep0 step37800] EVAL loss=0.0521 auc=0.9983
+[ep0 step37850] loss=0.0528 0.25s/step temps=(60.0, 79.0)
+[ep0 step37900] loss=0.0462 0.25s/step temps=(59.75, 81.0)
+[ep0 step37950] loss=0.0611 0.25s/step temps=(59.875, 81.0)
+[ep0 step38000] loss=0.0542 0.25s/step temps=(59.875, 82.0)
+[ep0 step38000] EVAL loss=0.0515 auc=0.9983
+[ep0 step38000] ckpt saved
+[ep0 step38050] loss=0.0504 0.25s/step temps=(61.25, 80.0)
+[ep0 step38100] loss=0.0712 0.25s/step temps=(61.125, 81.0)
+[ep0 step38150] loss=0.0541 0.25s/step temps=(61.125, 80.0)
+[ep0 step38200] loss=0.0735 0.25s/step temps=(61.75, 81.0)
+[ep0 step38200] EVAL loss=0.0523 auc=0.9983
+[ep0 step38250] loss=0.0626 0.25s/step temps=(59.625, 81.0)
+[ep0 step38300] loss=0.0544 0.25s/step temps=(59.875, 81.0)
+[ep0 step38350] loss=0.0533 0.25s/step temps=(59.75, 81.0)
+[ep0 step38400] loss=0.0764 0.25s/step temps=(60.125, 81.0)
+[ep0 step38400] EVAL loss=0.0514 auc=0.9983
+[ep0 step38450] loss=0.0318 0.25s/step temps=(60.0, 81.0)
+[ep0 step38500] loss=0.0637 0.25s/step temps=(59.5, 79.0)
+[ep0 step38550] loss=0.0556 0.25s/step temps=(59.875, 77.0)
+[ep0 step38600] loss=0.0516 0.25s/step temps=(59.75, 75.0)
+[ep0 step38600] EVAL loss=0.0542 auc=0.9981
+[ep0 step38650] loss=0.0524 0.25s/step temps=(60.0, 80.0)
+[ep0 step38700] loss=0.0686 0.25s/step temps=(59.75, 78.0)
+[ep0 step38750] loss=0.0582 0.25s/step temps=(62.875, 81.0)
+[ep0 step38800] loss=0.0609 0.25s/step temps=(60.375, 82.0)
+[ep0 step38800] EVAL loss=0.0504 auc=0.9983
+[ep0 step38850] loss=0.0559 0.25s/step temps=(61.25, 81.0)
+[ep0 step38900] loss=0.0650 0.25s/step temps=(60.875, 76.0)
+[ep0 step38950] loss=0.0535 0.25s/step temps=(61.125, 81.0)
+[ep0 step39000] loss=0.0702 0.25s/step temps=(61.25, 80.0)
+[ep0 step39000] EVAL loss=0.0525 auc=0.9984
+[ep0 step39050] loss=0.0528 0.25s/step temps=(60.0, 81.0)
+[ep0 step39100] loss=0.0606 0.25s/step temps=(59.75, 78.0)
+[ep0 step39150] loss=0.0566 0.25s/step temps=(59.625, 81.0)
+[ep0 step39200] loss=0.0581 0.25s/step temps=(59.75, 80.0)
+[ep0 step39200] EVAL loss=0.0497 auc=0.9984
+[ep0 step39250] loss=0.0505 0.25s/step temps=(59.625, 81.0)
+[ep0 step39300] loss=0.0468 0.25s/step temps=(59.75, 81.0)
+[ep0 step39350] loss=0.0449 0.25s/step temps=(60.625, 81.0)
+[ep0 step39400] loss=0.0392 0.25s/step temps=(61.0, 81.0)
+[ep0 step39400] EVAL loss=0.0517 auc=0.9983
+[ep0 step39450] loss=0.0697 0.25s/step temps=(61.0, 81.0)
+[ep0 step39500] loss=0.0663 0.25s/step temps=(61.0, 82.0)
+[ep0 step39550] loss=0.0501 0.25s/step temps=(60.875, 82.0)
+[ep0 step39600] loss=0.0595 0.25s/step temps=(60.875, 82.0)
+[ep0 step39600] EVAL loss=0.0543 auc=0.9983
+[ep0 step39650] loss=0.0335 0.25s/step temps=(61.0, 81.0)
+[ep0 step39700] loss=0.0648 0.25s/step temps=(61.125, 82.0)
+[ep0 step39750] loss=0.0621 0.25s/step temps=(61.125, 77.0)
+[ep0 step39800] loss=0.0623 0.25s/step temps=(61.125, 78.0)
+[ep0 step39800] EVAL loss=0.0533 auc=0.9983
+[ep0 step39850] loss=0.0624 0.25s/step temps=(61.0, 82.0)
+[ep0 step39900] loss=0.0570 0.25s/step temps=(59.75, 81.0)
+[ep0 step39950] loss=0.0510 0.25s/step temps=(59.625, 76.0)
+[ep0 step40000] loss=0.0451 0.25s/step temps=(59.875, 82.0)
+[ep0 step40000] EVAL loss=0.0502 auc=0.9984
+[ep0 step40000] ckpt saved
+[ep0 step40050] loss=0.0552 0.25s/step temps=(60.25, 81.0)
+[ep0 step40100] loss=0.0560 0.25s/step temps=(59.75, 82.0)
+[ep0 step40150] loss=0.0486 0.25s/step temps=(60.0, 81.0)
+[ep0 step40200] loss=0.0626 0.25s/step temps=(60.625, 81.0)
+[ep0 step40200] EVAL loss=0.0517 auc=0.9983
+[ep0 step40250] loss=0.0708 0.25s/step temps=(60.0, 81.0)
+[ep0 step40300] loss=0.0616 0.25s/step temps=(60.25, 80.0)
+[ep0 step40350] loss=0.0507 0.25s/step temps=(59.625, 77.0)
+[ep0 step40400] loss=0.0565 0.25s/step temps=(59.75, 77.0)
+[ep0 step40400] EVAL loss=0.0542 auc=0.9983
+[ep0 step40450] loss=0.0499 0.25s/step temps=(59.75, 81.0)
+[ep0 step40500] loss=0.0618 0.25s/step temps=(59.75, 80.0)
+[ep0 step40550] loss=0.0699 0.25s/step temps=(60.0, 81.0)
+[ep0 step40600] loss=0.0397 0.25s/step temps=(59.625, 79.0)
+[ep0 step40600] EVAL loss=0.0521 auc=0.9983
+[ep0 step40650] loss=0.0552 0.25s/step temps=(59.875, 81.0)
+[ep0 step40700] loss=0.0581 0.25s/step temps=(60.0, 81.0)
+[ep0 step40750] loss=0.0564 0.25s/step temps=(60.0, 81.0)
+[ep0 step40800] loss=0.0613 0.25s/step temps=(60.125, 81.0)
+[ep0 step40800] EVAL loss=0.0529 auc=0.9982
+[ep0 step40850] loss=0.0608 0.25s/step temps=(59.875, 82.0)
+[ep0 step40900] loss=0.0468 0.25s/step temps=(60.0, 82.0)
+[ep0 step40950] loss=0.0445 0.25s/step temps=(60.0, 82.0)
+[ep0 step41000] loss=0.0603 0.25s/step temps=(59.875, 81.0)
+[ep0 step41000] EVAL loss=0.0533 auc=0.9983
+[ep0 step41050] loss=0.0561 0.25s/step temps=(59.75, 79.0)
+[ep0 step41100] loss=0.0637 0.25s/step temps=(60.125, 77.0)
+[ep0 step41150] loss=0.0472 0.25s/step temps=(59.875, 81.0)
+[ep0 step41200] loss=0.0453 0.25s/step temps=(59.875, 81.0)
+[ep0 step41200] EVAL loss=0.0539 auc=0.9985
+[ep0 step41250] loss=0.0595 0.25s/step temps=(60.0, 81.0)
+[ep0 step41300] loss=0.0617 0.25s/step temps=(60.125, 80.0)
+[ep0 step41350] loss=0.0451 0.25s/step temps=(61.5, 82.0)
+[ep0 step41400] loss=0.0595 0.25s/step temps=(63.125, 77.0)
+[ep0 step41400] EVAL loss=0.0499 auc=0.9985
+[ep0 step41450] loss=0.0625 0.25s/step temps=(69.125, 82.0)
+[ep0 step41500] loss=0.0519 0.25s/step temps=(69.125, 82.0)
+[ep0 step41550] loss=0.0694 0.25s/step temps=(61.75, 82.0)
+[ep0 step41600] loss=0.0566 0.25s/step temps=(62.375, 78.0)
+[ep0 step41600] EVAL loss=0.0500 auc=0.9984
+[ep0 step41650] loss=0.0595 0.25s/step temps=(61.125, 83.0)
+[ep0 step41700] loss=0.0771 0.25s/step temps=(61.375, 79.0)
+[ep0 step41750] loss=0.0627 0.25s/step temps=(60.875, 82.0)
+[ep0 step41800] loss=0.0615 0.25s/step temps=(61.0, 79.0)
+[ep0 step41800] EVAL loss=0.0542 auc=0.9983
+[ep0 step41850] loss=0.0374 0.25s/step temps=(60.5, 80.0)
+[ep0 step41900] loss=0.0506 0.25s/step temps=(60.125, 82.0)
+[ep0 step41950] loss=0.0465 0.25s/step temps=(61.0, 76.0)
+[ep0 step42000] loss=0.0531 0.25s/step temps=(61.375, 81.0)
+[ep0 step42000] EVAL loss=0.0515 auc=0.9984
+[ep0 step42000] ckpt saved
+[ep0 step42050] loss=0.0592 0.25s/step temps=(60.25, 81.0)
+[ep0 step42100] loss=0.0626 0.25s/step temps=(60.0, 80.0)
+[ep0 step42150] loss=0.0478 0.25s/step temps=(59.625, 81.0)
+[ep0 step42200] loss=0.0547 0.25s/step temps=(60.0, 81.0)
+[ep0 step42200] EVAL loss=0.0507 auc=0.9984
+[ep0 step42250] loss=0.0763 0.25s/step temps=(60.0, 83.0)
+[ep0 step42300] loss=0.0582 0.25s/step temps=(60.0, 82.0)
+[ep0 step42350] loss=0.0529 0.25s/step temps=(60.125, 81.0)
+[ep0 step42400] loss=0.0760 0.25s/step temps=(61.375, 76.0)
+[ep0 step42400] EVAL loss=0.0505 auc=0.9985
+[ep0 step42450] loss=0.0474 0.25s/step temps=(61.25, 81.0)
+[ep0 step42500] loss=0.0439 0.25s/step temps=(61.25, 82.0)
+[ep0 step42550] loss=0.0624 0.25s/step temps=(59.875, 81.0)
+[ep0 step42600] loss=0.0643 0.25s/step temps=(60.125, 81.0)
+[ep0 step42600] EVAL loss=0.0544 auc=0.9983
+[ep0 step42650] loss=0.0496 0.25s/step temps=(59.875, 82.0)
+[ep0 step42700] loss=0.0696 0.25s/step temps=(59.75, 81.0)
+[ep0 step42750] loss=0.0614 0.25s/step temps=(60.0, 81.0)
+[ep0 step42800] loss=0.0833 0.25s/step temps=(59.875, 81.0)
+[ep0 step42800] EVAL loss=0.0529 auc=0.9983
+[ep0 step42850] loss=0.0504 0.25s/step temps=(59.875, 82.0)
+[ep0 step42900] loss=0.0540 0.25s/step temps=(60.0, 81.0)
+[ep0 step42950] loss=0.0527 0.25s/step temps=(60.25, 82.0)
+[ep0 step43000] loss=0.0509 0.25s/step temps=(59.75, 82.0)
+[ep0 step43000] EVAL loss=0.0534 auc=0.9983
+[ep0 step43050] loss=0.0506 0.25s/step temps=(61.0, 81.0)
+[ep0 step43100] loss=0.0592 0.25s/step temps=(59.75, 81.0)
+[ep0 step43150] loss=0.0658 0.25s/step temps=(59.875, 81.0)
+[ep0 step43200] loss=0.0518 0.25s/step temps=(59.875, 81.0)
+[ep0 step43200] EVAL loss=0.0506 auc=0.9984
+[ep0 step43250] loss=0.0671 0.25s/step temps=(59.875, 80.0)
+[ep0 step43300] loss=0.0647 0.25s/step temps=(60.25, 81.0)
+[ep0 step43350] loss=0.0438 0.25s/step temps=(60.0, 82.0)
+[ep0 step43400] loss=0.0441 0.25s/step temps=(60.125, 77.0)
+[ep0 step43400] EVAL loss=0.0482 auc=0.9985
+[ep0 step43450] loss=0.0526 0.25s/step temps=(59.75, 82.0)
+[ep0 step43500] loss=0.0605 0.25s/step temps=(59.875, 81.0)
+[ep0 step43550] loss=0.0446 0.25s/step temps=(59.75, 81.0)
+[ep0 step43600] loss=0.0481 0.25s/step temps=(59.75, 81.0)
+[ep0 step43600] EVAL loss=0.0520 auc=0.9984
+[ep0 step43650] loss=0.0653 0.25s/step temps=(59.875, 81.0)
+[ep0 step43700] loss=0.0622 0.25s/step temps=(60.0, 81.0)
+[ep0 step43750] loss=0.0566 0.25s/step temps=(59.875, 81.0)
+[ep0 step43800] loss=0.0489 0.25s/step temps=(60.125, 81.0)
+[ep0 step43800] EVAL loss=0.0492 auc=0.9984
+[ep0 step43850] loss=0.0684 0.25s/step temps=(60.0, 82.0)
+[ep0 step43900] loss=0.0512 0.25s/step temps=(60.375, 82.0)
+[ep0 step43950] loss=0.0823 0.25s/step temps=(59.875, 82.0)
+[ep0 step44000] loss=0.0515 0.25s/step temps=(60.125, 81.0)
+[ep0 step44000] EVAL loss=0.0505 auc=0.9984
+[ep0 step44000] ckpt saved
+[ep0 step44050] loss=0.0606 0.25s/step temps=(60.125, 81.0)
+[ep0 step44100] loss=0.0579 0.25s/step temps=(59.5, 80.0)
+[ep0 step44150] loss=0.0607 0.25s/step temps=(59.625, 81.0)
+[ep0 step44200] loss=0.0613 0.25s/step temps=(59.875, 81.0)
+[ep0 step44200] EVAL loss=0.0493 auc=0.9984
+[ep0 step44250] loss=0.0407 0.25s/step temps=(60.125, 81.0)
+[ep0 step44300] loss=0.0606 0.25s/step temps=(59.875, 81.0)
+[ep0 step44350] loss=0.0413 0.25s/step temps=(60.125, 81.0)
+[ep0 step44400] loss=0.0762 0.25s/step temps=(59.625, 76.0)
+[ep0 step44400] EVAL loss=0.0534 auc=0.9983
+[ep0 step44450] loss=0.0506 0.25s/step temps=(59.625, 81.0)
+[ep0 step44500] loss=0.0814 0.25s/step temps=(59.25, 75.0)
+[ep0 step44550] loss=0.0620 0.25s/step temps=(59.75, 81.0)
+[ep0 step44600] loss=0.0681 0.25s/step temps=(59.75, 81.0)
+[ep0 step44600] EVAL loss=0.0540 auc=0.9983
+[ep0 step44650] loss=0.0552 0.25s/step temps=(59.625, 81.0)
+[ep0 step44700] loss=0.0577 0.25s/step temps=(59.75, 82.0)
+[ep0 step44750] loss=0.0722 0.25s/step temps=(60.5, 80.0)
+[ep0 step44800] loss=0.0684 0.25s/step temps=(59.875, 82.0)
+[ep0 step44800] EVAL loss=0.0504 auc=0.9983
+[ep0 step44850] loss=0.0646 0.25s/step temps=(59.875, 82.0)
+[ep0 step44900] loss=0.0679 0.25s/step temps=(59.75, 81.0)
+[ep0 step44950] loss=0.0874 0.25s/step temps=(60.375, 82.0)
+[ep0 step45000] loss=0.0421 0.25s/step temps=(60.0, 82.0)
+[ep0 step45000] EVAL loss=0.0512 auc=0.9983
+[ep0 step45050] loss=0.0638 0.25s/step temps=(59.875, 82.0)
+[ep0 step45100] loss=0.0416 0.25s/step temps=(60.0, 76.0)
+[ep0 step45150] loss=0.0778 0.25s/step temps=(60.125, 81.0)
+[ep0 step45200] loss=0.0569 0.25s/step temps=(59.75, 81.0)
+[ep0 step45200] EVAL loss=0.0490 auc=0.9984
+[ep0 step45250] loss=0.0433 0.25s/step temps=(59.75, 81.0)
+[ep0 step45300] loss=0.0489 0.25s/step temps=(59.875, 82.0)
+[ep0 step45350] loss=0.0553 0.25s/step temps=(59.875, 77.0)
+[ep0 step45400] loss=0.0510 0.25s/step temps=(60.25, 82.0)
+[ep0 step45400] EVAL loss=0.0490 auc=0.9983
+[ep0 step45450] loss=0.0346 0.25s/step temps=(60.375, 82.0)
+[ep0 step45500] loss=0.0693 0.25s/step temps=(60.125, 81.0)
+[ep0 step45550] loss=0.0650 0.25s/step temps=(63.0, 80.0)
+[ep0 step45600] loss=0.0567 0.25s/step temps=(60.625, 82.0)
+[ep0 step45600] EVAL loss=0.0512 auc=0.9984
+[ep0 step45650] loss=0.0473 0.25s/step temps=(61.25, 81.0)
+[ep0 step45700] loss=0.0624 0.25s/step temps=(63.375, 81.0)
+[ep0 step45750] loss=0.0646 0.25s/step temps=(61.375, 81.0)
+[ep0 step45800] loss=0.0495 0.25s/step temps=(61.125, 77.0)
+[ep0 step45800] EVAL loss=0.0479 auc=0.9985
+[ep0 step45850] loss=0.0721 0.25s/step temps=(60.375, 81.0)
+[ep0 step45900] loss=0.0433 0.25s/step temps=(60.5, 82.0)
+[ep0 step45950] loss=0.0610 0.25s/step temps=(60.125, 82.0)
+[ep0 step46000] loss=0.0550 0.25s/step temps=(60.25, 82.0)
+[ep0 step46000] EVAL loss=0.0519 auc=0.9984
+[ep0 step46000] ckpt saved
+[ep0 step46050] loss=0.0587 0.25s/step temps=(60.125, 81.0)
+[ep0 step46100] loss=0.0606 0.25s/step temps=(60.0, 81.0)
+[ep0 step46150] loss=0.0707 0.25s/step temps=(60.0, 81.0)
+[ep0 step46200] loss=0.0787 0.25s/step temps=(60.0, 82.0)
+[ep0 step46200] EVAL loss=0.0510 auc=0.9983
+[ep0 step46250] loss=0.0824 0.25s/step temps=(61.5, 78.0)
+[ep0 step46300] loss=0.0475 0.25s/step temps=(61.625, 82.0)
+[ep0 step46350] loss=0.0537 0.25s/step temps=(61.375, 80.0)
+[ep0 step46400] loss=0.0556 0.25s/step temps=(61.25, 82.0)
+[ep0 step46400] EVAL loss=0.0532 auc=0.9982
+[ep0 step46450] loss=0.0476 0.25s/step temps=(61.375, 81.0)
+[ep0 step46500] loss=0.0504 0.25s/step temps=(61.125, 79.0)
+[ep0 step46550] loss=0.0688 0.25s/step temps=(61.25, 81.0)
+[ep0 step46600] loss=0.0492 0.25s/step temps=(61.0, 77.0)
+[ep0 step46600] EVAL loss=0.0524 auc=0.9983
+[ep0 step46650] loss=0.0523 0.25s/step temps=(60.25, 82.0)
+[ep0 step46700] loss=0.0520 0.25s/step temps=(60.0, 81.0)
+[ep0 step46750] loss=0.0412 0.25s/step temps=(60.0, 82.0)
+[ep0 step46800] loss=0.0882 0.25s/step temps=(60.125, 82.0)
+[ep0 step46800] EVAL loss=0.0527 auc=0.9983
+[ep0 step46850] loss=0.0638 0.25s/step temps=(60.375, 81.0)
+[ep0 step46900] loss=0.0694 0.25s/step temps=(60.125, 78.0)
+[ep0 step46950] loss=0.0723 0.25s/step temps=(60.125, 82.0)
+[ep0 step47000] loss=0.0636 0.25s/step temps=(59.875, 77.0)
+[ep0 step47000] EVAL loss=0.0521 auc=0.9984
+[ep0 step47050] loss=0.0470 0.25s/step temps=(61.0, 78.0)
+[ep0 step47100] loss=0.0665 0.25s/step temps=(60.25, 82.0)
+[ep0 step47150] loss=0.0554 0.25s/step temps=(60.125, 81.0)
+[ep0 step47200] loss=0.0457 0.25s/step temps=(61.0, 82.0)
+[ep0 step47200] EVAL loss=0.0499 auc=0.9984
+[ep0 step47250] loss=0.0461 0.25s/step temps=(61.375, 82.0)
+[ep0 step47300] loss=0.0791 0.25s/step temps=(62.0, 79.0)
+[ep0 step47350] loss=0.0528 0.25s/step temps=(62.25, 81.0)
+[ep0 step47400] loss=0.0499 0.25s/step temps=(61.75, 77.0)
+[ep0 step47400] EVAL loss=0.0488 auc=0.9985
+[ep0 step47450] loss=0.0549 0.25s/step temps=(62.25, 81.0)
+[ep0 step47500] loss=0.0543 0.25s/step temps=(62.125, 81.0)
+[ep0 step47550] loss=0.0499 0.25s/step temps=(62.125, 81.0)
+[ep0 step47600] loss=0.0468 0.25s/step temps=(65.125, 81.0)
+[ep0 step47600] EVAL loss=0.0502 auc=0.9984
+[ep0 step47650] loss=0.0602 0.25s/step temps=(61.25, 82.0)
+[ep0 step47700] loss=0.0587 0.25s/step temps=(60.25, 81.0)
+[ep0 step47750] loss=0.0588 0.25s/step temps=(60.625, 81.0)
+[ep0 step47800] loss=0.0419 0.25s/step temps=(60.375, 82.0)
+[ep0 step47800] EVAL loss=0.0501 auc=0.9984
+[ep0 step47850] loss=0.0543 0.25s/step temps=(61.875, 82.0)
+[ep0 step47900] loss=0.0704 0.25s/step temps=(68.25, 78.0)
+[ep0 step47950] loss=0.0564 0.25s/step temps=(67.25, 78.0)
+[ep0 step48000] loss=0.0465 0.25s/step temps=(68.875, 83.0)
+[ep0 step48000] EVAL loss=0.0505 auc=0.9985
+[ep0 step48000] ckpt saved
+[ep0 step48050] loss=0.0613 0.25s/step temps=(63.125, 80.0)
+[ep0 step48100] loss=0.0572 0.25s/step temps=(63.625, 83.0)
+[ep0 step48150] loss=0.0637 0.25s/step temps=(61.0, 82.0)
+[ep0 step48200] loss=0.0568 0.25s/step temps=(64.875, 82.0)
+[ep0 step48200] EVAL loss=0.0503 auc=0.9984
+[ep0 step48250] loss=0.0511 0.25s/step temps=(62.125, 79.0)
+[ep0 step48300] loss=0.0639 0.25s/step temps=(61.75, 82.0)
+[ep0 step48350] loss=0.0584 0.25s/step temps=(61.5, 74.0)
+[ep0 step48400] loss=0.0535 0.25s/step temps=(61.875, 82.0)
+[ep0 step48400] EVAL loss=0.0508 auc=0.9984
+[ep0 step48450] loss=0.0536 0.25s/step temps=(61.75, 81.0)
+[ep0 step48500] loss=0.0543 0.25s/step temps=(63.875, 80.0)
+[ep0 step48550] loss=0.0537 0.25s/step temps=(60.75, 82.0)
+[ep0 step48600] loss=0.0571 0.25s/step temps=(60.25, 79.0)
+[ep0 step48600] EVAL loss=0.0488 auc=0.9982
+[ep0 step48650] loss=0.0521 0.25s/step temps=(61.125, 78.0)
+[ep0 step48700] loss=0.0658 0.25s/step temps=(60.875, 82.0)
+[ep0 step48750] loss=0.0598 0.25s/step temps=(63.375, 77.0)
+[ep0 step48800] loss=0.0500 0.25s/step temps=(62.875, 82.0)
+[ep0 step48800] EVAL loss=0.0517 auc=0.9985
+[ep0 step48850] loss=0.0504 0.25s/step temps=(65.125, 84.0)
+[ep0 step48900] loss=0.0694 0.25s/step temps=(64.125, 81.0)
+[ep0 step48950] loss=0.0703 0.25s/step temps=(65.375, 83.0)
+[ep0 step49000] loss=0.0663 0.25s/step temps=(65.75, 83.0)
+[ep0 step49000] EVAL loss=0.0508 auc=0.9984
+[ep0 step49050] loss=0.0572 0.25s/step temps=(63.875, 81.0)
+[ep0 step49100] loss=0.0622 0.25s/step temps=(63.75, 84.0)
+[ep0 step49150] loss=0.0585 0.25s/step temps=(64.625, 79.0)
+[ep0 step49200] loss=0.0557 0.25s/step temps=(64.25, 83.0)
+[ep0 step49200] EVAL loss=0.0507 auc=0.9980
+[ep0 step49250] loss=0.0431 0.25s/step temps=(63.375, 83.0)
+[ep0 step49300] loss=0.0535 0.25s/step temps=(62.75, 83.0)
+[ep0 step49350] loss=0.0574 0.25s/step temps=(62.25, 83.0)
+[ep0 step49400] loss=0.0513 0.25s/step temps=(63.125, 83.0)
+[ep0 step49400] EVAL loss=0.0509 auc=0.9980
+[ep0 step49450] loss=0.0407 0.25s/step temps=(63.75, 82.0)
+[ep0 step49500] loss=0.0689 0.25s/step temps=(63.25, 83.0)
+[ep0 step49550] loss=0.0484 0.25s/step temps=(63.25, 83.0)
+[ep0 step49600] loss=0.0692 0.25s/step temps=(63.0, 81.0)
+[ep0 step49600] EVAL loss=0.0502 auc=0.9984
+[ep0 step49650] loss=0.0627 0.25s/step temps=(63.75, 83.0)
+[ep0 step49700] loss=0.0618 0.25s/step temps=(63.5, 83.0)
+[ep0 step49750] loss=0.0585 0.25s/step temps=(64.875, 82.0)
+[ep0 step49800] loss=0.0736 0.25s/step temps=(63.375, 83.0)
+[ep0 step49800] EVAL loss=0.0495 auc=0.9985
+[ep0 step49850] loss=0.0504 0.25s/step temps=(67.25, 83.0)
+[ep0 step49900] loss=0.0612 0.25s/step temps=(65.0, 79.0)
+[ep0 step49950] loss=0.0427 0.25s/step temps=(64.875, 81.0)
+[ep0 step50000] loss=0.0690 0.25s/step temps=(62.875, 81.0)
+[ep0 step50000] EVAL loss=0.0483 auc=0.9983
+[ep0 step50000] ckpt saved
+[ep0 step50050] loss=0.0587 0.25s/step temps=(60.875, 81.0)
+[ep0 step50100] loss=0.0555 0.25s/step temps=(60.75, 82.0)
+[ep0 step50150] loss=0.0480 0.25s/step temps=(60.25, 81.0)
+[ep0 step50200] loss=0.0713 0.25s/step temps=(60.5, 80.0)
+[ep0 step50200] EVAL loss=0.0482 auc=0.9986
+[ep0 step50250] loss=0.0413 0.25s/step temps=(60.5, 82.0)
+[ep0 step50300] loss=0.0501 0.25s/step temps=(60.5, 82.0)
+[ep0 step50350] loss=0.0598 0.25s/step temps=(60.25, 81.0)
+[ep0 step50400] loss=0.0628 0.25s/step temps=(61.625, 82.0)
+[ep0 step50400] EVAL loss=0.0511 auc=0.9985
+[ep0 step50450] loss=0.0517 0.25s/step temps=(60.125, 78.0)
+[ep0 step50500] loss=0.0384 0.25s/step temps=(61.375, 82.0)
+[ep0 step50550] loss=0.0560 0.25s/step temps=(60.125, 80.0)
+[ep0 step50600] loss=0.0522 0.25s/step temps=(60.25, 77.0)
+[ep0 step50600] EVAL loss=0.0478 auc=0.9986
+[ep0 step50650] loss=0.0564 0.25s/step temps=(60.375, 82.0)
+[ep0 step50700] loss=0.0658 0.25s/step temps=(60.125, 82.0)
+[ep0 step50750] loss=0.0617 0.25s/step temps=(61.25, 82.0)
+[ep0 step50800] loss=0.0440 0.25s/step temps=(60.875, 81.0)
+[ep0 step50800] EVAL loss=0.0469 auc=0.9986
+[ep0 step50850] loss=0.0580 0.25s/step temps=(61.125, 81.0)
+[ep0 step50900] loss=0.0547 0.25s/step temps=(60.25, 82.0)
+[ep0 step50950] loss=0.0533 0.25s/step temps=(60.5, 77.0)
+[ep0 step51000] loss=0.0594 0.25s/step temps=(60.625, 82.0)
+[ep0 step51000] EVAL loss=0.0501 auc=0.9983
+[ep0 step51050] loss=0.0762 0.25s/step temps=(60.25, 82.0)
+[ep0 step51100] loss=0.0702 0.25s/step temps=(60.875, 82.0)
+[ep0 step51150] loss=0.0552 0.25s/step temps=(60.75, 82.0)
+[ep0 step51200] loss=0.0483 0.25s/step temps=(61.0, 79.0)
+[ep0 step51200] EVAL loss=0.0479 auc=0.9985
+[ep0 step51250] loss=0.0706 0.25s/step temps=(60.625, 82.0)
+[ep0 step51300] loss=0.0616 0.25s/step temps=(60.375, 82.0)
+[ep0 step51350] loss=0.0567 0.25s/step temps=(60.5, 82.0)
+[ep0 step51400] loss=0.0563 0.25s/step temps=(60.5, 82.0)
+[ep0 step51400] EVAL loss=0.0491 auc=0.9985
+[ep0 step51450] loss=0.0481 0.25s/step temps=(60.5, 82.0)
+[ep0 step51500] loss=0.0472 0.25s/step temps=(60.25, 81.0)
+[ep0 step51550] loss=0.0567 0.25s/step temps=(61.875, 81.0)
+[ep0 step51600] loss=0.0505 0.25s/step temps=(60.625, 82.0)
+[ep0 step51600] EVAL loss=0.0485 auc=0.9986
+[ep0 step51650] loss=0.0833 0.25s/step temps=(60.5, 80.0)
+[ep0 step51700] loss=0.0466 0.25s/step temps=(60.625, 82.0)
+[ep0 step51750] loss=0.0478 0.25s/step temps=(60.75, 81.0)
+[ep0 step51800] loss=0.0502 0.25s/step temps=(60.25, 82.0)
+[ep0 step51800] EVAL loss=0.0492 auc=0.9985
+[ep0 step51850] loss=0.0442 0.25s/step temps=(61.0, 81.0)
+[ep0 step51900] loss=0.0605 0.25s/step temps=(60.125, 82.0)
+[ep0 step51950] loss=0.0621 0.25s/step temps=(60.125, 78.0)
+[ep0 step52000] loss=0.0973 0.25s/step temps=(60.5, 82.0)
+[ep0 step52000] EVAL loss=0.0587 auc=0.9983
+[ep0 step52000] ckpt saved
+[ep0 step52050] loss=0.0590 0.25s/step temps=(61.125, 79.0)
+[ep0 step52100] loss=0.0797 0.25s/step temps=(60.125, 82.0)
+[ep0 step52150] loss=0.0710 0.25s/step temps=(60.0, 80.0)
+[ep0 step52200] loss=0.0505 0.25s/step temps=(60.875, 76.0)
+[ep0 step52200] EVAL loss=0.0521 auc=0.9981
+[ep0 step52250] loss=0.0395 0.25s/step temps=(61.375, 82.0)
+[ep0 step52300] loss=0.0622 0.25s/step temps=(62.0, 81.0)
+[ep0 step52350] loss=0.0479 0.25s/step temps=(61.875, 78.0)
+[ep0 step52400] loss=0.0615 0.25s/step temps=(61.75, 82.0)
+[ep0 step52400] EVAL loss=0.0513 auc=0.9980
+[ep0 step52450] loss=0.0386 0.25s/step temps=(62.375, 78.0)
+[ep0 step52500] loss=0.0315 0.25s/step temps=(62.875, 76.0)
+[ep0 step52550] loss=0.0454 0.25s/step temps=(62.125, 81.0)
+[ep0 step52600] loss=0.0443 0.25s/step temps=(64.375, 76.0)
+[ep0 step52600] EVAL loss=0.0571 auc=0.9975
+[ep0 step52650] loss=0.0714 0.25s/step temps=(63.0, 83.0)
+[ep0 step52700] loss=0.0655 0.25s/step temps=(64.5, 82.0)
+[ep0 step52750] loss=0.0519 0.25s/step temps=(64.5, 82.0)
+[ep0 step52800] loss=0.0465 0.25s/step temps=(64.625, 82.0)
+[ep0 step52800] EVAL loss=0.0512 auc=0.9981
+[ep0 step52850] loss=0.0522 0.25s/step temps=(65.0, 81.0)
+[ep0 step52900] loss=0.0567 0.25s/step temps=(65.5, 83.0)
+[ep0 step52950] loss=0.0581 0.25s/step temps=(62.0, 80.0)
+[ep0 step53000] loss=0.0593 0.25s/step temps=(62.125, 82.0)
+[ep0 step53000] EVAL loss=0.0533 auc=0.9981
+[ep0 step53050] loss=0.0439 0.25s/step temps=(62.625, 82.0)
+[ep0 step53100] loss=0.0585 0.25s/step temps=(62.75, 82.0)
+[ep0 step53150] loss=0.0689 0.25s/step temps=(63.25, 83.0)
+[ep0 step53200] loss=0.0576 0.25s/step temps=(62.5, 82.0)
+[ep0 step53200] EVAL loss=0.0549 auc=0.9983
+[ep0 step53250] loss=0.0603 0.25s/step temps=(64.125, 83.0)
+[ep0 step53300] loss=0.0498 0.25s/step temps=(64.375, 79.0)
+[ep0 step53350] loss=0.0602 0.25s/step temps=(64.25, 82.0)
+[ep0 step53400] loss=0.0417 0.25s/step temps=(62.25, 83.0)
+[ep0 step53400] EVAL loss=0.0512 auc=0.9984
+[ep0 step53450] loss=0.0512 0.25s/step temps=(65.875, 82.0)
+[ep0 step53500] loss=0.0603 0.25s/step temps=(64.875, 83.0)
+[ep0 step53550] loss=0.0603 0.25s/step temps=(64.5, 79.0)
+[ep0 step53600] loss=0.0518 0.25s/step temps=(64.5, 83.0)
+[ep0 step53600] EVAL loss=0.0539 auc=0.9983
+[ep0 step53650] loss=0.0483 0.25s/step temps=(65.375, 83.0)
+[ep0 step53700] loss=0.0480 0.25s/step temps=(63.125, 83.0)
+[ep0 step53750] loss=0.0556 0.25s/step temps=(62.75, 83.0)
+[ep0 step53800] loss=0.0653 0.25s/step temps=(61.625, 83.0)
+[ep0 step53800] EVAL loss=0.0543 auc=0.9983
+[ep0 step53850] loss=0.0617 0.25s/step temps=(63.75, 84.0)
+[ep0 step53900] loss=0.0576 0.25s/step temps=(64.125, 82.0)
+[ep0 step53950] loss=0.0564 0.25s/step temps=(64.25, 83.0)
+[ep0 step54000] loss=0.0564 0.25s/step temps=(64.875, 84.0)
+[ep0 step54000] EVAL loss=0.0496 auc=0.9985
+[ep0 step54000] ckpt saved
+[ep0 step54050] loss=0.0586 0.25s/step temps=(64.75, 82.0)
+[ep0 step54100] loss=0.0492 0.25s/step temps=(63.75, 77.0)
+[ep0 step54150] loss=0.0434 0.25s/step temps=(63.875, 83.0)
+[ep0 step54200] loss=0.0464 0.25s/step temps=(65.125, 83.0)
+[ep0 step54200] EVAL loss=0.0485 auc=0.9986
+[ep0 step54250] loss=0.0620 0.25s/step temps=(66.5, 84.0)
+[ep0 step54300] loss=0.0597 0.25s/step temps=(63.25, 83.0)
+[ep0 step54350] loss=0.0573 0.25s/step temps=(63.75, 83.0)
+[ep0 step54400] loss=0.0665 0.25s/step temps=(64.75, 83.0)
+[ep0 step54400] EVAL loss=0.0484 auc=0.9985
+[ep0 step54450] loss=0.0541 0.25s/step temps=(64.125, 84.0)
+[ep0 step54500] loss=0.0505 0.25s/step temps=(64.75, 81.0)
+[ep0 step54550] loss=0.0608 0.25s/step temps=(64.0, 84.0)
+[ep0 step54600] loss=0.0607 0.25s/step temps=(64.75, 78.0)
+[ep0 step54600] EVAL loss=0.0514 auc=0.9983
+[ep0 step54650] loss=0.0774 0.25s/step temps=(64.375, 83.0)
+[ep0 step54700] loss=0.0676 0.25s/step temps=(63.125, 83.0)
+[ep0 step54750] loss=0.0437 0.25s/step temps=(63.125, 83.0)
+[ep0 step54800] loss=0.0427 0.25s/step temps=(62.875, 83.0)
+[ep0 step54800] EVAL loss=0.0491 auc=0.9985
+[ep0 step54850] loss=0.0497 0.25s/step temps=(63.25, 84.0)
+[ep0 step54900] loss=0.0658 0.25s/step temps=(63.125, 83.0)
+[ep0 step54950] loss=0.0545 0.25s/step temps=(62.5, 83.0)
+[ep0 step55000] loss=0.0467 0.25s/step temps=(62.5, 83.0)
+[ep0 step55000] EVAL loss=0.0517 auc=0.9984
+[ep0 step55050] loss=0.0586 0.25s/step temps=(69.125, 82.0)
+[ep0 step55100] loss=0.0421 0.25s/step temps=(63.75, 83.0)
+[ep0 step55150] loss=0.0569 0.25s/step temps=(65.625, 83.0)
+[ep0 step55200] loss=0.0415 0.25s/step temps=(64.5, 83.0)
+[ep0 step55200] EVAL loss=0.0535 auc=0.9982
+[ep0 step55250] loss=0.0454 0.25s/step temps=(64.125, 83.0)
+[ep0 step55300] loss=0.0511 0.25s/step temps=(63.625, 83.0)
+[ep0 step55350] loss=0.0706 0.25s/step temps=(62.75, 84.0)
+[ep0 step55400] loss=0.0539 0.25s/step temps=(62.375, 83.0)
+[ep0 step55400] EVAL loss=0.0499 auc=0.9984
+[ep0 step55450] loss=0.0414 0.25s/step temps=(64.5, 82.0)
+[ep0 step55500] loss=0.0556 0.25s/step temps=(63.125, 79.0)
+[ep0 step55550] loss=0.0484 0.25s/step temps=(64.625, 82.0)
+[ep0 step55600] loss=0.0572 0.25s/step temps=(61.875, 83.0)
+[ep0 step55600] EVAL loss=0.0495 auc=0.9984
+[ep0 step55650] loss=0.0336 0.25s/step temps=(63.625, 80.0)
+[ep0 step55700] loss=0.0543 0.25s/step temps=(65.625, 81.0)
+[ep0 step55750] loss=0.0581 0.25s/step temps=(64.625, 84.0)
+[ep0 step55800] loss=0.0680 0.25s/step temps=(63.125, 83.0)
+[ep0 step55800] EVAL loss=0.0479 auc=0.9984
+[ep0 step55850] loss=0.0743 0.25s/step temps=(61.875, 82.0)
+[ep0 step55900] loss=0.0453 0.25s/step temps=(63.625, 83.0)
+[ep0 step55950] loss=0.0631 0.25s/step temps=(62.125, 77.0)
+[ep0 step56000] loss=0.0345 0.25s/step temps=(62.5, 83.0)
+[ep0 step56000] EVAL loss=0.0486 auc=0.9984
+[ep0 step56000] ckpt saved
+[ep0 step56050] loss=0.0615 0.25s/step temps=(65.625, 83.0)
+[ep0 step56100] loss=0.0544 0.25s/step temps=(65.0, 78.0)
+[ep0 step56150] loss=0.0553 0.25s/step temps=(62.75, 82.0)
+[ep0 step56200] loss=0.0544 0.25s/step temps=(65.75, 83.0)
+[ep0 step56200] EVAL loss=0.0514 auc=0.9982
+[ep0 step56250] loss=0.0664 0.25s/step temps=(66.75, 80.0)
+[ep0 step56300] loss=0.0659 0.25s/step temps=(64.0, 83.0)
+[ep0 step56350] loss=0.0524 0.25s/step temps=(65.375, 76.0)
+[ep0 step56400] loss=0.0651 0.25s/step temps=(63.75, 83.0)
+[ep0 step56400] EVAL loss=0.0511 auc=0.9984
+[ep0 step56450] loss=0.0578 0.25s/step temps=(64.625, 83.0)
+[ep0 step56500] loss=0.0681 0.25s/step temps=(64.25, 82.0)
+[ep0 step56550] loss=0.0462 0.25s/step temps=(64.0, 81.0)
+[ep0 step56600] loss=0.0547 0.25s/step temps=(63.25, 81.0)
+[ep0 step56600] EVAL loss=0.0495 auc=0.9984
+[ep0 step56650] loss=0.0524 0.25s/step temps=(62.0, 82.0)
+[ep0 step56700] loss=0.0464 0.25s/step temps=(61.375, 83.0)
+[ep0 step56750] loss=0.0539 0.25s/step temps=(61.25, 83.0)
+[ep0 step56800] loss=0.0396 0.25s/step temps=(61.125, 82.0)
+[ep0 step56800] EVAL loss=0.0510 auc=0.9985
+[ep0 step56850] loss=0.0622 0.25s/step temps=(60.875, 82.0)
+[ep0 step56900] loss=0.0651 0.25s/step temps=(60.5, 82.0)
+[ep0 step56950] loss=0.0630 0.25s/step temps=(61.0, 79.0)
+[ep0 step57000] loss=0.0475 0.25s/step temps=(60.375, 83.0)
+[ep0 step57000] EVAL loss=0.0499 auc=0.9985
+[ep0 step57050] loss=0.0798 0.25s/step temps=(60.25, 81.0)
+[ep0 step57100] loss=0.0577 0.25s/step temps=(60.375, 81.0)
+[ep0 step57150] loss=0.0748 0.25s/step temps=(60.5, 81.0)
+[ep0 step57200] loss=0.0811 0.25s/step temps=(60.0, 82.0)
+[ep0 step57200] EVAL loss=0.0488 auc=0.9986
+[ep0 step57250] loss=0.0655 0.25s/step temps=(60.125, 82.0)
+[ep0 step57300] loss=0.0608 0.25s/step temps=(60.25, 82.0)
+[ep0 step57350] loss=0.0699 0.25s/step temps=(60.0, 82.0)
+[ep0 step57400] loss=0.0352 0.25s/step temps=(61.375, 82.0)
+[ep0 step57400] EVAL loss=0.0554 auc=0.9985
+[ep0 step57450] loss=0.0517 0.25s/step temps=(61.5, 82.0)
+[ep0 step57500] loss=0.0810 0.25s/step temps=(61.75, 82.0)
+[ep0 step57550] loss=0.0581 0.25s/step temps=(61.125, 81.0)
+[ep0 step57600] loss=0.0434 0.25s/step temps=(60.0, 82.0)
+[ep0 step57600] EVAL loss=0.0561 auc=0.9982
+[ep0 step57650] loss=0.0706 0.25s/step temps=(62.0, 80.0)
+[ep0 step57700] loss=0.0621 0.25s/step temps=(60.5, 79.0)
+[ep0 step57750] loss=0.0689 0.25s/step temps=(61.5, 82.0)
+[ep0 step57800] loss=0.0516 0.25s/step temps=(62.75, 81.0)
+[ep0 step57800] EVAL loss=0.0501 auc=0.9984
+[ep0 step57850] loss=0.0755 0.25s/step temps=(61.0, 82.0)
+[ep0 step57900] loss=0.0677 0.25s/step temps=(62.0, 78.0)
+[ep0 step57950] loss=0.0435 0.25s/step temps=(61.25, 78.0)
+[ep0 step58000] loss=0.0427 0.25s/step temps=(61.5, 82.0)
+[ep0 step58000] EVAL loss=0.0483 auc=0.9985
+[ep0 step58000] ckpt saved
+[ep0 step58050] loss=0.0493 0.25s/step temps=(61.25, 81.0)
+[ep0 step58100] loss=0.0639 0.25s/step temps=(61.125, 81.0)
+[ep0 step58150] loss=0.0669 0.25s/step temps=(62.625, 82.0)
+[ep0 step58200] loss=0.0619 0.25s/step temps=(61.5, 81.0)
+[ep0 step58200] EVAL loss=0.0492 auc=0.9984
+[ep0 step58250] loss=0.0618 0.25s/step temps=(60.125, 81.0)
+[ep0 step58300] loss=0.0514 0.25s/step temps=(60.125, 76.0)
+[ep0 step58350] loss=0.0647 0.25s/step temps=(60.375, 82.0)
+[ep0 step58400] loss=0.0662 0.25s/step temps=(60.125, 81.0)
+[ep0 step58400] EVAL loss=0.0507 auc=0.9982
+[ep0 step58450] loss=0.0450 0.25s/step temps=(60.375, 81.0)
+[ep0 step58500] loss=0.0504 0.25s/step temps=(61.375, 82.0)
+[ep0 step58550] loss=0.0409 0.25s/step temps=(61.375, 81.0)
+[ep0 step58600] loss=0.0605 0.25s/step temps=(61.75, 82.0)
+[ep0 step58600] EVAL loss=0.0495 auc=0.9984
+[ep0 step58650] loss=0.0450 0.25s/step temps=(60.875, 80.0)
+[ep0 step58700] loss=0.0603 0.25s/step temps=(61.0, 82.0)
+[ep0 step58750] loss=0.0598 0.25s/step temps=(60.5, 82.0)
+[ep0 step58800] loss=0.0485 0.25s/step temps=(62.75, 82.0)
+[ep0 step58800] EVAL loss=0.0479 auc=0.9985
+[ep0 step58850] loss=0.0571 0.25s/step temps=(62.0, 82.0)
+[ep0 step58900] loss=0.0534 0.25s/step temps=(61.375, 81.0)
+[ep0 step58950] loss=0.0462 0.25s/step temps=(61.75, 82.0)
+[ep0 step59000] loss=0.0740 0.25s/step temps=(60.75, 82.0)
+[ep0 step59000] EVAL loss=0.0492 auc=0.9985
+[ep0 step59050] loss=0.0577 0.25s/step temps=(62.0, 82.0)
+[ep0 step59100] loss=0.0563 0.25s/step temps=(63.375, 81.0)
+[ep0 step59150] loss=0.0571 0.25s/step temps=(63.625, 79.0)
+[ep0 step59200] loss=0.0617 0.25s/step temps=(63.75, 79.0)
+[ep0 step59200] EVAL loss=0.0486 auc=0.9985
+[ep0 step59250] loss=0.0529 0.25s/step temps=(64.375, 82.0)
+[ep0 step59300] loss=0.0630 0.25s/step temps=(63.375, 78.0)
+[ep0 step59350] loss=0.0551 0.25s/step temps=(64.625, 81.0)
+[ep0 step59400] loss=0.0630 0.25s/step temps=(63.625, 83.0)
+[ep0 step59400] EVAL loss=0.0488 auc=0.9986
+[ep0 step59450] loss=0.0638 0.25s/step temps=(61.125, 81.0)
+[ep0 step59500] loss=0.0526 0.25s/step temps=(60.75, 77.0)
+[ep0 step59550] loss=0.0424 0.25s/step temps=(60.625, 81.0)
+[ep0 step59600] loss=0.0764 0.25s/step temps=(60.625, 77.0)
+[ep0 step59600] EVAL loss=0.0495 auc=0.9985
+[ep0 step59650] loss=0.0460 0.25s/step temps=(61.25, 82.0)
+[ep0 step59700] loss=0.0418 0.25s/step temps=(61.625, 81.0)
+[ep0 step59750] loss=0.0570 0.25s/step temps=(61.375, 82.0)
+[ep0 step59800] loss=0.0581 0.25s/step temps=(62.125, 82.0)
+[ep0 step59800] EVAL loss=0.0467 auc=0.9986
+[ep0 step59850] loss=0.0532 0.25s/step temps=(60.25, 81.0)
+[ep0 step59900] loss=0.0642 0.25s/step temps=(60.375, 81.0)
+[ep0 step59950] loss=0.0492 0.25s/step temps=(60.375, 81.0)
+[ep0 step60000] loss=0.0431 0.25s/step temps=(60.125, 81.0)
+[ep0 step60000] EVAL loss=0.0457 auc=0.9986
+[ep0 step60000] ckpt saved
+[ep0 step60050] loss=0.0511 0.25s/step temps=(59.875, 80.0)
+[ep0 step60100] loss=0.0509 0.25s/step temps=(59.625, 80.0)
+[ep0 step60150] loss=0.0531 0.25s/step temps=(59.875, 81.0)
+[ep0 step60200] loss=0.0552 0.25s/step temps=(60.5, 81.0)
+[ep0 step60200] EVAL loss=0.0502 auc=0.9985
+[ep0 step60250] loss=0.0713 0.25s/step temps=(60.125, 81.0)
+[ep0 step60300] loss=0.0554 0.25s/step temps=(60.125, 79.0)
+[ep0 step60350] loss=0.0384 0.25s/step temps=(60.25, 81.0)
+[ep0 step60400] loss=0.0434 0.25s/step temps=(61.25, 81.0)
+[ep0 step60400] EVAL loss=0.0521 auc=0.9984
+[ep0 step60450] loss=0.0524 0.25s/step temps=(61.0, 81.0)
+[ep0 step60500] loss=0.0534 0.25s/step temps=(60.375, 77.0)
+[ep0 step60550] loss=0.0444 0.25s/step temps=(67.5, 81.0)
+[ep0 step60600] loss=0.0357 0.25s/step temps=(68.75, 78.0)
+[ep0 step60600] EVAL loss=0.0509 auc=0.9986
+[ep0 step60650] loss=0.0524 0.25s/step temps=(60.75, 79.0)
+[ep0 step60700] loss=0.0587 0.25s/step temps=(60.5, 82.0)
+[done] EVAL loss=0.0491 auc=0.9986 steps=60717 time=15131s

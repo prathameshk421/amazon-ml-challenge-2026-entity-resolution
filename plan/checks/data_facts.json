@@ -1,0 +1,343 @@
+{
+ "train/train_source1.tsv": {
+  "bytes": 210069713,
+  "n_lines": 2206822,
+  "has_CR": 0,
+  "has_BOM": false,
+  "n_doublequote_chars": 20,
+  "header": [
+   "entity_id",
+   "business_name",
+   "business_address",
+   "country"
+  ],
+  "field_count_hist": {
+   "4": 2206821
+  },
+  "n_rows": 2206821,
+  "n_unique_ids": 2206821,
+  "bad_id_format": 0,
+  "id_prefix": {
+   "1": 2206821
+  },
+  "id_leading_zero": 0,
+  "id_max_num": 999998822,
+  "id_num_width_hist": {
+   "3": 4,
+   "4": 20,
+   "5": 203,
+   "6": 2072,
+   "7": 19912,
+   "8": 198190,
+   "9": 1986420
+  },
+  "empty": {},
+  "leading_trailing_ws": {},
+  "countries": {
+   "US": 1323633,
+   "India": 883188
+  },
+  "scripts_nonascii_letters": {
+   "LATIN": 680
+  },
+  "pandas_default_quoting_rows": 2206821,
+  "pandas_quote_none_rows": 2206821
+ },
+ "train/train_source2.tsv": {
+  "bytes": 489301488,
+  "n_lines": 5034617,
+  "has_CR": 0,
+  "has_BOM": false,
+  "n_doublequote_chars": 30,
+  "header": [
+   "entity_id",
+   "business_name",
+   "business_address",
+   "country"
+  ],
+  "field_count_hist": {
+   "4": 5034616
+  },
+  "n_rows": 5034616,
+  "n_unique_ids": 5034616,
+  "bad_id_format": 0,
+  "id_prefix": {
+   "2": 5034616
+  },
+  "id_leading_zero": 0,
+  "id_max_num": 999999727,
+  "id_num_width_hist": {
+   "3": 3,
+   "4": 40,
+   "5": 469,
+   "6": 4404,
+   "7": 45433,
+   "8": 453700,
+   "9": 4530567
+  },
+  "empty": {
+   "addr": 168967
+  },
+  "leading_trailing_ws": {},
+  "countries": {
+   "India": 2017799,
+   "US": 3016817
+  },
+  "scripts_nonascii_letters": {
+   "DEVANAGARI": 5702088,
+   "TELUGU": 782499,
+   "KANNADA": 778251,
+   "BENGALI": 751566,
+   "TAMIL": 735514,
+   "GUJARATI": 626401,
+   "MALAYALAM": 389956,
+   "LATIN": 299344,
+   "ORIYA": 146225,
+   "GURMUKHI": 125909
+  },
+  "exact_dup_name_addr_country_groups": 25060,
+  "exact_dup_rows_in_groups": 50933,
+  "pandas_default_quoting_rows": 5034616,
+  "pandas_quote_none_rows": 5034616
+ },
+ "train/train_source3.tsv": {
+  "bytes": 503705637,
+  "n_lines": 5285604,
+  "has_CR": 0,
+  "has_BOM": false,
+  "n_doublequote_chars": 0,
+  "header": [
+   "entity_id",
+   "business_name",
+   "business_address",
+   "country"
+  ],
+  "field_count_hist": {
+   "4": 5285603
+  },
+  "n_rows": 5285603,
+  "n_unique_ids": 5285603,
+  "bad_id_format": 0,
+  "id_prefix": {
+   "3": 5285603
+  },
+  "id_leading_zero": 0,
+  "id_max_num": 999999866,
+  "id_num_width_hist": {
+   "2": 1,
+   "3": 2,
+   "4": 47,
+   "5": 462,
+   "6": 4682,
+   "7": 47337,
+   "8": 477291,
+   "9": 4755781
+  },
+  "empty": {
+   "addr": 175916
+  },
+  "leading_trailing_ws": {},
+  "countries": {
+   "US": 3170056,
+   "India": 2115547
+  },
+  "scripts_nonascii_letters": {
+   "DEVANAGARI": 3825772,
+   "KANNADA": 525605,
+   "BENGALI": 517879,
+   "TELUGU": 510570,
+   "TAMIL": 489781,
+   "GUJARATI": 404255,
+   "LATIN": 337933,
+   "MALAYALAM": 240350,
+   "ORIYA": 88643,
+   "GURMUKHI": 83520
+  },
+  "exact_dup_name_addr_country_groups": 18381,
+  "exact_dup_rows_in_groups": 37241,
+  "pandas_default_quoting_rows": 5285603,
+  "pandas_quote_none_rows": 5285603
+ },
+ "test/test_source1.tsv": {
+  "bytes": 175022086,
+  "n_lines": 1732545,
+  "has_CR": 0,
+  "has_BOM": false,
+  "n_doublequote_chars": 558,
+  "header": [
+   "entity_id",
+   "business_name",
+   "business_address",
+   "country"
+  ],
+  "field_count_hist": {
+   "4": 1732544
+  },
+  "n_rows": 1732544,
+  "n_unique_ids": 1732544,
+  "bad_id_format": 0,
+  "id_prefix": {
+   "1": 1732544
+  },
+  "id_leading_zero": 0,
+  "id_max_num": 999998909,
+  "id_num_width_hist": {
+   "3": 3,
+   "4": 15,
+   "5": 154,
+   "6": 1524,
+   "7": 15466,
+   "8": 155513,
+   "9": 1559869
+  },
+  "empty": {},
+  "leading_trailing_ws": {},
+  "countries": {
+   "US": 663106,
+   "France": 259452,
+   "India": 809986
+  },
+  "scripts_nonascii_letters": {
+   "LATIN": 132472
+  },
+  "pandas_default_quoting_rows": 1732544,
+  "pandas_quote_none_rows": 1732544
+ },
+ "test/test_source2.tsv": {
+  "bytes": 509456422,
+  "n_lines": 4887274,
+  "has_CR": 0,
+  "has_BOM": false,
+  "n_doublequote_chars": 1448,
+  "header": [
+   "entity_id",
+   "business_name",
+   "business_address",
+   "country"
+  ],
+  "field_count_hist": {
+   "4": 4887273
+  },
+  "n_rows": 4887273,
+  "n_unique_ids": 4887273,
+  "bad_id_format": 0,
+  "id_prefix": {
+   "2": 4887273
+  },
+  "id_leading_zero": 0,
+  "id_max_num": 999999982,
+  "id_num_width_hist": {
+   "3": 3,
+   "4": 28,
+   "5": 426,
+   "6": 4500,
+   "7": 43823,
+   "8": 439602,
+   "9": 4398891
+  },
+  "empty": {
+   "addr": 129408
+  },
+  "leading_trailing_ws": {},
+  "countries": {
+   "India": 2312565,
+   "France": 703378,
+   "US": 1871330
+  },
+  "scripts_nonascii_letters": {
+   "DEVANAGARI": 6663423,
+   "KANNADA": 933868,
+   "TELUGU": 916234,
+   "BENGALI": 883839,
+   "TAMIL": 867579,
+   "GUJARATI": 732085,
+   "LATIN": 567009,
+   "MALAYALAM": 464461,
+   "ORIYA": 172789,
+   "GURMUKHI": 152994,
+   "MASCULINE": 11881
+  },
+  "exact_dup_name_addr_country_groups": 21909,
+  "exact_dup_rows_in_groups": 44550,
+  "pandas_default_quoting_rows": 4887273,
+  "pandas_quote_none_rows": 4887273
+ },
+ "test/test_source3.tsv": {
+  "bytes": 506002772,
+  "n_lines": 5082317,
+  "has_CR": 0,
+  "has_BOM": false,
+  "n_doublequote_chars": 1372,
+  "header": [
+   "entity_id",
+   "business_name",
+   "business_address",
+   "country"
+  ],
+  "field_count_hist": {
+   "4": 5082316
+  },
+  "n_rows": 5082316,
+  "n_unique_ids": 5082316,
+  "bad_id_format": 0,
+  "id_prefix": {
+   "3": 5082316
+  },
+  "id_leading_zero": 0,
+  "id_max_num": 999999995,
+  "id_num_width_hist": {
+   "1": 1,
+   "3": 8,
+   "4": 49,
+   "5": 453,
+   "6": 4691,
+   "7": 45776,
+   "8": 457859,
+   "9": 4573479
+  },
+  "empty": {
+   "addr": 136098
+  },
+  "leading_trailing_ws": {},
+  "countries": {
+   "India": 2405000,
+   "France": 731615,
+   "US": 1945701
+  },
+  "scripts_nonascii_letters": {
+   "DEVANAGARI": 4469097,
+   "KANNADA": 624153,
+   "LATIN": 613286,
+   "BENGALI": 605360,
+   "TELUGU": 599012,
+   "TAMIL": 573568,
+   "GUJARATI": 471572,
+   "MALAYALAM": 286102,
+   "ORIYA": 106299,
+   "GURMUKHI": 95578,
+   "MASCULINE": 11809
+  },
+  "exact_dup_name_addr_country_groups": 15861,
+  "exact_dup_rows_in_groups": 32154,
+  "pandas_default_quoting_rows": 5082316,
+  "pandas_quote_none_rows": 5082316
+ },
+ "train_S2_S3_numeric_overlap": 26801,
+ "test_S2_S3_numeric_overlap": 25008,
+ "train_test_id_overlap_S1": 0,
+ "train_test_id_overlap_S2": 0,
+ "train_test_id_overlap_S3": 0,
+ "ground_truth": {
+  "rows": 2206821,
+  "empty": 123247,
+  "ids_with_space": 0,
+  "dup_within_list": 0,
+  "missing_in_pool": 0,
+  "s1_not_in_source1": 0,
+  "dup_s1_rows": 0,
+  "n_links": 7638365,
+  "max_list": 11,
+  "s1_without_gt_row": 0,
+  "pool_records_with_2plus_owners": 0
+ }
+}

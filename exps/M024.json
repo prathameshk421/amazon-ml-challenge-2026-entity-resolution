@@ -1,0 +1,1 @@
+{"id": "M024", "parent": "x1_strsim", "hypothesis": "E: + CE vs stage-2 disagreement (p - p_rerank, rank diff, top1 agreement, margin diff)", "groups": ["cex_dis:ce_rec"], "weights": null}

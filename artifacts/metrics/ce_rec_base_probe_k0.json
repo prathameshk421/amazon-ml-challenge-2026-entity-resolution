@@ -1,0 +1,21 @@
+{
+ "gpu": "Tesla T4",
+ "n_gpus": 2,
+ "model": "/tmp/bge-reranker-base",
+ "max_length": 128,
+ "batch": 64,
+ "score_pairs_per_s_one_gpu": 1623.3,
+ "train_pairs_per_s_one_gpu": 193.2,
+ "peak_vram_train_gb": 7.48,
+ "untrained_auc_match_valid_20k": 0.8365,
+ "loss_first10_mean": 0.5113495886325836,
+ "loss_last10_mean": 0.16628912314772606,
+ "hours": {
+  "train_1_epoch": 1.33,
+  "MATCH_TRAIN+VALID": 0.09,
+  "TEST": 0.91,
+  "DEV_REST_REST": 0.59
+ },
+ "hours_without_dev_rest_rest": 2.34,
+ "note": "scoring hours assume --n-gpus-scoring processes in parallel; untrained score is sorted-length batches without tokenization time"
+}

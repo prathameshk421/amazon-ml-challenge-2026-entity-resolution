@@ -1,0 +1,1 @@
+{"id": "M032", "parent": "M027", "hypothesis": "X3 sibling group (+0.00074 OOF / +0.00175 MATCH_VALID on x1_strsim, rejected only on a singleton breach) retested on the c0 base: near-duplicate candidates of the same S1 as support evidence", "groups": ["cex_p:ce_rec_c0", "sib"], "weights": null}

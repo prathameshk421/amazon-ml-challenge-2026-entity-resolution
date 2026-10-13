@@ -1,0 +1,1 @@
+{"id": "M021", "parent": "x1_strsim", "hypothesis": "B: + logit/entropy/confidence; monotone or symmetric transforms of p, expected ~= A for a tree (null control)", "groups": ["cex_raw:ce_rec"], "weights": null}

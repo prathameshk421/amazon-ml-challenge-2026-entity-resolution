@@ -1,0 +1,1 @@
+{"id": "M018", "parent": "x1_strsim", "hypothesis": "S6 (full_ce) gained +0.00375 on MATCH_ALL; this is the same p_ce group on the MATCH_TRAIN 5-fold protocol, the parent for further p_ce-era experiments", "groups": ["ce:ce_rec"], "weights": null}

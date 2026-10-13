@@ -1,0 +1,65 @@
+{
+ "gt_by_country": {
+  "US": {
+   "n": 1323633,
+   "singleton": 73896,
+   "match_count": {
+    "0": 73896,
+    "1": 71689,
+    "2": 225285,
+    "3": 318876,
+    "4": 290446,
+    "5": 192618,
+    "6+": 150823
+   },
+   "S2": 2213074,
+   "S3": 2365448,
+   "singleton_rate": 0.0558
+  },
+  "India": {
+   "n": 883188,
+   "singleton": 49351,
+   "match_count": {
+    "0": 49351,
+    "1": 47468,
+    "2": 149927,
+    "3": 211965,
+    "4": 193669,
+    "5": 129339,
+    "6+": 101469
+   },
+   "S2": 1480545,
+   "S3": 1579298,
+   "singleton_rate": 0.0559
+  }
+ },
+ "true_links": 7638365,
+ "true_link_country": {
+  "same": 7638365
+ },
+ "true_links_pool_addr_empty_or_only_NULL": 337018,
+ "true_links_pool_name_empty": 0,
+ "pool_addr_empty_or_only_NULL_total": 344883,
+ "test_S1_name_in_train_S1": {
+  "France": 0.0001,
+  "India": 0.4602,
+  "US": 0.3591
+ },
+ "test_S1_name_in_train_S1_all": 0.3526,
+ "random20_holdout_name_in_dev80": {
+  "India": 0.4428,
+  "US": 0.3348
+ },
+ "random20_holdout_name_in_dev80_all": 0.378,
+ "random20_holdout_name_in_other_train_S1_all": 0.3989,
+ "sizes": {
+  "train_S1": 2206821,
+  "train_pool": 10320219,
+  "test_S1": 1732544,
+  "test_pool": 9969589,
+  "train_pool_per_S1": 4.677,
+  "test_pool_per_S1": 5.754,
+  "train_links_per_S1": 3.461,
+  "train_orphan_pool_records": 2681854
+ }
+}

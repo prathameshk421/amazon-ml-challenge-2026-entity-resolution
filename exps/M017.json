@@ -1,0 +1,1 @@
+{"id": "M017", "parent": "M016", "hypothesis": "M011 specialists (+0.00174 with a truncated name specialist) on top of comp+num, specialist cap 10000 so every specialist converges", "groups": ["comp", "num"], "weights": null, "specialists": ["name", "addr", "ctx"], "spec_num_boost_round": 10000}

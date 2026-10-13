@@ -1,0 +1,1 @@
+{"id": "M008", "parent": "x1_strsim", "hypothesis": "56% of loss is in band S1; upweight x2 the pairs that look ambiguous from features alone (n_tset>=0.9 with a_tset<0.6 or empty, or |gap to next p_rerank|<0.1 with p_rerank in [0.05,0.95]); 18.5% of rows, 58% of band rows", "groups": [], "weights": {"kind": "hard", "alpha": 2.0, "name_min": 0.9, "addr_max": 0.6, "gap": 0.1}}

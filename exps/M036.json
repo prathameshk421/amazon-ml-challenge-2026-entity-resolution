@@ -1,0 +1,1 @@
+{"id": "M036", "parent": "M035", "hypothesis": "group-profile features (research pack #1/#2): compare a candidate with the S1s first-pass accepted pool records by char/token similarity and token coverage of the group union, not exact names or e5; targets name-only ownership (bucket +0.00546)", "groups": ["cex_p:ce_rec_c0", "rev", "nfreq", "grp"], "weights": null}

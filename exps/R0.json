@@ -1,0 +1,1 @@
+{"id": "R0", "parent": "x1_strsim", "hypothesis": "harness check: no groups, no weights must reproduce x1_strsim OOF per-entity scores exactly", "groups": [], "weights": null}

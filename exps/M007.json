@@ -1,0 +1,1 @@
+{"id": "M007", "parent": "x1_strsim", "hypothesis": "F8: the metric is a macro mean over S1 while logloss is a mean over pairs; weight 1/n_candidates(S1) makes each S1 count once", "groups": [], "weights": {"kind": "macro", "power": 1.0}}

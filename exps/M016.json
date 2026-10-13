@@ -1,0 +1,1 @@
+{"id": "M016", "parent": "M005", "hypothesis": "M005 (comp, +0.00300) and M010 (num, +0.00132) act on different evidence (pool-side contention vs address-number agreement); combined they should be close to additive", "groups": ["comp", "num"], "weights": null}

@@ -1,0 +1,199 @@
+{
+ "exact": {
+  "pair_recall": 0.28245790761260614,
+  "entity_recall": 0.6537727850784231,
+  "avg_cands": 13.0344,
+  "reduction": 0.9999987370035461,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "token": {
+  "pair_recall": 0.7312706864297022,
+  "entity_recall": 0.8503603221704112,
+  "avg_cands": 6366.0379,
+  "reduction": 0.9993831489525561,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "tri10": {
+  "pair_recall": 0.09978414160310836,
+  "entity_recall": 0.1513353115727003,
+  "avg_cands": 4.551,
+  "reduction": 0.9999995590209859,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "tri25": {
+  "pair_recall": 0.13000431716793784,
+  "entity_recall": 0.18228062738448494,
+  "avg_cands": 11.377,
+  "reduction": 0.9999988976009133,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "tri50": {
+  "pair_recall": 0.15081306662829183,
+  "entity_recall": 0.2072912250953794,
+  "avg_cands": 22.752,
+  "reduction": 0.999997795395621,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "tri_idf10": {
+  "pair_recall": 0.10070513742984602,
+  "entity_recall": 0.15154726579058922,
+  "avg_cands": 4.551,
+  "reduction": 0.9999995590209859,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "tri_idf25": {
+  "pair_recall": 0.13083896963591884,
+  "entity_recall": 0.18228062738448494,
+  "avg_cands": 11.377,
+  "reduction": 0.9999988976009133,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "tri_idf50": {
+  "pair_recall": 0.1517340624550295,
+  "entity_recall": 0.2072912250953794,
+  "avg_cands": 22.752,
+  "reduction": 0.999997795395621,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "phon20": {
+  "pair_recall": 0.38293279608576775,
+  "entity_recall": 0.5689910979228486,
+  "avg_cands": 19.3966,
+  "reduction": 0.9999981205243803,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "union_tri": {
+  "pair_recall": 0.7699525111526838,
+  "entity_recall": 0.9271937261551505,
+  "avg_cands": 6383.1174,
+  "reduction": 0.9993814939973658,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "union_all": {
+  "pair_recall": 0.7765721686573608,
+  "entity_recall": 0.9316447647308181,
+  "avg_cands": 6392.6798,
+  "reduction": 0.9993805674278812,
+  "ms_per_query": 340.88934659957886,
+  "timing_note": "shared query_all wall time; tri10/25 are free slices of tri50"
+ },
+ "n_queries": 10000,
+ "n_pos_pairs": 34745,
+ "missed_count": 7763,
+ "missed_examples": [
+  {
+   "s1": "S1-712197565",
+   "s1_name": "Family Health",
+   "s1_addr": "1601 Orchard Springs Road, Bloomington, MN",
+   "missed": "S2-371000753",
+   "missed_name": "Family Health LP"
+  },
+  {
+   "s1": "S1-712197565",
+   "s1_name": "Family Health",
+   "s1_addr": "1601 Orchard Springs Road, Bloomington, MN",
+   "missed": "S3-460843227",
+   "missed_name": "Family  Health Co"
+  },
+  {
+   "s1": "S1-798659592",
+   "s1_name": "Quality Global Regions",
+   "s1_addr": "TX, 2709 Hot Springs Drive, Pearland",
+   "missed": "S2-865499456",
+   "missed_name": "Quality Global"
+  },
+  {
+   "s1": "S1-798659592",
+   "s1_name": "Quality Global Regions",
+   "s1_addr": "TX, 2709 Hot Springs Drive, Pearland",
+   "missed": "S2-397355963",
+   "missed_name": "@qualityglobal"
+  },
+  {
+   "s1": "S1-107837988",
+   "s1_name": "Best Tech Limited",
+   "s1_addr": "2-91/12/4/Nr, Plot No 4, Doc Bhavan, 4Th And 5Th Floor, Kondapur, Shaikpet, Hyderabad, Telangana",
+   "missed": "S2-651557688",
+   "missed_name": "Best Tecfch Limited"
+  },
+  {
+   "s1": "S1-107837988",
+   "s1_name": "Best Tech Limited",
+   "s1_addr": "2-91/12/4/Nr, Plot No 4, Doc Bhavan, 4Th And 5Th Floor, Kondapur, Shaikpet, Hyderabad, Telangana",
+   "missed": "S2-237471242",
+   "missed_name": "Mr BEST LIMITED SERVICES"
+  },
+  {
+   "s1": "S1-107837988",
+   "s1_name": "Best Tech Limited",
+   "s1_addr": "2-91/12/4/Nr, Plot No 4, Doc Bhavan, 4Th And 5Th Floor, Kondapur, Shaikpet, Hyderabad, Telangana",
+   "missed": "S3-841692994",
+   "missed_name": "(Ltd) Best Tech"
+  },
+  {
+   "s1": "S1-541493204",
+   "s1_name": "Royal Agro Private Limited",
+   "s1_addr": "C/O Sanjay Puri Flat No A1-801 Lunkad Sky Vie, Viman Nagar, Pune, Maharashtra",
+   "missed": "S2-126795359",
+   "missed_name": "\u0930\u0949\u092f\u0932 \u090f\u0917\u094d\u0930\u094b \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921"
+  },
+  {
+   "s1": "S1-541493204",
+   "s1_name": "Royal Agro Private Limited",
+   "s1_addr": "C/O Sanjay Puri Flat No A1-801 Lunkad Sky Vie, Viman Nagar, Pune, Maharashtra",
+   "missed": "S2-858901951",
+   "missed_name": "\u0930\u0949\u092f\u0932 \u090f\u0917\u094d\u0930\u094b \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921"
+  },
+  {
+   "s1": "S1-541493204",
+   "s1_name": "Royal Agro Private Limited",
+   "s1_addr": "C/O Sanjay Puri Flat No A1-801 Lunkad Sky Vie, Viman Nagar, Pune, Maharashtra",
+   "missed": "S3-832217212",
+   "missed_name": "Royal-Agro Private Private"
+  }
+ ],
+ "bktree_sample": {
+  "k1": {
+   "pair_recall": 0.3263888888888889,
+   "entity_recall": 0.34057971014492755,
+   "avg_cands": 0.341,
+   "reduction": 0.999998295,
+   "ms_per_query": 0.3180135488510132,
+   "note": "200K pool sample, not full pool"
+  },
+  "k2": {
+   "pair_recall": 0.3472222222222222,
+   "entity_recall": 0.36231884057971014,
+   "avg_cands": 0.9025,
+   "reduction": 0.9999954875,
+   "ms_per_query": 2.637062430381775,
+   "note": "200K pool sample, not full pool"
+  },
+  "k3": {
+   "pair_recall": 0.3819444444444444,
+   "entity_recall": 0.39855072463768115,
+   "avg_cands": 10.3515,
+   "reduction": 0.9999482425,
+   "ms_per_query": 8.355579018592834,
+   "note": "200K pool sample, not full pool"
+  },
+  "k4": {
+   "pair_recall": 0.4722222222222222,
+   "entity_recall": 0.4927536231884058,
+   "avg_cands": 38.4625,
+   "reduction": 0.9998076875,
+   "ms_per_query": 16.08749747276306,
+   "note": "200K pool sample, not full pool"
+  }
+ }
+}

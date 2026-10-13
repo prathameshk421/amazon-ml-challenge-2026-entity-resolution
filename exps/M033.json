@@ -1,0 +1,1 @@
+{"id": "M033", "parent": "M027", "hypothesis": "M017 specialists (name / address / context LightGBMs stacked + name-minus-address disagreement; +0.00119 on comp+num) retested on the c0 base: field-separated evidence the joint model does not isolate", "groups": ["cex_p:ce_rec_c0"], "weights": null, "specialists": ["name", "addr", "ctx"], "spec_num_boost_round": 10000}

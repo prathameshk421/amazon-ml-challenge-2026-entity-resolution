@@ -1,0 +1,1 @@
+{"id": "M012", "parent": "x1_strsim", "hypothesis": "Item 13: S2 and S3 pool records have different noise; one model per pool source (src) instead of src as a split feature", "groups": [], "weights": null, "split_by": "src"}

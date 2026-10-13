@@ -1,0 +1,267 @@
+{
+ "n_queries": 10000,
+ "n_true_pairs": 2503,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "PH",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.002,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 300,
+   "NAME": 100,
+   "ADDR": 100,
+   "PAIR": 100,
+   "XK": 100,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": true,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 10,
+    "K_max": 100,
+    "p_min": 0.005
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   }
+  }
+ },
+ "config_hash": "80358ebebc200c11e94b10a75806e40cf58b12b7",
+ "norm_version": "2.1",
+ "git_commit": "d35b9320c8046f0f3ed4c6c8dbae7bf903ce35c3",
+ "created_at": "2026-09-25T18:35:15+05:30",
+ "gate_set": "DEV_A",
+ "gate_pass": true,
+ "cap": 20640,
+ "cap_frac_NT": 0.002,
+ "n_pool": 10320219,
+ "before": {
+  "n": 2503,
+  "overall": 0.2700759089093088,
+  "per_script": {
+   "BENGALI": {
+    "n": 142,
+    "share": 0.36619718309859156
+   },
+   "DEVANAGARI": {
+    "n": 1432,
+    "share": 0.28910614525139666
+   },
+   "GUJARATI": {
+    "n": 173,
+    "share": 0.3063583815028902
+   },
+   "GURMUKHI": {
+    "n": 37,
+    "share": 0.21621621621621623
+   },
+   "KANNADA": {
+    "n": 207,
+    "share": 0.2995169082125604
+   },
+   "MALAYALAM": {
+    "n": 98,
+    "share": 0.1836734693877551
+   },
+   "ORIYA": {
+    "n": 46,
+    "share": 0.21739130434782608
+   },
+   "TAMIL": {
+    "n": 177,
+    "share": 0.07344632768361582
+   },
+   "TELUGU": {
+    "n": 191,
+    "share": 0.24083769633507854
+   }
+  }
+ },
+ "after": {
+  "n": 2503,
+  "overall": 0.4490611266480224,
+  "per_script": {
+   "BENGALI": {
+    "n": 142,
+    "share": 0.5070422535211268
+   },
+   "DEVANAGARI": {
+    "n": 1432,
+    "share": 0.44553072625698326
+   },
+   "GUJARATI": {
+    "n": 173,
+    "share": 0.42196531791907516
+   },
+   "GURMUKHI": {
+    "n": 37,
+    "share": 0.5135135135135135
+   },
+   "KANNADA": {
+    "n": 207,
+    "share": 0.43478260869565216
+   },
+   "MALAYALAM": {
+    "n": 98,
+    "share": 0.3877551020408163
+   },
+   "ORIYA": {
+    "n": 46,
+    "share": 0.3695652173913043
+   },
+   "TAMIL": {
+    "n": 177,
+    "share": 0.4745762711864407
+   },
+   "TELUGU": {
+    "n": 191,
+    "share": 0.4869109947643979
+   }
+  }
+ },
+ "n_pairs_learn": {
+  "name": 436106,
+  "addr": 546900
+ },
+ "n_entries": {
+  "name": 445,
+  "addr": 902
+ },
+ "rule": "overall usable-token share increases and no script decreases",
+ "wall_time_s": 18.2,
+ "peak_rss_mb": 2824.2
+}

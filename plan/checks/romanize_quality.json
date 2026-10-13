@@ -1,0 +1,282 @@
+{
+ "n_indic_pool_names": 752869,
+ "n_pairs_evaluated": 30000,
+ "rates": {
+  "any_token_equal": 0.7731,
+  "any_metaphone_equal": 0.9533,
+  "same_token_count": 0.9197,
+  "tri_jac_ge_0.3": 0.4222,
+  "tri_jac_ge_0.5": 0.0881
+ },
+ "tri_jaccard_quantiles": {
+  "0.1": 0.132,
+  "0.25": 0.2,
+  "0.5": 0.273,
+  "0.75": 0.367,
+  "0.9": 0.474
+ },
+ "top_positional_token_pairs": [
+  [
+   "limited",
+   "limited",
+   19158
+  ],
+  [
+   "praivet",
+   "private",
+   14148
+  ],
+  [
+   "pra",
+   "private",
+   2533
+  ],
+  [
+   "li",
+   "limited",
+   2533
+  ],
+  [
+   "limitet",
+   "limited",
+   1810
+  ],
+  [
+   "praibhet",
+   "private",
+   1722
+  ],
+  [
+   "piraivet",
+   "private",
+   1581
+  ],
+  [
+   "elaelapi",
+   "llp",
+   949
+  ],
+  [
+   "tek",
+   "tech",
+   900
+  ],
+  [
+   "global",
+   "global",
+   772
+  ],
+  [
+   "private",
+   "private",
+   769
+  ],
+  [
+   "aiti",
+   "it",
+   589
+  ],
+  [
+   "intaraneshanal",
+   "international",
+   570
+  ],
+  [
+   "estet",
+   "estate",
+   538
+  ],
+  [
+   "marketin",
+   "marketing",
+   537
+  ],
+  [
+   "pavar",
+   "power",
+   521
+  ],
+  [
+   "phud",
+   "food",
+   519
+  ],
+  [
+   "phuds",
+   "foods",
+   516
+  ],
+  [
+   "phaundeshan",
+   "foundation",
+   515
+  ],
+  [
+   "midiy",
+   "media",
+   511
+  ],
+  [
+   "enarji",
+   "energy",
+   509
+  ],
+  [
+   "prodakts",
+   "products",
+   506
+  ],
+  [
+   "bildars",
+   "builders",
+   493
+  ],
+  [
+   "tredin",
+   "trading",
+   493
+  ],
+  [
+   "sistams",
+   "systems",
+   487
+  ],
+  [
+   "devalapars",
+   "developers",
+   461
+  ],
+  [
+   "injiniyarin",
+   "engineering",
+   456
+  ],
+  [
+   "kansaltin",
+   "consulting",
+   455
+  ],
+  [
+   "impeks",
+   "impex",
+   451
+  ],
+  [
+   "kansaltensi",
+   "consultancy",
+   449
+  ],
+  [
+   "venchars",
+   "ventures",
+   443
+  ],
+  [
+   "solyushans",
+   "solutions",
+   438
+  ],
+  [
+   "prodyusar",
+   "producer",
+   432
+  ],
+  [
+   "inphotek",
+   "infotech",
+   428
+  ],
+  [
+   "kansaltents",
+   "consultants",
+   414
+  ],
+  [
+   "keyar",
+   "care",
+   382
+  ],
+  [
+   "teknoloji",
+   "technology",
+   382
+  ],
+  [
+   "kanstrakshans",
+   "constructions",
+   377
+  ],
+  [
+   "projekts",
+   "projects",
+   375
+  ],
+  [
+   "egro",
+   "agro",
+   372
+  ]
+ ],
+ "examples": [
+  {
+   "s1": "Silver Developers Private Limited",
+   "pool": "சில்வர் டெவலப்பர்ஸ் பிரைவேட் லிமிடெட்",
+   "romanized": "chilvar tevalappars piraivet limitet"
+  },
+  {
+   "s1": "Premier Tech Limited",
+   "pool": "प्रीमियर टेक लिमिटेड",
+   "romanized": "primiyar tek limited"
+  },
+  {
+   "s1": "Bombay Investments Private Limited",
+   "pool": "बॉम्बे इन्वेस्टमेंट्स प्राइवेट लिमिटेड",
+   "romanized": "bombe investaments praivet limited"
+  },
+  {
+   "s1": "Eastern Exports Private Limited",
+   "pool": "ईस्टर्न एक्सपोर्ट्स प्राइवेट लिमिटेड",
+   "romanized": "istarn eksaports praivet limited"
+  },
+  {
+   "s1": "Shivam Care Private Limited",
+   "pool": "शिवम केयर प्राइवेट लिमिटेड",
+   "romanized": "shivam keyar praivet limited"
+  },
+  {
+   "s1": "Super Industries Limited",
+   "pool": "সুপার ইন্ডাস্ট্রিজ লিমিটেড",
+   "romanized": "supar indastrij limited"
+  },
+  {
+   "s1": "Universal Services Private Limited",
+   "pool": "यूनिवर्सल सर्विसेज प्राइवेट लिमिटेड",
+   "romanized": "yunivarsal sarvisej praivet limited"
+  },
+  {
+   "s1": "Good Business",
+   "pool": "గుడ్ బిజినెస్",
+   "romanized": "gud bijines"
+  },
+  {
+   "s1": "Future Industries Private Limited",
+   "pool": "फ्यूचर इंडस्ट्रीज प्राइवेट लिमिटेड",
+   "romanized": "phyuchar indastrij praivet limited"
+  },
+  {
+   "s1": "Prime Constructions Limited",
+   "pool": "પ્રાઇમ કન્સ્ટ્રક્શન્સ લિમિટેડ",
+   "romanized": "praim kanstrakshans limited"
+  },
+  {
+   "s1": "Sunrise Consulting Private Limited",
+   "pool": "ಸನ್‌ರೈಸ್ ಕನ್ಸಲ್ಟಿಂಗ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+   "romanized": "san rais kansaltin praivet limited"
+  },
+  {
+   "s1": "Life Technology LLP",
+   "pool": "लाइफ टेक्नोलॉजी एलएलपी",
+   "romanized": "laiph teknoloji elaelapi"
+  }
+ ]
+}

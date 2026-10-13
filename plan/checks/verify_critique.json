@@ -1,0 +1,71 @@
+{
+ "C1_france_addr_token_share": {
+  "s1": {
+   "r": 0.0002,
+   "rue": 0.6582,
+   "av": 0.0085,
+   "avenue": 0.1194,
+   "street": 0.0005,
+   "suite": 0.0004,
+   "saint": 0.0998,
+   "imp": 0.0008,
+   "rte": 0.0015,
+   "no": 0.0
+  },
+  "pool": {
+   "r": 0.2486,
+   "rue": 0.3886,
+   "av": 0.0384,
+   "avenue": 0.0816,
+   "street": 0.017,
+   "suite": 0.0003,
+   "saint": 0.0792,
+   "imp": 0.0084,
+   "rte": 0.0081,
+   "no": 0.0658
+  }
+ },
+ "C1_france_name_token_share": {
+  "s1": {
+   "s": 0.0,
+   "a": 0.0002,
+   "sas": 0.2015,
+   "sarl": 0.2832,
+   "club": 0.0874
+  },
+  "pool": {
+   "s": 0.0447,
+   "a": 0.0431,
+   "sas": 0.1398,
+   "sarl": 0.2077,
+   "club": 0.0744
+  }
+ },
+ "C1_n": {
+  "france_s1": 259452,
+  "france_pool": 1434993
+ },
+ "C3_skeleton_df": {
+  "LMT": 2621103,
+  "PRPT": 2094803,
+  "LK": 1159618
+ },
+ "C3_cap": 20640.438000000002,
+ "C2_exact_name_equal": {
+  "all": 0.2855,
+  "chain10": 0.2468,
+  "chain10_link_share": 0.1817
+ },
+ "C3_indic_pairs": {
+  "n": 551240,
+  "tok_any": 0.7972,
+  "tok_usable": 0.2615,
+  "sk_any": 0.9838,
+  "sk_usable": 0.0554
+ },
+ "C4_dEN_chain10": {
+  "median": 31.0,
+  "p90": 138.0,
+  "share_ge_50": 0.3643
+ }
+}

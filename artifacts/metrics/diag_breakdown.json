@@ -1,0 +1,43 @@
+{
+ "n_pairs": 34745,
+ "share_nonlatin_or_mixed_name": 0.0693,
+ "share_empty_addr": 0.0444,
+ "share_chain10plus": 0.1818,
+ "reachable_name_silent": 6792,
+ "lost_at150_F1": {
+  "n": 2155,
+  "name_silent": 1272,
+  "nonlatin": 435,
+  "addr_empty": 448,
+  "chain10plus": 753,
+  "addr_channel_silent": 696
+ },
+ "deep_gt2000_or_unreachable": {
+  "n": 1469,
+  "nonlatin_or_mixed": 447,
+  "addr_empty": 377,
+  "chain10plus": 633,
+  "reachable": 1025,
+  "reachable_name_silent": 640,
+  "chain10plus_reachable": 401,
+  "chain10plus_exact_voted": 1,
+  "chain10plus_nametoken_voted": 117
+ },
+ "chain_channel_vote_rate": {
+  "1": {
+   "v_EX": 0.294,
+   "v_NT": 0.834,
+   "v_AD": 0.933
+  },
+  "2-9": {
+   "v_EX": 0.291,
+   "v_NT": 0.731,
+   "v_AD": 0.938
+  },
+  "10+": {
+   "v_EX": 0.251,
+   "v_NT": 0.432,
+   "v_AD": 0.961
+  }
+ }
+}

@@ -1,0 +1,1 @@
+{"id": "M022", "parent": "x1_strsim", "hypothesis": "C: + CE rank/top-k/gaps to top1, next, previous, t1-t2, t2-t3 inside the S1 list", "groups": ["cex_rank:ce_rec"], "weights": null}

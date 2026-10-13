@@ -1,0 +1,437 @@
+{
+ "n_queries": 180000,
+ "n_true_pairs": 621534,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.001,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 150,
+   "NAME": 0,
+   "ADDR": 50,
+   "PAIR": 100,
+   "XK": 50,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": false,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 5,
+    "K_max": 60,
+    "p_min": 0.05
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   },
+   "families": {
+    "experiment": "E2",
+    "metrics": "artifacts/metrics/s1_E2.json",
+    "value": [
+     "EN",
+     "NT",
+     "NG",
+     "NP",
+     "SP",
+     "NC",
+     "AT",
+     "AB",
+     "XK"
+    ]
+   },
+   "cap_frac.NT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.001
+   },
+   "cap_frac.NG": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.0008
+   },
+   "cap_frac.AT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.NP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.SP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.AB": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.XK": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "channels.LEARN": {
+    "experiment": "E3b",
+    "metrics": "artifacts/metrics/s1_E3b.json",
+    "value": "stage1_model"
+   },
+   "quota": {
+    "experiment": "E4",
+    "metrics": "artifacts/metrics/s1_E4.json",
+    "value": {
+     "LEARN": 150,
+     "NAME": 0,
+     "ADDR": 50,
+     "PAIR": 100,
+     "XK": 50,
+     "CAT": 20
+    }
+   },
+   "chain_rule.enabled": {
+    "experiment": "E5",
+    "metrics": "artifacts/metrics/s1_E5.json",
+    "value": false
+   },
+   "rerank.cut.K_min": {
+    "experiment": "revert: teammate's ADDRESS_EXPERIMENTS.md S4 already measured K_min widening (ceiling +0.002 past K=5, not worth it); K_min stays 5, keep the matcher feature gain instead (k5_feat vs k5_base OOF +0.00211 CI[0.00190,0.00235])",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 5
+   },
+   "rerank.cut.K_max": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 60
+   },
+   "rerank.cut.p_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 0.05
+   }
+  }
+ },
+ "config_hash": "94241292b8cdffae19b4574cddafde111bd9aceb",
+ "norm_version": "2.1",
+ "git_commit": "1e6d21a7e8df5b457be1f4d4c157ce85dde782c2",
+ "created_at": "2026-09-27T13:47:15+05:30",
+ "n_s1": 180000,
+ "n_missed_pairs": 15117,
+ "missed_share": 0.024322080529785982,
+ "f05_M027": 0.985515049062601,
+ "s1_with_missed": 13225,
+ "rows": [
+  {
+   "s1_k": 1,
+   "seed_k": 0,
+   "new_pairs": 6726,
+   "new_per_s1": 0.037366666666666666,
+   "new_pos_rate": 0.035979779958370504,
+   "missed_recovered": 242,
+   "missed_recall": 0.016008467288483166,
+   "oracle_f05": 0.9858145346985965,
+   "oracle_gain": 0.00029948563599546674,
+   "new_per_singleton_s1": 0.15550544170997158,
+   "missed_recall_by_country": {
+    "US": 0.010277324632952691,
+    "India": 0.019917658840547456
+   }
+  },
+  {
+   "s1_k": 5,
+   "seed_k": 0,
+   "new_pairs": 232438,
+   "new_per_s1": 1.2913222222222223,
+   "new_pos_rate": 0.01411559211488655,
+   "missed_recovered": 3281,
+   "missed_recall": 0.21704041807236885,
+   "oracle_f05": 0.9874785575400443,
+   "oracle_gain": 0.00196350847744331,
+   "new_per_singleton_s1": 3.189920580449064,
+   "missed_recall_by_country": {
+    "US": 0.17732463295269169,
+    "India": 0.24413041059307888
+   }
+  },
+  {
+   "s1_k": 10,
+   "seed_k": 0,
+   "new_pairs": 1044377,
+   "new_per_s1": 5.802094444444444,
+   "new_pos_rate": 0.005383113569142178,
+   "missed_recovered": 5622,
+   "missed_recall": 0.3718991863464973,
+   "oracle_f05": 0.9883581532289701,
+   "oracle_gain": 0.002843104166369126,
+   "new_per_singleton_s1": 7.953622904206295,
+   "missed_recall_by_country": {
+    "US": 0.33295269168026104,
+    "India": 0.3984644486480472
+   }
+  },
+  {
+   "s1_k": 20,
+   "seed_k": 0,
+   "new_pairs": 2817140,
+   "new_per_s1": 15.650777777777778,
+   "new_pos_rate": 0.0024318990181531625,
+   "missed_recovered": 6851,
+   "missed_recall": 0.4531983859231329,
+   "oracle_f05": 0.9889055911824653,
+   "oracle_gain": 0.003390542119864337,
+   "new_per_singleton_s1": 17.722619864692618,
+   "missed_recall_by_country": {
+    "US": 0.4230016313213703,
+    "India": 0.47379548236341384
+   }
+  },
+  {
+   "s1_k": 50,
+   "seed_k": 0,
+   "new_pairs": 8189692,
+   "new_per_s1": 45.49828888888889,
+   "new_pos_rate": 0.0009971070951141996,
+   "missed_recovered": 8166,
+   "missed_recall": 0.5401865449493948,
+   "oracle_f05": 0.9895170918105654,
+   "oracle_gain": 0.0040020427479643406,
+   "new_per_singleton_s1": 47.420041180507894,
+   "missed_recall_by_country": {
+    "US": 0.5244698205546493,
+    "India": 0.5509068654723489
+   }
+  },
+  {
+   "s1_k": 0,
+   "seed_k": 5,
+   "new_pairs": 858239,
+   "new_per_s1": 4.767994444444445,
+   "new_pos_rate": 0.006826769699349482,
+   "missed_recovered": 5859,
+   "missed_recall": 0.38757690017860685,
+   "oracle_f05": 0.9877139852260619,
+   "oracle_gain": 0.002198936163460896,
+   "new_per_singleton_s1": 0.02539464653397392,
+   "missed_recall_by_country": {
+    "US": 0.34486133768352367,
+    "India": 0.41671302993212417
+   }
+  },
+  {
+   "s1_k": 0,
+   "seed_k": 10,
+   "new_pairs": 2967817,
+   "new_per_s1": 16.487872222222222,
+   "new_pos_rate": 0.002379526770013111,
+   "missed_recovered": 7062,
+   "missed_recall": 0.4671561817820996,
+   "oracle_f05": 0.988099074919419,
+   "oracle_gain": 0.0025840258568179397,
+   "new_per_singleton_s1": 0.05500539268555741,
+   "missed_recall_by_country": {
+    "US": 0.4437194127243067,
+    "India": 0.48314231667964835
+   }
+  },
+  {
+   "s1_k": 0,
+   "seed_k": 20,
+   "new_pairs": 7334147,
+   "new_per_s1": 40.74526111111111,
+   "new_pos_rate": 0.0010836979406057719,
+   "missed_recovered": 7948,
+   "missed_recall": 0.5257656942515049,
+   "oracle_f05": 0.9884255217235501,
+   "oracle_gain": 0.002910472660949126,
+   "new_per_singleton_s1": 0.11559956858515541,
+   "missed_recall_by_country": {
+    "US": 0.5254486133768352,
+    "India": 0.5259819739623901
+   }
+  },
+  {
+   "s1_k": 5,
+   "seed_k": 5,
+   "new_pairs": 983236,
+   "new_per_s1": 5.462422222222222,
+   "new_pos_rate": 0.006776602972226403,
+   "missed_recovered": 6663,
+   "missed_recall": 0.44076205596348483,
+   "oracle_f05": 0.9886048068720465,
+   "oracle_gain": 0.003089757809445537,
+   "new_per_singleton_s1": 3.21188351799196,
+   "missed_recall_by_country": {
+    "US": 0.3598694942903752,
+    "India": 0.4959385779459219
+   }
+  },
+  {
+   "s1_k": 10,
+   "seed_k": 10,
+   "new_pairs": 3460249,
+   "new_per_s1": 19.223605555555555,
+   "new_pos_rate": 0.0023521428660191798,
+   "missed_recovered": 8139,
+   "missed_recall": 0.5384004762849772,
+   "oracle_f05": 0.9892244538432462,
+   "oracle_gain": 0.003709404780645187,
+   "new_per_singleton_s1": 8.000686341798216,
+   "missed_recall_by_country": {
+    "US": 0.4711256117455139,
+    "India": 0.5842884166017581
+   }
+  },
+  {
+   "s1_k": 20,
+   "seed_k": 20,
+   "new_pairs": 8601543,
+   "new_per_s1": 47.78635,
+   "new_pos_rate": 0.001066669084837453,
+   "missed_recovered": 9175,
+   "missed_recall": 0.6069325924455911,
+   "oracle_f05": 0.9897117913604415,
+   "oracle_gain": 0.0041967422978405056,
+   "new_per_singleton_s1": 17.820276497695854,
+   "missed_recall_by_country": {
+    "US": 0.5634584013050571,
+    "India": 0.6365861800378324
+   }
+  }
+ ],
+ "sanity_inlist_true_recall_at50": 0.9784471741392474
+}

@@ -1,0 +1,1 @@
+{"id": "M013", "parent": "x1_strsim", "hypothesis": "Item 10: a second LightGBM trained only on the parent's uncertain-band rows (p_cal in [0.1,0.9), 25% of S1) with the parent's raw score as a feature, calibrated on the band; the sure-match rows keep the parent's p", "groups": [], "weights": null, "residual_of": "x1_strsim"}

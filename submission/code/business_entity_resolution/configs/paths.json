@@ -1,0 +1,5 @@
+{
+  "data_root": "student_resource/dataset",
+  "work_root": "work",
+  "metrics_root": "artifacts/metrics"
+}

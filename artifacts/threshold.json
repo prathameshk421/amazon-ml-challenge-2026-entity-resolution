@@ -1,0 +1,30 @@
+{
+ "t": 0.6200000000000001,
+ "t2": 0.6400000000000001,
+ "weighting": "uniform",
+ "screen": {
+  "uniform": 0.9062962172587893,
+  "hardx3": 0.9049899826910248
+ },
+ "features": [
+  "n_lev_raw",
+  "n_lev_norm",
+  "n_jacc",
+  "n_tfidf",
+  "n_meta",
+  "n_snd",
+  "n_tset",
+  "a_lev_raw",
+  "a_lev_norm",
+  "a_jacc",
+  "a_tfidf",
+  "a_tset",
+  "a_postal3",
+  "a_digit",
+  "co_agree",
+  "co_unknown",
+  "len_name_diff",
+  "len_addr_diff",
+  "rare_shared"
+ ]
+}

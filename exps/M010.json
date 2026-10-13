@@ -1,0 +1,1 @@
+{"id": "M010", "parent": "x1_strsim", "hypothesis": "Item 7: structured number evidence; on 5,000 S1 first-number equal matches 92%, different 24%, one missing 31%; existing a_num_jacc/a_house do not separate first-number vs any-number agreement, digit drops, postal or unit numbers", "groups": ["num"], "weights": null}

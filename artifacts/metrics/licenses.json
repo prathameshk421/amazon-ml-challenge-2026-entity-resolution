@@ -1,0 +1,62 @@
+{
+ "pandas": {
+  "version": "3.0.6",
+  "license": "License :: OSI Approved :: BSD License"
+ },
+ "numpy": {
+  "version": "2.5.3",
+  "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+ },
+ "scikit-learn": {
+  "version": "1.9.1",
+  "license": "BSD-3-Clause"
+ },
+ "scipy": {
+  "version": "1.18.1",
+  "license": "License :: OSI Approved :: BSD License"
+ },
+ "rapidfuzz": {
+  "version": "3.14.6",
+  "license": "MIT"
+ },
+ "jellyfish": {
+  "version": "1.2.1",
+  "license": "License :: OSI Approved :: MIT License"
+ },
+ "lightgbm": {
+  "version": "4.7.0",
+  "license": "MIT"
+ },
+ "xgboost": {
+  "version": "NOT INSTALLED",
+  "license": "n/a"
+ },
+ "sentence-transformers": {
+  "version": "6.1.0",
+  "license": "Apache-2.0"
+ },
+ "torch": {
+  "version": "2.14.0",
+  "license": "Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT"
+ },
+ "transformers": {
+  "version": "5.17.0",
+  "license": "Apache 2.0 License"
+ },
+ "huggingface-hub": {
+  "version": "1.33.0",
+  "license": "License :: OSI Approved :: Apache Software License"
+ },
+ "matplotlib": {
+  "version": "3.11.2",
+  "license": "License :: OSI Approved :: Python Software Foundation License"
+ },
+ "tqdm": {
+  "version": "4.70.1",
+  "license": "MPL-2.0 AND MIT"
+ },
+ "pyarrow": {
+  "version": "25.0.1",
+  "license": "Apache-2.0"
+ }
+}

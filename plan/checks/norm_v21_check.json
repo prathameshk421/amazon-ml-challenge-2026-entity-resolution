@@ -1,0 +1,58 @@
+{
+ "v1": {
+  "sample_links": 519542,
+  "exact_name_equal": 0.2859,
+  "shared_token": 0.9089,
+  "addr_jaccard_mean": 0.698,
+  "per_script_shared_token": {
+   "MALAYALAM": 0.3416,
+   "DEVANAGARI": 0.8521,
+   "GURMUKHI": 0.2253,
+   "ORIYA": 0.8857,
+   "GUJARATI": 0.8508,
+   "TELUGU": 0.918,
+   "TAMIL": 0.2294,
+   "KANNADA": 0.9261,
+   "BENGALI": 0.9206
+  },
+  "per_script_n": {
+   "MALAYALAM": 1455,
+   "DEVANAGARI": 21347,
+   "GURMUKHI": 7924,
+   "ORIYA": 630,
+   "GUJARATI": 2446,
+   "TELUGU": 3085,
+   "TAMIL": 2694,
+   "KANNADA": 2868,
+   "BENGALI": 2380
+  }
+ },
+ "v2.1": {
+  "sample_links": 519542,
+  "exact_name_equal": 0.296,
+  "shared_token": 0.9093,
+  "addr_jaccard_mean": 0.6996,
+  "per_script_shared_token": {
+   "MALAYALAM": 0.3416,
+   "DEVANAGARI": 0.8542,
+   "GURMUKHI": 0.259,
+   "ORIYA": 0.8857,
+   "GUJARATI": 0.852,
+   "TELUGU": 0.918,
+   "TAMIL": 0.2294,
+   "KANNADA": 0.9261,
+   "BENGALI": 0.9206
+  },
+  "per_script_n": {
+   "MALAYALAM": 1455,
+   "DEVANAGARI": 21347,
+   "GURMUKHI": 7924,
+   "ORIYA": 630,
+   "GUJARATI": 2446,
+   "TELUGU": 3085,
+   "TAMIL": 2694,
+   "KANNADA": 2868,
+   "BENGALI": 2380
+  }
+ }
+}

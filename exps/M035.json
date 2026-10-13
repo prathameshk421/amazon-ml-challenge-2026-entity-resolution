@@ -1,0 +1,1 @@
+{"id": "M035", "parent": "M031", "hypothesis": "M031 (reverse-name ownership, +0.00028) and M034 (nfreq, +0.00020) both describe name commonness; check whether they add up before the full-scale S11 build", "groups": ["cex_p:ce_rec_c0", "rev", "nfreq"], "weights": null}

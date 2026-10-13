@@ -1,0 +1,10 @@
+{
+ "s1_unique_ids": 2206821,
+ "gt_s1_unique_ids": 2206821,
+ "s1_minus_gt_diff_lines": 0,
+ "s1_equals_gt_sets": true,
+ "gt_matched_raw": 7638365,
+ "gt_matched_unique": 7638365,
+ "each_record_at_most_one_owner": true,
+ "gt_ids_missing_from_pool": 0
+}

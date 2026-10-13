@@ -1,0 +1,457 @@
+{
+ "n_queries": 2206821,
+ "n_true_pairs": 7638365,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "PH",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.002,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 300,
+   "NAME": 100,
+   "ADDR": 100,
+   "PAIR": 100,
+   "XK": 100,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": true,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 10,
+    "K_max": 100,
+    "p_min": 0.005
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   }
+  }
+ },
+ "config_hash": "80358ebebc200c11e94b10a75806e40cf58b12b7",
+ "norm_version": "2.1",
+ "git_commit": "d35b9320c8046f0f3ed4c6c8dbae7bf903ce35c3",
+ "created_at": "2026-09-25T18:32:23+05:30",
+ "sizes": {
+  "DEV_A": 10000,
+  "DEV_B": 10000,
+  "S1R_TRAIN": 20000,
+  "RR_TRAIN": 50000,
+  "RR_CAL": 20000,
+  "MATCH_TRAIN": 180000,
+  "MATCH_VALID": 20000,
+  "DEV_REST": 1455458,
+  "HOLDOUT_TEST": 441363,
+  "DICT_SRC": 1745458,
+  "val-S1": 441363
+ },
+ "seeds": {
+  "split_seed": 42,
+  "permutation_seed": 20260925,
+  "stratify": "country x singleton vs matched"
+ },
+ "per_set": {
+  "DEV_A": {
+   "n": 10000,
+   "country": {
+    "India": 3912,
+    "US": 6088
+   },
+   "singleton": {
+    "matched": 9441,
+    "singleton": 559
+   },
+   "nmatch": {
+    "0": 559,
+    "1": 525,
+    "2": 1654,
+    "3": 2465,
+    "4": 2149,
+    "5": 1478,
+    "6": 746,
+    "7": 318,
+    "8": 91,
+    "9": 13,
+    "10": 2
+   }
+  },
+  "DEV_B": {
+   "n": 10000,
+   "country": {
+    "India": 3995,
+    "US": 6005
+   },
+   "singleton": {
+    "matched": 9430,
+    "singleton": 570
+   },
+   "nmatch": {
+    "0": 570,
+    "1": 570,
+    "2": 1694,
+    "3": 2453,
+    "4": 2139,
+    "5": 1438,
+    "6": 746,
+    "7": 296,
+    "8": 67,
+    "9": 20,
+    "10": 7
+   }
+  },
+  "S1R_TRAIN": {
+   "n": 20000,
+   "country": {
+    "India": 8040,
+    "US": 11960
+   },
+   "singleton": {
+    "matched": 18882,
+    "singleton": 1118
+   },
+   "nmatch": {
+    "0": 1118,
+    "1": 1071,
+    "2": 3403,
+    "3": 4793,
+    "4": 4395,
+    "5": 2924,
+    "6": 1474,
+    "7": 582,
+    "8": 204,
+    "9": 33,
+    "10": 3
+   }
+  },
+  "RR_TRAIN": {
+   "n": 50000,
+   "country": {
+    "India": 19954,
+    "US": 30046
+   },
+   "singleton": {
+    "matched": 47340,
+    "singleton": 2660
+   },
+   "nmatch": {
+    "0": 2660,
+    "1": 2706,
+    "2": 8499,
+    "3": 12091,
+    "4": 11021,
+    "5": 7417,
+    "6": 3665,
+    "7": 1390,
+    "8": 436,
+    "9": 104,
+    "10": 11
+   }
+  },
+  "RR_CAL": {
+   "n": 20000,
+   "country": {
+    "India": 8079,
+    "US": 11921
+   },
+   "singleton": {
+    "matched": 18845,
+    "singleton": 1155
+   },
+   "nmatch": {
+    "0": 1155,
+    "1": 1039,
+    "2": 3338,
+    "3": 4834,
+    "4": 4331,
+    "5": 2990,
+    "6": 1499,
+    "7": 620,
+    "8": 155,
+    "9": 32,
+    "10": 5,
+    "11": 2
+   }
+  },
+  "MATCH_TRAIN": {
+   "n": 180000,
+   "country": {
+    "India": 72141,
+    "US": 107859
+   },
+   "singleton": {
+    "matched": 169801,
+    "singleton": 10199
+   },
+   "nmatch": {
+    "0": 10199,
+    "1": 9692,
+    "2": 30650,
+    "3": 43451,
+    "4": 39358,
+    "5": 26422,
+    "6": 13246,
+    "7": 5112,
+    "8": 1488,
+    "9": 341,
+    "10": 37,
+    "11": 4
+   }
+  },
+  "MATCH_VALID": {
+   "n": 20000,
+   "country": {
+    "India": 8024,
+    "US": 11976
+   },
+   "singleton": {
+    "matched": 18848,
+    "singleton": 1152
+   },
+   "nmatch": {
+    "0": 1152,
+    "1": 1145,
+    "2": 3319,
+    "3": 4736,
+    "4": 4403,
+    "5": 2946,
+    "6": 1520,
+    "7": 591,
+    "8": 148,
+    "9": 35,
+    "10": 5
+   }
+  },
+  "DEV_REST": {
+   "n": 1455458,
+   "country": {
+    "India": 582406,
+    "US": 873052
+   },
+   "singleton": {
+    "matched": 1374273,
+    "singleton": 81185
+   },
+   "nmatch": {
+    "0": 81185,
+    "1": 78786,
+    "2": 247379,
+    "3": 349738,
+    "4": 319569,
+    "5": 212071,
+    "6": 109165,
+    "7": 42182,
+    "8": 12217,
+    "9": 2775,
+    "10": 364,
+    "11": 27
+   }
+  },
+  "HOLDOUT_TEST": {
+   "n": 441363,
+   "country": {
+    "India": 176637,
+    "US": 264726
+   },
+   "singleton": {
+    "matched": 416714,
+    "singleton": 24649
+   },
+   "nmatch": {
+    "0": 24649,
+    "1": 23623,
+    "2": 75276,
+    "3": 106280,
+    "4": 96750,
+    "5": 64271,
+    "6": 32807,
+    "7": 12877,
+    "8": 3874,
+    "9": 852,
+    "10": 100,
+    "11": 4
+   }
+  },
+  "DICT_SRC": {
+   "n": 1745458,
+   "country": {
+    "India": 698644,
+    "US": 1046814
+   },
+   "singleton": {
+    "matched": 1647989,
+    "singleton": 97469
+   },
+   "nmatch": {
+    "0": 97469,
+    "1": 94439,
+    "2": 296588,
+    "3": 419643,
+    "4": 383077,
+    "5": 254770,
+    "6": 130569,
+    "7": 50477,
+    "8": 14648,
+    "9": 3320,
+    "10": 425,
+    "11": 33
+   }
+  },
+  "val-S1": {
+   "n": 441363,
+   "country": {
+    "India": 176637,
+    "US": 264726
+   },
+   "singleton": {
+    "matched": 416714,
+    "singleton": 24649
+   },
+   "nmatch": {
+    "0": 24649,
+    "1": 23623,
+    "2": 75276,
+    "3": 106280,
+    "4": 96750,
+    "5": 64271,
+    "6": 32807,
+    "7": 12877,
+    "8": 3874,
+    "9": 852,
+    "10": 100,
+    "11": 4
+   }
+  }
+ }
+}

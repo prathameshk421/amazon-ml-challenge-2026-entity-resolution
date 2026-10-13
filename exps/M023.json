@@ -1,0 +1,1 @@
+{"id": "M023", "parent": "x1_strsim", "hypothesis": "D: + list shape (mean/std/min/max, z, percentile, softmax share and HHI, entropy, counts >= 0.5..0.9, same-name rank)", "groups": ["cex_list:ce_rec"], "weights": null}

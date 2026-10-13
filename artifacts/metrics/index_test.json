@@ -1,0 +1,646 @@
+{
+ "n_queries": 0,
+ "n_true_pairs": 0,
+ "config": {
+  "norm_version": "2.1",
+  "max_workers": 14,
+  "abbrev_mining": {
+   "enabled": true,
+   "min_frac": 0.0005,
+   "short_max_len": 4,
+   "cos_min": 0.95,
+   "target_min_frac": 0.001,
+   "sample": 1500000,
+   "min_country_records": 50000,
+   "seed": 0
+  },
+  "families": [
+   "EN",
+   "NT",
+   "NG",
+   "NP",
+   "SP",
+   "NC",
+   "AT",
+   "AB",
+   "XK"
+  ],
+  "build_df_max_frac": 0.005,
+  "cap_frac": {
+   "EN": 0.002,
+   "NT": 0.001,
+   "NG": 0.0008,
+   "NP": 0.002,
+   "PH": 0.002,
+   "SK": 0.002,
+   "SP": 0.002,
+   "NC": 0.002,
+   "AT": 0.002,
+   "AB": 0.002,
+   "XK": 0.002
+  },
+  "max_postings_per_query": 300000,
+  "hand_both": {
+   "EN": 10,
+   "NT": 1,
+   "NG": 1,
+   "PH": 0.2,
+   "AT": 1
+  },
+  "channels": {
+   "LEARN": "stage1_model",
+   "NAME": {
+    "EN": 1,
+    "NT": 1,
+    "NG": 1,
+    "PH": 0.2
+   },
+   "ADDR": {
+    "AT": 1,
+    "AB": 1
+   },
+   "PAIR": {
+    "NP": 1,
+    "SP": 1
+   },
+   "XK": {
+    "XK": 1
+   },
+   "CAT": {
+    "NC": 1
+   }
+  },
+  "quota": {
+   "LEARN": 150,
+   "NAME": 0,
+   "ADDR": 50,
+   "PAIR": 100,
+   "XK": 50,
+   "CAT": 20
+  },
+  "chain_rule": {
+   "enabled": false,
+   "min_chain": 10,
+   "mult": 2,
+   "channels": [
+    "ADDR",
+    "PAIR",
+    "XK"
+   ]
+  },
+  "edge_tokens": {
+   "min_frac": 0.0005,
+   "min_edge_share": 0.8,
+   "nc_min_len": 6,
+   "nc_pool_token_min_len": 8
+  },
+  "stage1_model": {
+   "neg_top": 300,
+   "neg_rand": 300,
+   "C": 1.0,
+   "max_iter": 2000
+  },
+  "rerank": {
+   "sample": {
+    "top_neg": 100,
+    "rand_neg": 100
+   },
+   "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_boost_round": 400,
+    "early_stopping_rounds": 50,
+    "holdout_frac": 0.1
+   },
+   "cut": {
+    "K_min": 5,
+    "K_max": 60,
+    "p_min": 0.05
+   },
+   "cut_grid": {
+    "K_min": [
+     5,
+     10,
+     20
+    ],
+    "K_max": [
+     60,
+     80,
+     100,
+     150
+    ],
+    "p_min": [
+     0.0005,
+     0.001,
+     0.002,
+     0.005,
+     0.01,
+     0.02,
+     0.05
+    ]
+   },
+   "mean_size_budget": 100
+  },
+  "tuned_by": {
+   "abbrev_mining.enabled": {
+    "experiment": "E0",
+    "metrics": "artifacts/metrics/e0_abbrev.json",
+    "value": true
+   },
+   "families": {
+    "experiment": "E2",
+    "metrics": "artifacts/metrics/s1_E2.json",
+    "value": [
+     "EN",
+     "NT",
+     "NG",
+     "NP",
+     "SP",
+     "NC",
+     "AT",
+     "AB",
+     "XK"
+    ]
+   },
+   "cap_frac.NT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.001
+   },
+   "cap_frac.NG": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.0008
+   },
+   "cap_frac.AT": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.NP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.SP": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.AB": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "cap_frac.XK": {
+    "experiment": "E3",
+    "metrics": "artifacts/metrics/s1_E3.json",
+    "value": 0.002
+   },
+   "channels.LEARN": {
+    "experiment": "E3b",
+    "metrics": "artifacts/metrics/s1_E3b.json",
+    "value": "stage1_model"
+   },
+   "quota": {
+    "experiment": "E4",
+    "metrics": "artifacts/metrics/s1_E4.json",
+    "value": {
+     "LEARN": 150,
+     "NAME": 0,
+     "ADDR": 50,
+     "PAIR": 100,
+     "XK": 50,
+     "CAT": 20
+    }
+   },
+   "chain_rule.enabled": {
+    "experiment": "E5",
+    "metrics": "artifacts/metrics/s1_E5.json",
+    "value": false
+   },
+   "rerank.cut.K_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 5
+   },
+   "rerank.cut.K_max": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 60
+   },
+   "rerank.cut.p_min": {
+    "experiment": "rerank-cut",
+    "metrics": "artifacts/metrics/rerank_cut.json",
+    "value": 0.05
+   }
+  }
+ },
+ "config_hash": "fc7811e23cb9358ab31b04e2b784fe8516779e5d",
+ "norm_version": "2.1",
+ "git_commit": "79bad2eeb2d0415f19299bc5d6377e1c36d87a94",
+ "created_at": "2026-09-25T20:26:49+05:30",
+ "n_pool": 9969589,
+ "G": [
+  "aditya",
+  "ahmedabad",
+  "alliance",
+  "alpha",
+  "amicale",
+  "amis",
+  "anand",
+  "anciens",
+  "arihant",
+  "arts",
+  "association",
+  "associes",
+  "back",
+  "bangalore",
+  "behavioral",
+  "big",
+  "black",
+  "board",
+  "body",
+  "bombay",
+  "bordeaux",
+  "brands",
+  "bureau",
+  "cafe",
+  "calais",
+  "cardiology",
+  "center",
+  "central",
+  "centre",
+  "cercle",
+  "charities",
+  "chasse",
+  "chennai",
+  "chiropractic",
+  "church",
+  "cie",
+  "clinic",
+  "clinique",
+  "club",
+  "coalition",
+  "coastal",
+  "coffee",
+  "collectif",
+  "collective",
+  "college",
+  "com",
+  "comite",
+  "commission",
+  "committee",
+  "communale",
+  "compagnie",
+  "company",
+  "concepts",
+  "conseil",
+  "corner",
+  "corporation",
+  "council",
+  "cozy",
+  "culture",
+  "culturelle",
+  "danse",
+  "deleves",
+  "deli",
+  "dermatology",
+  "developpement",
+  "diner",
+  "distribution",
+  "downtown",
+  "dr",
+  "dunkerque",
+  "dynamics",
+  "ear",
+  "east",
+  "eastern",
+  "eastgate",
+  "ecole",
+  "ehpad",
+  "ei",
+  "elementaire",
+  "es",
+  "esaes",
+  "et",
+  "etablissements",
+  "ets",
+  "eurl",
+  "eye",
+  "federation",
+  "fellowship",
+  "fetes",
+  "fils",
+  "foot",
+  "fortune",
+  "foyer",
+  "galaxy",
+  "gestion",
+  "good",
+  "greater",
+  "grill",
+  "group",
+  "groupe",
+  "groupement",
+  "guild",
+  "gujarat",
+  "happy",
+  "harbor",
+  "hari",
+  "high",
+  "highland",
+  "holding",
+  "holdings",
+  "hyderabad",
+  "hypnosis",
+  "id",
+  "iii",
+  "incorporated",
+  "indian",
+  "indo",
+  "initiative",
+  "institut",
+  "internal",
+  "jai",
+  "jain",
+  "jaipur",
+  "jean",
+  "jeunes",
+  "kolkata",
+  "lakeside",
+  "laxmi",
+  "league",
+  "lege",
+  "lille",
+  "limited",
+  "little",
+  "llc",
+  "llp",
+  "loisirs",
+  "lotus",
+  "lower",
+  "lp",
+  "lucknow",
+  "lucky",
+  "lycee",
+  "maid",
+  "maison",
+  "massage",
+  "merignac",
+  "metro",
+  "midtown",
+  "ministries",
+  "mr",
+  "ms",
+  "mumbai",
+  "musique",
+  "my",
+  "nails",
+  "nantes",
+  "networks",
+  "new",
+  "noida",
+  "north",
+  "northern",
+  "northside",
+  "nyu",
+  "office",
+  "oncology",
+  "orthopedic",
+  "parents",
+  "participations",
+  "partners",
+  "patrimoine",
+  "pc",
+  "pediatric",
+  "perfect",
+  "pessac",
+  "pharmacie",
+  "physical",
+  "phyuchar",
+  "pilates",
+  "pizza",
+  "pllc",
+  "pornic",
+  "practice",
+  "primary",
+  "private",
+  "program",
+  "pub",
+  "public",
+  "pune",
+  "red",
+  "residence",
+  "rev",
+  "riverside",
+  "roubaix",
+  "sa",
+  "samiti",
+  "sangh",
+  "sarl",
+  "sas",
+  "sasu",
+  "sci",
+  "seafood",
+  "section",
+  "service",
+  "services",
+  "shakti",
+  "shiva",
+  "shivam",
+  "shop",
+  "shyam",
+  "smt",
+  "snc",
+  "societe",
+  "society",
+  "south",
+  "southern",
+  "southside",
+  "sport",
+  "sportive",
+  "sree",
+  "sri",
+  "store",
+  "straight",
+  "studios",
+  "summit",
+  "sunrise",
+  "super",
+  "surgical",
+  "surya",
+  "swastik",
+  "sweet",
+  "tavern",
+  "team",
+  "thane",
+  "the",
+  "theatre",
+  "tirupati",
+  "tourcoing",
+  "trust",
+  "twisted",
+  "unique",
+  "universal",
+  "upper",
+  "uptown",
+  "urban",
+  "urgent",
+  "urology",
+  "valley",
+  "van",
+  "vijay",
+  "vision",
+  "west",
+  "western",
+  "westgate",
+  "womens",
+  "worldwide",
+  "yoga"
+ ],
+ "at_cap": 19939,
+ "build_df_limit": 49847,
+ "chunk": 250000,
+ "n_shards": 64,
+ "norm_input_fingerprint": "399277451:1790347587323152481",
+ "families": {
+  "EN": {
+   "n_keys": 7066247,
+   "n_postings": 9969589,
+   "n_dropped": 0,
+   "df_quantiles": {
+    "p50": 1,
+    "p90": 2,
+    "p99": 6,
+    "max": 689
+   },
+   "bytes": 152938828,
+   "wall_s": 43.8
+  },
+  "NT": {
+   "n_keys": 1196689,
+   "n_postings": 20188859,
+   "n_dropped": 79,
+   "df_quantiles": {
+    "p50": 1,
+    "p90": 6,
+    "p99": 128,
+    "max": 49844
+   },
+   "bytes": 99903612,
+   "wall_s": 95.7
+  },
+  "NG": {
+   "n_keys": 30039,
+   "n_postings": 50039235,
+   "n_dropped": 952,
+   "df_quantiles": {
+    "p50": 52,
+    "p90": 2891,
+    "p99": 33940,
+    "max": 49838
+   },
+   "bytes": 200645700,
+   "wall_s": 128.9
+  },
+  "NP": {
+   "n_keys": 7049391,
+   "n_postings": 49081306,
+   "n_dropped": 31,
+   "df_quantiles": {
+    "p50": 1,
+    "p90": 7,
+    "p99": 62,
+    "max": 49679
+   },
+   "bytes": 309116248,
+   "wall_s": 65.2
+  },
+  "SP": {
+   "n_keys": 2540686,
+   "n_postings": 40662555,
+   "n_dropped": 46,
+   "df_quantiles": {
+    "p50": 1,
+    "p90": 11,
+    "p99": 186,
+    "max": 48623
+   },
+   "bytes": 203302084,
+   "wall_s": 65.2
+  },
+  "NC": {
+   "n_keys": 13497921,
+   "n_postings": 30964618,
+   "n_dropped": 25,
+   "df_quantiles": {
+    "p50": 1,
+    "p90": 3,
+    "p99": 12,
+    "max": 49726
+   },
+   "bytes": 339825928,
+   "wall_s": 70.0
+  },
+  "AT": {
+   "n_keys": 650633,
+   "n_postings": 36992664,
+   "n_dropped": 225,
+   "df_quantiles": {
+    "p50": 4,
+    "p90": 36,
+    "p99": 775,
+    "max": 49284
+   },
+   "bytes": 158383104,
+   "wall_s": 34.9
+  },
+  "AB": {
+   "n_keys": 6480927,
+   "n_postings": 65787672,
+   "n_dropped": 86,
+   "df_quantiles": {
+    "p50": 2,
+    "p90": 9,
+    "p99": 104,
+    "max": 48570
+   },
+   "bytes": 366846728,
+   "wall_s": 32.6
+  },
+  "XK": {
+   "n_keys": 18720425,
+   "n_postings": 103423509,
+   "n_dropped": 0,
+   "df_quantiles": {
+    "p50": 2,
+    "p90": 8,
+    "p99": 56,
+    "max": 12375
+   },
+   "bytes": 713221356,
+   "wall_s": 52.6
+  }
+ },
+ "at_distinct_tokens": 650858,
+ "at_tokens_above_cap": 447,
+ "g_at_wall_s": 18.6,
+ "peak_rss_mb": {
+  "main": 1541.9,
+  "workers_max": 959.7,
+  "workers_sum": 5167.8
+ },
+ "wall_s": 607.8,
+ "n_G": 256
+}

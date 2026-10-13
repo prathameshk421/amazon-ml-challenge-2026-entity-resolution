@@ -1,0 +1,19 @@
+# GPU box packages on top of the DLAMI's torch (not listed: pip must not replace the CUDA build).
+# Versions match requirements.txt where the package is there; accelerate/datasets/evaluate are new (Apache-2.0,
+# reports/licenses.md) and pinned after the first install from /workspace/logs/pip_freeze.txt.
+transformers==5.17.0
+tokenizers==0.23.2
+safetensors==0.8.0
+huggingface_hub==1.33.0
+sentence-transformers==6.1.0
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+RapidFuzz==3.14.6
+tqdm==4.70.1
+accelerate
+datasets
+evaluate

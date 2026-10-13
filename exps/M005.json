@@ -1,0 +1,1 @@
+{"id": "M005", "parent": "x1_strsim", "hypothesis": "N05: 63% of FP rows are records another S1 owns and in-band rows beaten by another S1 by >=0.2 p_rerank match 11% vs p_cal 0.28; pool-side contention columns let LightGBM use that", "groups": ["comp"], "weights": null}

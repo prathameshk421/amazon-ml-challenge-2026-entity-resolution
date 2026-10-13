@@ -1,0 +1,1 @@
+{"id": "M014", "parent": "x1_strsim", "hypothesis": "Item 17: average of 3 LightGBM seeds (42, 43, 44) per fold reduces variance in band rows", "groups": [], "weights": null, "seeds": [42, 43, 44]}

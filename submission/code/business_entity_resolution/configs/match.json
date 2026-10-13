@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "train_set": "MATCH_TRAIN",
+  "confirm_set": "MATCH_VALID",
+  "n_folds": 5,
+  "fold_seed": 42,
+  "early_stop_frac": 0.1,
+  "chunk_queries": 5000,
+  "part_queries": 250000,
+  "lgb": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 100,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "seed": 42,
+    "deterministic": true,
+    "force_row_wise": true,
+    "verbosity": -1
+  },
+  "num_boost_round": 3000,
+  "early_stopping_rounds": 100,
+  "decision": {
+    "threshold_start": 0.05,
+    "threshold_stop": 0.95,
+    "threshold_step": 0.01,
+    "expected_f_min_gain": 0.0,
+    "one_owner_min_gain": 0.0
+  },
+  "confirm_tolerance": 0.003,
+  "error_export_max_rows": 20000,
+  "cand_filter": {
+    "K_min": 5,
+    "p_min": 0.05
+  },
+  "drop_features": []
+}

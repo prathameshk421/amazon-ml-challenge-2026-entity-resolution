@@ -1,0 +1,797 @@
+[
+ {
+  "kind": "name",
+  "in": "লিমিটেড",
+  "script": "BENGALI",
+  "out": "limited",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "প্রাইভেট",
+  "script": "BENGALI",
+  "out": "praibhet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "এলএলপি",
+  "script": "BENGALI",
+  "out": "elaelapi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "টেক",
+  "script": "BENGALI",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "গ্লোবাল",
+  "script": "BENGALI",
+  "out": "global",
+  "had_indic": true,
+  "skeletons": [
+   "KLPL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ইন্টারন্যাশনাল",
+  "script": "BENGALI",
+  "out": "intaranyashanal",
+  "had_indic": true,
+  "skeletons": [
+   "NTRNSNL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "लिमिटेड",
+  "script": "DEVANAGARI",
+  "out": "limited",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "प्राइवेट",
+  "script": "DEVANAGARI",
+  "out": "praivet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "प्रा.",
+  "script": "DEVANAGARI",
+  "out": "pra",
+  "had_indic": true,
+  "skeletons": [
+   "PR"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "लि.",
+  "script": "DEVANAGARI",
+  "out": "li",
+  "had_indic": true,
+  "skeletons": [
+   "L"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "एलएलपी",
+  "script": "DEVANAGARI",
+  "out": "elaelapi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "टेक",
+  "script": "DEVANAGARI",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "લિમિટેડ",
+  "script": "GUJARATI",
+  "out": "limited",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "પ્રાઇવેટ",
+  "script": "GUJARATI",
+  "out": "praivet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "પ્રા.",
+  "script": "GUJARATI",
+  "out": "pra",
+  "had_indic": true,
+  "skeletons": [
+   "PR"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "લિ.",
+  "script": "GUJARATI",
+  "out": "li",
+  "had_indic": true,
+  "skeletons": [
+   "L"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "એલએલપી",
+  "script": "GUJARATI",
+  "out": "elaelapi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ટેક",
+  "script": "GUJARATI",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਲਿਮਟਿਡ",
+  "script": "GURMUKHI",
+  "out": "limatid",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਪ੍ਰਾਈਵੇਟ",
+  "script": "GURMUKHI",
+  "out": "praivet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਪ੍ਰਾ.",
+  "script": "GURMUKHI",
+  "out": "pra",
+  "had_indic": true,
+  "skeletons": [
+   "PR"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਲਿ.",
+  "script": "GURMUKHI",
+  "out": "li",
+  "had_indic": true,
+  "skeletons": [
+   "L"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਐਲਐਲਪੀ",
+  "script": "GURMUKHI",
+  "out": "ailaailapi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਟੈਕ",
+  "script": "GURMUKHI",
+  "out": "taik",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ಲಿಮಿಟೆಡ್",
+  "script": "KANNADA",
+  "out": "limited",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ಪ್ರೈವೇಟ್",
+  "script": "KANNADA",
+  "out": "praivet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ಎಲ್ಎಲ್‌ಪಿ",
+  "script": "KANNADA",
+  "out": "elelpi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ಟೆಕ್",
+  "script": "KANNADA",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ಇಂಟರ್‌ನ್ಯಾಷನಲ್",
+  "script": "KANNADA",
+  "out": "intarnyashanal",
+  "had_indic": true,
+  "skeletons": [
+   "NTRNSNL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ಗ್ಲೋಬಲ್",
+  "script": "KANNADA",
+  "out": "global",
+  "had_indic": true,
+  "skeletons": [
+   "KLPL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ലിമിറ്റഡ്",
+  "script": "MALAYALAM",
+  "out": "limitad",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "പ്രൈവറ്റ്",
+  "script": "MALAYALAM",
+  "out": "praivat",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "എൽഎൽപി",
+  "script": "MALAYALAM",
+  "out": "elelpi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ടെക്",
+  "script": "MALAYALAM",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ഇന്റർനാഷണൽ",
+  "script": "MALAYALAM",
+  "out": "intarnashanal",
+  "had_indic": true,
+  "skeletons": [
+   "NTRNSNL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ഗ്ലോബൽ",
+  "script": "MALAYALAM",
+  "out": "global",
+  "had_indic": true,
+  "skeletons": [
+   "KLPL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ଲିମିଟେଡ୍",
+  "script": "ORIYA",
+  "out": "limited",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ପ୍ରାଇଭେଟ୍",
+  "script": "ORIYA",
+  "out": "praibhet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ଏଲ୍‌ଏଲ୍‌ପି",
+  "script": "ORIYA",
+  "out": "elelpi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ଗ୍ଲୋବାଲ୍",
+  "script": "ORIYA",
+  "out": "global",
+  "had_indic": true,
+  "skeletons": [
+   "KLPL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ଇଣ୍ଟରନ୍ୟାସନାଲ୍",
+  "script": "ORIYA",
+  "out": "intaranyasanal",
+  "had_indic": true,
+  "skeletons": [
+   "NTRNSNL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ଟେକ୍",
+  "script": "ORIYA",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "லிமிடெட்",
+  "script": "TAMIL",
+  "out": "limitet",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "பிரைவேட்",
+  "script": "TAMIL",
+  "out": "piraivet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "எல்எல்பி",
+  "script": "TAMIL",
+  "out": "elelpi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "டெக்",
+  "script": "TAMIL",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "குளோபல்",
+  "script": "TAMIL",
+  "out": "kulopal",
+  "had_indic": true,
+  "skeletons": [
+   "KLPL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "இன்டர்நேஷனல்",
+  "script": "TAMIL",
+  "out": "intarneshanal",
+  "had_indic": true,
+  "skeletons": [
+   "NTRNSNL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "లిమిటెడ్",
+  "script": "TELUGU",
+  "out": "limited",
+  "had_indic": true,
+  "skeletons": [
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ప్రైవేట్",
+  "script": "TELUGU",
+  "out": "praivet",
+  "had_indic": true,
+  "skeletons": [
+   "PRPT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ఎల్‌ఎల్‌పీ",
+  "script": "TELUGU",
+  "out": "elelpi",
+  "had_indic": true,
+  "skeletons": [
+   "LP"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "గ్లోబల్",
+  "script": "TELUGU",
+  "out": "global",
+  "had_indic": true,
+  "skeletons": [
+   "KLPL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ఇంటర్నేషనల్",
+  "script": "TELUGU",
+  "out": "intarneshanal",
+  "had_indic": true,
+  "skeletons": [
+   "NTRNSNL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "టెక్",
+  "script": "TELUGU",
+  "out": "tek",
+  "had_indic": true,
+  "skeletons": [
+   "TK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਅਨੰਦ",
+  "out": "anand",
+  "had_indic": true,
+  "skeletons": [
+   "NT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਇੰਡਸਟ੍ਰੀਜ਼",
+  "out": "indasatrij",
+  "had_indic": true,
+  "skeletons": [
+   "NTSTRS"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ਪੱਕਾ",
+  "out": "paka",
+  "had_indic": true,
+  "skeletons": [
+   "PK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ॐ साईं",
+  "out": "om sain",
+  "had_indic": true,
+  "skeletons": [
+   "M",
+   "SN"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "BORDEAUX CLUB S.A.S.",
+  "out": "bordeaux club sas",
+  "had_indic": false,
+  "skeletons": [
+   "PRTKS",
+   "KLP",
+   "S"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "J S W Steel",
+  "out": "jsw steel",
+  "had_indic": false,
+  "skeletons": [
+   "SP",
+   "STL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "राम मार्केटिंग प्राइवेट लिमिटेड",
+  "out": "ram marketing praivet limited",
+  "had_indic": true,
+  "skeletons": [
+   "RM",
+   "MRKTNK",
+   "PRPT",
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "चैंपियन",
+  "out": "chaimpiyan",
+  "had_indic": true,
+  "skeletons": [
+   "SMPN"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ज़ू",
+  "out": "ju",
+  "had_indic": true,
+  "skeletons": [
+   "S"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "ಸನ್‌ರೈಸ್ ಕನ್ಸಲ್ಟಿಂಗ್",
+  "out": "sanrais kansalting",
+  "had_indic": true,
+  "skeletons": [
+   "SNRS",
+   "KNSLTNK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "സിൽവർ",
+  "out": "silvar",
+  "had_indic": true,
+  "skeletons": [
+   "SLPR"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "Café Crème SARL",
+  "out": "cafe creme sarl",
+  "had_indic": false,
+  "skeletons": [
+   "KP",
+   "KRM",
+   "SRL"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "Œuvre d'Art",
+  "out": "oeuvre dart",
+  "had_indic": false,
+  "skeletons": [
+   "PR",
+   "TRT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "O'Connor & Sons, Inc.",
+  "out": "oconnor and sons incorporated",
+  "had_indic": false,
+  "skeletons": [
+   "KNR",
+   "NT",
+   "SNS",
+   "NKRPRT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "<CITY_NAME> Homes Pvt Ltd",
+  "out": "cityname homes private limited",
+  "had_indic": false,
+  "skeletons": [
+   "KTNM",
+   "MS",
+   "PRPT",
+   "LMT"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "HU DESERT ALTO LLC",
+  "out": "hu desert alto llc",
+  "had_indic": false,
+  "skeletons": [
+   "",
+   "TSRT",
+   "LT",
+   "LK"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "phaedrazengpegasus.com",
+  "out": "phaedrazengpegasus com",
+  "had_indic": false,
+  "skeletons": [
+   "PTRSNKPKS",
+   "KM"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "Jrm Sciences-<CITY_NAME>",
+  "out": "jrm sciences cityname",
+  "had_indic": false,
+  "skeletons": [
+   "SRM",
+   "SKNKS",
+   "KTNM"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "@n",
+  "out": "n",
+  "had_indic": false,
+  "skeletons": [
+   "N"
+  ]
+ },
+ {
+  "kind": "name",
+  "in": "",
+  "out": "",
+  "had_indic": false,
+  "skeletons": []
+ },
+ {
+  "kind": "addr",
+  "in": "57 R. JEAN MOULIN STE MARIE",
+  "out": "57 r jean moulin ste marie",
+  "had_indic": false
+ },
+ {
+  "kind": "addr",
+  "in": "12 Main St, St Louis",
+  "out": "12 main st st louis",
+  "had_indic": false
+ },
+ {
+  "kind": "addr",
+  "in": "Suite 5, 100 Saint Street",
+  "out": "ste 5 100 st st",
+  "had_indic": false
+ },
+ {
+  "kind": "addr",
+  "in": "2612 SOUTHVIEW COURT, <NULL>, BRAINERD, MN",
+  "out": "2612 southview court brainerd mn",
+  "had_indic": false
+ },
+ {
+  "kind": "addr",
+  "in": "#009, A BLOCK, RAHEJA ENCLAVE236, RACE COURSE",
+  "out": "009 a block raheja enclave 236 race course",
+  "had_indic": false
+ },
+ {
+  "kind": "addr",
+  "in": "Nº 12 Rue de l'Église, Lille",
+  "out": "no 12 rue de leglise lille",
+  "had_indic": false
+ },
+ {
+  "kind": "addr",
+  "in": "1945 214TH LN, BUCKEYE, AZ",
+  "out": "1945 214 th lane buckeye az",
+  "had_indic": false
+ },
+ {
+  "kind": "addr",
+  "in": "PLOT NO B-78/1, THANE, महाराष्ट्र",
+  "out": "plot no b 78 1 thane maharashtr",
+  "had_indic": true
+ },
+ {
+  "kind": "addr",
+  "in": "",
+  "out": "",
+  "had_indic": false
+ }
+]
